@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>520992</id>
+      <size>150</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-01-16 04:52:56.779751+00:00</created>
+      <updated>2024-08-08 03:32:50.004775+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>149</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>521713</id>
+          <start>0</start>
+          <stop>149</stop>
+          <url>https://app.cvat.ai/api/jobs/520992</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-08 03:32:53.791085+00:00</dumped>
+    <original_size>
+      <width>1280</width>
+      <height>720</height>
+    </original_size>
+  </meta>
+  <track id="0" label="object" source="manual">
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="769.85" ytl="233.37" xbr="790.13" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="772.10" ytl="224.90" xbr="793.50" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="772.10" ytl="224.90" xbr="798.60" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="772.10" ytl="231.40" xbr="798.60" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="777.81" ytl="234.70" xbr="804.31" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="40" keyframe="1" outside="0" occluded="0" xtl="778.94" ytl="230.20" xbr="806.60" ybr="280.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="781.00" ytl="228.84" xbr="810.70" ybr="280.70" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="782.40" ytl="225.45" xbr="816.81" ybr="282.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="760.00" ytl="225.45" xbr="822.20" ybr="288.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="760.00" ytl="225.45" xbr="828.30" ybr="290.30" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="766.52" ytl="222.19" xbr="837.30" ybr="295.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="766.52" ytl="222.19" xbr="847.50" ybr="302.60" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="815.60" ytl="222.19" xbr="859.30" ybr="309.70" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="825.22" ytl="230.11" xbr="870.10" ybr="317.62" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="833.40" ytl="237.60" xbr="887.76" ybr="329.17" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="844.20" ytl="202.40" xbr="906.40" ybr="341.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="856.90" ytl="199.50" xbr="924.98" ybr="358.53" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="874.00" ytl="210.10" xbr="960.03" ybr="387.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="888.10" ytl="255.90" xbr="994.10" ybr="413.70" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="916.30" ytl="255.90" xbr="1042.20" ybr="420.70" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="991.60" ytl="287.20" xbr="1106.75" ybr="324.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1043.40" ytl="306.00" xbr="1176.51" ybr="353.41" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="1114.00" ytl="331.00" xbr="1276.02" ybr="389.71" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="1" occluded="0" xtl="1114.00" ytl="331.00" xbr="1276.02" ybr="389.71" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+  </track>
+  <track id="1" label="object" source="manual">
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="738.20" ytl="291.42" xbr="774.97" ybr="352.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="730.30" ytl="294.80" xbr="773.80" ybr="362.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="730.30" ytl="290.80" xbr="775.50" ybr="362.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="730.30" ytl="290.80" xbr="779.40" ybr="367.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="716.40" ytl="290.80" xbr="782.66" ybr="373.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="40" keyframe="1" outside="0" occluded="0" xtl="718.66" ytl="290.80" xbr="784.92" ybr="375.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="730.90" ytl="290.80" xbr="788.30" ybr="379.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="732.90" ytl="290.80" xbr="793.70" ybr="385.40" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="737.65" ytl="295.60" xbr="798.45" ybr="389.50" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="736.30" ytl="295.60" xbr="803.20" ybr="399.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="734.70" ytl="295.60" xbr="811.40" ybr="409.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="729.80" ytl="298.04" xbr="818.20" ybr="418.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="731.70" ytl="299.46" xbr="824.33" ybr="428.70" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="726.60" ytl="299.46" xbr="836.20" ybr="438.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="726.60" ytl="299.46" xbr="845.70" ybr="449.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="724.60" ytl="302.90" xbr="860.00" ybr="467.50" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="714.82" ytl="312.68" xbr="875.60" ybr="497.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="711.60" ytl="323.30" xbr="896.00" ybr="520.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="704.60" ytl="323.30" xbr="921.80" ybr="540.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="695.20" ytl="323.30" xbr="940.60" ybr="575.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="687.40" ytl="328.20" xbr="1058.00" ybr="619.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="663.90" ytl="328.20" xbr="1058.00" ybr="619.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="663.90" ytl="322.60" xbr="1134.10" ybr="619.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="650.20" ytl="322.60" xbr="1101.80" ybr="656.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="641.70" ytl="328.20" xbr="1099.00" ybr="656.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="628.20" ytl="328.20" xbr="1099.00" ybr="656.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="628.20" ytl="337.50" xbr="1066.50" ybr="656.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="635.20" ytl="328.10" xbr="1280.00" ybr="656.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="698.10" ytl="313.90" xbr="1097.50" ybr="625.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="698.10" ytl="292.80" xbr="1163.70" ybr="625.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="730.60" ytl="304.90" xbr="1090.70" ybr="638.10" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="730.60" ytl="309.00" xbr="1220.50" ybr="650.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="730.60" ytl="426.80" xbr="999.80" ybr="650.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="730.60" ytl="465.70" xbr="1059.00" ybr="650.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="754.30" ytl="465.70" xbr="868.00" ybr="650.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="717.68" ytl="430.49" xbr="794.80" ybr="603.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="1" occluded="0" xtl="716.27" ytl="430.49" xbr="793.39" ybr="603.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="2" label="object" source="manual">
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="856.83" ytl="-33.46" xbr="883.52" ybr="267.14" rotation="37.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="856.83" ytl="-31.77" xbr="883.52" ybr="268.83" rotation="37.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="863.00" ytl="-30.69" xbr="886.80" ybr="269.91" rotation="37.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="40" keyframe="1" outside="0" occluded="0" xtl="870.32" ytl="-37.13" xbr="893.89" ybr="263.46" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="870.06" ytl="-37.94" xbr="896.49" ybr="262.66" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="869.80" ytl="-38.74" xbr="899.10" ybr="261.85" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="869.37" ytl="-37.59" xbr="902.17" ybr="263.00" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="875.36" ytl="-48.79" xbr="912.63" ybr="262.09" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="876.47" ytl="-51.75" xbr="921.01" ybr="265.22" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="875.54" ytl="-49.26" xbr="927.67" ybr="267.71" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="878.50" ytl="-50.64" xbr="938.35" ybr="266.33" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="882.42" ytl="-61.11" xbr="949.51" ybr="270.51" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="885.45" ytl="-64.44" xbr="963.76" ybr="277.62" rotation="41.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="907.09" ytl="-74.03" xbr="964.24" ybr="280.76" rotation="48.10" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="910.50" ytl="-81.67" xbr="975.91" ybr="285.97" rotation="48.10" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="918.34" ytl="-79.57" xbr="997.81" ybr="288.07" rotation="48.10" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="947.58" ytl="-97.05" xbr="999.00" ybr="288.78" rotation="56.00" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="962.09" ytl="-92.50" xbr="1028.26" ybr="296.45" rotation="63.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="989.97" ytl="-122.11" xbr="1059.23" ybr="305.72" rotation="63.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="994.95" ytl="-112.58" xbr="1076.91" ybr="294.11" rotation="63.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="993.35" ytl="-96.68" xbr="1092.01" ybr="279.90" rotation="63.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="999.07" ytl="-78.54" xbr="1108.01" ybr="270.02" rotation="58.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="1037.95" ytl="-98.59" xbr="1183.87" ybr="265.84" rotation="58.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1127.67" ytl="20.38" xbr="1191.68" ybr="292.15" rotation="58.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1192.45" ytl="108.57" xbr="1295.49" ybr="270.20" rotation="58.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="1" occluded="0" xtl="1192.45" ytl="108.57" xbr="1295.49" ybr="270.20" rotation="58.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="3" label="object" source="manual">
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="770.90" ytl="214.31" xbr="791.00" ybr="301.82" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="778.82" ytl="203.55" xbr="796.10" ybr="291.07" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="780.90" ytl="213.70" xbr="800.20" ybr="291.07" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="786.33" ytl="217.78" xbr="809.00" ybr="295.14" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="792.20" ytl="218.75" xbr="814.87" ybr="304.00" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="798.72" ytl="222.80" xbr="826.30" ybr="305.60" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="804.83" ytl="224.80" xbr="841.20" ybr="313.75" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="813.30" ytl="226.20" xbr="851.60" ybr="321.30" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="822.73" ytl="228.60" xbr="899.20" ybr="331.70" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="833.30" ytl="228.60" xbr="928.50" ybr="343.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="844.80" ytl="232.00" xbr="928.50" ybr="358.00" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="893.70" ytl="233.00" xbr="939.30" ybr="271.90" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="934.45" ytl="246.04" xbr="999.60" ybr="289.80" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="978.40" ytl="255.81" xbr="1075.89" ybr="317.19" rotation="0.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1081.21" ytl="288.20" xbr="1178.70" ybr="355.50" rotation="0.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="1" occluded="0" xtl="1081.21" ytl="288.20" xbr="1178.70" ybr="355.50" rotation="0.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_object">snow</attribute>
+    </box>
+  </track>
+  <track id="4" label="object" source="manual">
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="724.57" ytl="227.70" xbr="797.80" ybr="304.85" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="729.80" ytl="225.34" xbr="805.35" ybr="302.49" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="724.90" ytl="233.50" xbr="812.70" ybr="315.50" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="728.97" ytl="238.25" xbr="827.60" ybr="320.25" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="728.97" ytl="236.30" xbr="843.20" ybr="320.25" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="723.30" ytl="236.30" xbr="862.80" ybr="328.40" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="714.50" ytl="232.40" xbr="893.10" ybr="328.40" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="714.50" ytl="224.60" xbr="914.60" ybr="337.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="777.70" ytl="210.80" xbr="973.10" ybr="345.70" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="808.10" ytl="194.57" xbr="1009.61" ybr="329.47" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="1" occluded="0" xtl="808.10" ytl="287.50" xbr="1009.61" ybr="329.47" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="5" label="object" source="manual">
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="738.60" ytl="156.30" xbr="877.70" ybr="285.40" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="738.60" ytl="134.00" xbr="928.40" ybr="297.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="730.49" ytl="82.50" xbr="984.30" ybr="334.06" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="744.00" ytl="155.20" xbr="1057.00" ybr="410.10" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="704.45" ytl="204.40" xbr="970.70" ybr="421.30" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="712.90" ytl="261.90" xbr="933.30" ybr="429.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="712.90" ytl="270.40" xbr="926.20" ybr="429.80" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="1" occluded="0" xtl="819.90" ytl="270.40" xbr="926.20" ybr="405.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="6" label="object" source="manual">
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="539.70" ytl="164.67" xbr="725.50" ybr="563.50" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="550.90" ytl="185.70" xbr="731.10" ybr="557.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="550.90" ytl="185.70" xbr="731.10" ybr="557.90" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="532.30" ytl="167.10" xbr="690.50" ybr="555.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="532.30" ytl="220.60" xbr="690.50" ybr="565.50" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="532.30" ytl="220.60" xbr="773.60" ybr="561.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="528.07" ytl="230.46" xbr="768.00" ybr="571.06" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="492.90" ytl="230.46" xbr="762.40" ybr="571.06" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="492.90" ytl="230.46" xbr="762.40" ybr="531.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="501.40" ytl="192.40" xbr="753.90" ybr="531.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="492.90" ytl="178.30" xbr="753.90" ybr="524.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="1" occluded="0" xtl="492.90" ytl="178.30" xbr="753.90" ybr="524.60" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="7" label="object" source="manual">
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="787.00" ytl="0.00" xbr="839.70" ybr="116.83" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="792.07" ytl="74.37" xbr="844.77" ybr="191.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="1" occluded="0" xtl="792.07" ytl="74.37" xbr="844.77" ybr="191.20" z_order="0">
+      <attribute name="type_of_object">snow</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="8" label="object" source="manual">
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="690.00" ytl="422.90" xbr="721.14" ybr="459.10" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="116" keyframe="0" outside="0" occluded="0" xtl="689.82" ytl="423.37" xbr="720.70" ybr="458.73" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="117" keyframe="0" outside="0" occluded="0" xtl="689.64" ytl="423.83" xbr="720.25" ybr="458.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="689.45" ytl="424.30" xbr="719.80" ybr="458.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="688.09" ytl="424.30" xbr="718.44" ybr="458.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="688.09" ytl="425.10" xbr="718.44" ybr="458.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="121" keyframe="0" outside="0" occluded="0" xtl="687.52" ytl="425.10" xbr="717.87" ybr="458.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="686.95" ytl="425.10" xbr="717.30" ybr="458.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="686.95" ytl="425.10" xbr="717.30" ybr="455.70" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="0" xtl="686.64" ytl="425.35" xbr="716.98" ybr="455.95" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="125" keyframe="0" outside="0" occluded="0" xtl="686.32" ytl="425.61" xbr="716.67" ybr="456.21" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="686.00" ytl="425.86" xbr="716.35" ybr="456.46" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="684.87" ytl="426.05" xbr="715.21" ybr="456.65" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="684.87" ytl="425.37" xbr="715.21" ybr="455.61" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="684.87" ytl="424.70" xbr="715.21" ybr="454.56" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="685.43" ytl="424.89" xbr="715.78" ybr="454.75" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="131" keyframe="0" outside="0" occluded="0" xtl="685.62" ytl="424.57" xbr="715.92" ybr="454.44" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="0" xtl="685.81" ytl="424.26" xbr="716.06" ybr="454.12" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="686.00" ytl="423.94" xbr="716.20" ybr="453.81" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="134" keyframe="0" outside="0" occluded="0" xtl="686.13" ytl="423.81" xbr="716.33" ybr="453.67" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="686.27" ytl="423.68" xbr="716.46" ybr="453.54" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="687.06" ytl="424.30" xbr="716.60" ybr="453.28" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="686.40" ytl="424.56" xbr="715.94" ybr="453.54" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="0" occluded="0" xtl="687.06" ytl="425.77" xbr="716.60" ybr="453.41" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="686.92" ytl="427.90" xbr="716.47" ybr="453.28" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="140" keyframe="0" outside="0" occluded="0" xtl="687.06" ytl="427.90" xbr="716.60" ybr="453.28" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="141" keyframe="1" outside="0" occluded="0" xtl="687.19" ytl="427.90" xbr="716.73" ybr="453.28" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="142" keyframe="0" outside="0" occluded="0" xtl="687.19" ytl="428.00" xbr="717.12" ybr="453.48" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="143" keyframe="0" outside="0" occluded="0" xtl="687.19" ytl="428.10" xbr="717.52" ybr="453.69" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="144" keyframe="0" outside="0" occluded="0" xtl="687.19" ytl="428.20" xbr="717.91" ybr="453.89" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="145" keyframe="1" outside="0" occluded="0" xtl="687.19" ytl="428.30" xbr="718.30" ybr="454.10" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="146" keyframe="0" outside="0" occluded="0" xtl="687.10" ytl="428.21" xbr="718.21" ybr="454.01" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="147" keyframe="0" outside="0" occluded="0" xtl="687.01" ytl="428.12" xbr="718.12" ybr="453.92" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="686.93" ytl="428.04" xbr="718.04" ybr="453.84" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="687.50" ytl="429.10" xbr="717.10" ybr="453.31" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+  </track>
+  <track id="9" label="object" source="manual">
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="694.20" ytl="423.60" xbr="726.00" ybr="453.80" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="693.90" ytl="423.60" xbr="725.70" ybr="453.80" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="693.60" ytl="423.60" xbr="725.39" ybr="453.80" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="693.29" ytl="423.60" xbr="725.09" ybr="453.80" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="692.84" ytl="423.15" xbr="724.63" ybr="453.34" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="691.93" ytl="422.46" xbr="723.73" ybr="452.66" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="110" keyframe="0" outside="0" occluded="0" xtl="691.59" ytl="422.35" xbr="723.38" ybr="452.23" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="691.25" ytl="422.24" xbr="723.04" ybr="451.80" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="690.56" ytl="422.69" xbr="722.36" ybr="452.26" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="690.11" ytl="422.01" xbr="721.91" ybr="451.57" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="689.88" ytl="421.80" xbr="721.68" ybr="450.44" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="1" occluded="0" xtl="739.24" ytl="417.91" xbr="771.04" ybr="447.48" z_order="0">
+      <attribute name="type_of_object">objects name, etc.</attribute>
+      <attribute name="situation">on_road, not_on_road, flying</attribute>
+      <attribute name="cross">crossing, not_crossing, undefined</attribute>
+    </box>
+  </track>
+</annotations>

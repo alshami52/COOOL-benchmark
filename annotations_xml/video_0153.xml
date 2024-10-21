@@ -1,0 +1,3371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>853032</id>
+      <size>161</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-05-14 18:07:29.366844+00:00</created>
+      <updated>2024-10-17 15:24:35.983032+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>160</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>854711</id>
+          <start>0</start>
+          <stop>160</stop>
+          <url>https://app.cvat.ai/api/jobs/853032</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>Bezbakri</username>
+        <email>bezbakri@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-10-17 15:24:41.037045+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="pedestrian" source="manual">
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="638.60" ytl="658.75" xbr="711.76" ybr="830.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="634.15" ytl="665.67" xbr="711.67" ybr="843.39" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="629.70" ytl="672.59" xbr="711.57" ybr="855.99" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="625.25" ytl="679.52" xbr="711.48" ybr="868.58" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="618.87" ytl="676.81" xbr="709.46" ybr="871.54" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="612.49" ytl="674.10" xbr="707.44" ybr="874.50" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="606.11" ytl="671.39" xbr="705.42" ybr="877.46" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="599.73" ytl="668.68" xbr="703.40" ybr="880.42" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="593.36" ytl="665.97" xbr="701.38" ybr="883.38" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="586.98" ytl="663.26" xbr="699.36" ybr="886.34" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="580.60" ytl="660.54" xbr="697.34" ybr="889.30" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="597.06" ytl="660.72" xbr="695.90" ybr="886.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="595.81" ytl="662.42" xbr="701.82" ybr="896.18" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="594.56" ytl="664.12" xbr="707.73" ybr="906.17" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="593.31" ytl="665.81" xbr="713.65" ybr="916.15" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="65" keyframe="0" outside="0" occluded="0" xtl="592.05" ytl="667.51" xbr="719.57" ybr="926.13" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="590.80" ytl="669.20" xbr="725.48" ybr="936.12" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="589.55" ytl="670.90" xbr="731.40" ybr="946.10" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="588.30" ytl="672.59" xbr="725.57" ybr="949.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="594.99" ytl="674.29" xbr="730.84" ybr="955.10" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="601.69" ytl="675.98" xbr="736.10" ybr="961.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="612.12" ytl="677.68" xbr="743.97" ybr="964.15" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="622.56" ytl="679.37" xbr="751.84" ybr="967.10" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="73" keyframe="0" outside="0" occluded="0" xtl="633.00" ytl="681.07" xbr="759.71" ybr="970.05" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="643.44" ytl="682.77" xbr="767.58" ybr="973.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="656.40" ytl="684.46" xbr="755.24" ybr="963.30" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="76" keyframe="0" outside="0" occluded="0" xtl="659.27" ytl="678.14" xbr="766.20" ybr="964.41" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="77" keyframe="0" outside="0" occluded="0" xtl="662.13" ytl="671.82" xbr="777.15" ybr="965.53" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="665.00" ytl="665.50" xbr="788.11" ybr="966.64" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="671.18" ytl="673.39" xbr="792.43" ybr="972.81" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="677.37" ytl="681.27" xbr="796.74" ybr="978.98" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="683.55" ytl="689.16" xbr="801.06" ybr="985.15" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="689.74" ytl="697.04" xbr="805.38" ybr="991.32" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="699.30" ytl="704.37" xbr="813.07" ybr="996.93" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="708.86" ytl="711.69" xbr="820.76" ybr="1002.54" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="718.41" ytl="719.02" xbr="828.45" ybr="1008.15" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="86" keyframe="0" outside="0" occluded="0" xtl="722.93" ytl="717.23" xbr="837.16" ybr="1005.66" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="727.44" ytl="715.45" xbr="845.86" ybr="1003.18" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="88" keyframe="0" outside="0" occluded="0" xtl="731.93" ytl="712.15" xbr="845.46" ybr="997.66" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="736.43" ytl="708.85" xbr="845.06" ybr="992.14" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="740.92" ytl="705.56" xbr="844.65" ybr="986.62" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="745.41" ytl="702.26" xbr="844.25" ybr="981.10" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="746.99" ytl="702.66" xbr="845.83" ybr="981.50" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="748.58" ytl="703.05" xbr="847.42" ybr="981.89" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="750.16" ytl="703.45" xbr="849.00" ybr="982.29" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="751.74" ytl="703.85" xbr="850.58" ybr="982.68" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="753.32" ytl="704.24" xbr="852.16" ybr="983.08" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="97" keyframe="0" outside="0" occluded="0" xtl="754.91" ytl="704.64" xbr="853.75" ybr="983.48" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="98" keyframe="0" outside="0" occluded="0" xtl="756.49" ytl="705.03" xbr="855.33" ybr="983.87" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="99" keyframe="0" outside="0" occluded="0" xtl="758.07" ytl="705.43" xbr="856.91" ybr="984.27" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="100" keyframe="0" outside="0" occluded="0" xtl="759.65" ytl="705.82" xbr="858.49" ybr="984.66" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="101" keyframe="0" outside="0" occluded="0" xtl="761.24" ytl="706.22" xbr="860.08" ybr="985.06" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="102" keyframe="0" outside="0" occluded="0" xtl="762.82" ytl="706.61" xbr="861.66" ybr="985.45" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="103" keyframe="0" outside="0" occluded="0" xtl="764.40" ytl="707.01" xbr="863.24" ybr="985.85" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="104" keyframe="0" outside="0" occluded="0" xtl="765.98" ytl="707.41" xbr="864.82" ybr="986.25" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="767.57" ytl="707.80" xbr="866.41" ybr="986.64" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="769.15" ytl="708.20" xbr="867.99" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="107" keyframe="0" outside="0" occluded="0" xtl="771.27" ytl="708.20" xbr="869.53" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="108" keyframe="0" outside="0" occluded="0" xtl="773.40" ytl="708.20" xbr="871.06" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="775.52" ytl="708.20" xbr="872.60" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="110" keyframe="0" outside="0" occluded="0" xtl="777.64" ytl="708.20" xbr="874.14" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="111" keyframe="0" outside="0" occluded="0" xtl="779.77" ytl="708.20" xbr="875.68" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="112" keyframe="0" outside="0" occluded="0" xtl="781.89" ytl="708.20" xbr="877.21" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="113" keyframe="0" outside="0" occluded="0" xtl="784.02" ytl="708.20" xbr="878.75" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="114" keyframe="0" outside="0" occluded="0" xtl="786.14" ytl="708.20" xbr="880.29" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="1" xtl="788.27" ytl="708.20" xbr="881.83" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="116" keyframe="0" outside="0" occluded="1" xtl="790.39" ytl="708.20" xbr="883.36" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="117" keyframe="0" outside="0" occluded="1" xtl="792.51" ytl="708.20" xbr="884.90" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="118" keyframe="0" outside="0" occluded="1" xtl="794.64" ytl="708.20" xbr="886.44" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="119" keyframe="0" outside="0" occluded="1" xtl="796.76" ytl="708.20" xbr="887.98" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="120" keyframe="0" outside="0" occluded="1" xtl="798.89" ytl="708.20" xbr="889.51" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="121" keyframe="0" outside="0" occluded="1" xtl="801.01" ytl="708.20" xbr="891.05" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="122" keyframe="0" outside="0" occluded="1" xtl="803.13" ytl="708.20" xbr="892.59" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="123" keyframe="0" outside="0" occluded="1" xtl="805.26" ytl="708.20" xbr="894.13" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="1" xtl="807.38" ytl="708.20" xbr="895.66" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="125" keyframe="0" outside="0" occluded="1" xtl="809.51" ytl="708.20" xbr="897.20" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="126" keyframe="0" outside="0" occluded="1" xtl="811.63" ytl="708.20" xbr="898.74" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="127" keyframe="0" outside="0" occluded="1" xtl="813.76" ytl="708.20" xbr="900.28" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="1" xtl="815.88" ytl="708.20" xbr="901.81" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="129" keyframe="0" outside="0" occluded="1" xtl="818.00" ytl="708.20" xbr="903.35" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="130" keyframe="0" outside="0" occluded="1" xtl="820.13" ytl="708.20" xbr="904.89" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="131" keyframe="0" outside="0" occluded="1" xtl="822.25" ytl="708.20" xbr="906.43" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="1" xtl="824.38" ytl="708.20" xbr="907.96" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="1" xtl="826.50" ytl="708.20" xbr="909.50" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="1" occluded="0" xtl="826.50" ytl="708.20" xbr="909.50" ybr="987.04" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">female</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">kid</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+  </track>
+  <track id="1" label="ped" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1182.53" ytl="582.00" xbr="1265.60" ybr="700.68" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1190.07" ytl="584.35" xbr="1274.14" ybr="704.02" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="2" keyframe="0" outside="0" occluded="0" xtl="1197.61" ytl="586.70" xbr="1282.67" ybr="707.36" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1205.15" ytl="589.05" xbr="1291.20" ybr="710.70" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="4" keyframe="0" outside="0" occluded="0" xtl="1212.69" ytl="591.40" xbr="1299.73" ybr="714.04" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="1220.23" ytl="593.74" xbr="1308.26" ybr="717.37" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="1227.77" ytl="596.09" xbr="1316.79" ybr="720.71" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="1235.32" ytl="598.44" xbr="1325.32" ybr="724.05" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1242.86" ytl="600.79" xbr="1333.85" ybr="727.39" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1250.40" ytl="603.14" xbr="1342.38" ybr="730.73" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1257.94" ytl="605.49" xbr="1350.91" ybr="734.07" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="1265.48" ytl="607.84" xbr="1359.45" ybr="737.41" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1273.02" ytl="610.19" xbr="1367.98" ybr="740.75" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1280.56" ytl="612.54" xbr="1376.51" ybr="744.08" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1288.10" ytl="614.89" xbr="1385.04" ybr="747.42" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1295.65" ytl="617.23" xbr="1393.57" ybr="750.76" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="1303.19" ytl="619.58" xbr="1402.10" ybr="754.10" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1315.55" ytl="619.58" xbr="1418.42" ybr="759.42" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1327.91" ytl="619.59" xbr="1434.74" ybr="764.73" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1340.27" ytl="619.59" xbr="1451.06" ybr="770.05" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="1352.64" ytl="619.59" xbr="1467.38" ybr="775.36" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1365.00" ytl="619.59" xbr="1483.69" ybr="780.68" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1377.36" ytl="619.59" xbr="1500.01" ybr="786.00" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1389.73" ytl="619.59" xbr="1516.33" ybr="791.31" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1402.09" ytl="619.59" xbr="1532.65" ybr="796.63" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1414.45" ytl="619.59" xbr="1548.97" ybr="801.94" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1426.81" ytl="619.59" xbr="1565.29" ybr="807.26" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1439.18" ytl="619.59" xbr="1581.61" ybr="812.58" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="28" keyframe="0" outside="0" occluded="0" xtl="1451.54" ytl="619.60" xbr="1597.93" ybr="817.89" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1463.90" ytl="619.60" xbr="1614.24" ybr="823.21" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1476.26" ytl="619.60" xbr="1630.56" ybr="828.52" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1488.63" ytl="619.60" xbr="1646.88" ybr="833.84" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="1500.99" ytl="619.60" xbr="1663.20" ybr="839.16" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1523.54" ytl="620.78" xbr="1691.28" ybr="851.02" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1546.09" ytl="621.96" xbr="1719.36" ybr="862.89" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1568.64" ytl="623.14" xbr="1747.44" ybr="874.76" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1591.19" ytl="624.32" xbr="1775.52" ybr="886.63" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="1613.74" ytl="625.50" xbr="1803.60" ybr="898.50" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1636.48" ytl="645.28" xbr="1826.35" ybr="918.28" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="1659.23" ytl="665.06" xbr="1849.09" ybr="938.06" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1659.23" ytl="665.06" xbr="1849.09" ybr="938.06" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="1" occluded="0" xtl="1659.23" ytl="665.06" xbr="1849.09" ybr="938.06" z_order="0">
+      <attribute name="occlusion">none</attribute>
+    </box>
+  </track>
+  <track id="2" label="pedestrian" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="905.60" ytl="542.44" xbr="976.81" ybr="682.88" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="908.24" ytl="543.10" xbr="981.03" ybr="685.78" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="2" keyframe="0" outside="0" occluded="0" xtl="910.88" ytl="543.75" xbr="985.25" ybr="688.68" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="913.52" ytl="544.41" xbr="989.47" ybr="691.58" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="4" keyframe="0" outside="0" occluded="0" xtl="916.15" ytl="545.07" xbr="993.69" ybr="694.48" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="918.79" ytl="545.73" xbr="997.91" ybr="697.38" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="921.43" ytl="546.38" xbr="1002.13" ybr="700.29" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="924.07" ytl="547.04" xbr="1006.35" ybr="703.19" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="926.70" ytl="547.70" xbr="1010.57" ybr="706.09" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="929.34" ytl="548.36" xbr="1014.79" ybr="708.99" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="931.98" ytl="549.01" xbr="1019.00" ybr="711.89" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="934.62" ytl="549.67" xbr="1023.22" ybr="714.79" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="937.25" ytl="550.33" xbr="1027.44" ybr="717.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="939.89" ytl="550.99" xbr="1031.66" ybr="720.59" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="942.53" ytl="551.64" xbr="1035.88" ybr="723.49" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="15" keyframe="1" outside="0" occluded="0" xtl="945.17" ytl="552.30" xbr="1040.10" ybr="726.40" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="16" keyframe="0" outside="0" occluded="0" xtl="952.68" ytl="551.11" xbr="1047.22" ybr="729.37" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="960.19" ytl="549.93" xbr="1054.34" ybr="732.34" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="967.71" ytl="548.74" xbr="1061.46" ybr="735.31" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="975.22" ytl="547.55" xbr="1068.58" ybr="738.28" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="982.73" ytl="546.37" xbr="1075.70" ybr="741.25" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="990.25" ytl="545.18" xbr="1082.83" ybr="744.22" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="997.76" ytl="543.99" xbr="1089.95" ybr="747.19" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1005.27" ytl="542.81" xbr="1097.07" ybr="750.16" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1012.79" ytl="541.62" xbr="1104.19" ybr="753.13" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="25" keyframe="1" outside="0" occluded="0" xtl="1020.30" ytl="540.43" xbr="1111.31" ybr="756.10" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1029.70" ytl="536.97" xbr="1124.41" ybr="760.06" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1039.09" ytl="533.50" xbr="1137.51" ybr="764.01" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="28" keyframe="0" outside="0" occluded="0" xtl="1048.49" ytl="530.03" xbr="1150.61" ybr="767.97" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1057.88" ytl="526.57" xbr="1163.70" ybr="771.92" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1067.28" ytl="523.10" xbr="1176.80" ybr="775.88" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1076.67" ytl="519.63" xbr="1189.90" ybr="779.84" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1086.07" ytl="516.17" xbr="1203.00" ybr="783.79" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="1095.46" ytl="512.70" xbr="1216.10" ybr="787.75" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1106.67" ytl="511.72" xbr="1231.60" ybr="795.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1117.88" ytl="510.73" xbr="1247.10" ybr="802.25" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1129.09" ytl="509.75" xbr="1262.60" ybr="809.51" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="37" keyframe="0" outside="0" occluded="0" xtl="1140.30" ytl="508.77" xbr="1278.10" ybr="816.76" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1151.51" ytl="507.78" xbr="1293.60" ybr="824.01" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="1162.72" ytl="506.80" xbr="1309.10" ybr="831.26" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1178.76" ytl="506.58" xbr="1326.02" ybr="841.59" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1194.80" ytl="506.36" xbr="1342.94" ybr="851.92" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1210.84" ytl="506.13" xbr="1359.87" ybr="862.25" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1226.89" ytl="505.91" xbr="1376.79" ybr="872.58" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1242.93" ytl="505.69" xbr="1393.71" ybr="882.91" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1258.97" ytl="505.47" xbr="1410.63" ybr="893.24" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="46" keyframe="0" outside="0" occluded="0" xtl="1275.01" ytl="505.24" xbr="1427.56" ybr="903.57" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="47" keyframe="0" outside="0" occluded="0" xtl="1291.06" ytl="505.02" xbr="1444.48" ybr="913.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1307.10" ytl="504.80" xbr="1461.40" ybr="924.23" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1315.80" ytl="512.32" xbr="1486.32" ybr="940.84" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="50" keyframe="0" outside="0" occluded="0" xtl="1324.51" ytl="519.84" xbr="1511.24" ybr="957.46" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="1333.21" ytl="527.36" xbr="1536.16" ybr="974.07" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="1341.91" ytl="534.88" xbr="1561.08" ybr="990.69" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1350.62" ytl="542.40" xbr="1586.00" ybr="1007.30" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="1" occluded="0" xtl="1350.62" ytl="542.40" xbr="1586.00" ybr="1007.30" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+  </track>
+  <track id="3" label="pedestrian" source="manual">
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1308.13" ytl="527.50" xbr="1626.60" ybr="1028.00" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="1303.61" ytl="518.74" xbr="1636.21" ybr="1030.83" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="1299.09" ytl="509.98" xbr="1645.83" ybr="1033.66" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="1294.57" ytl="501.22" xbr="1655.44" ybr="1036.49" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="1290.05" ytl="492.46" xbr="1665.06" ybr="1039.31" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1285.53" ytl="483.70" xbr="1674.67" ybr="1042.14" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="1281.00" ytl="474.94" xbr="1684.29" ybr="1044.97" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1276.48" ytl="466.18" xbr="1693.90" ybr="1047.80" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="1271.01" ytl="465.88" xbr="1684.62" ybr="1047.50" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="1265.53" ytl="465.57" xbr="1675.33" ybr="1047.19" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1260.05" ytl="465.27" xbr="1666.05" ybr="1046.89" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="65" keyframe="0" outside="0" occluded="0" xtl="1254.57" ytl="464.96" xbr="1656.76" ybr="1046.58" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="1249.10" ytl="464.66" xbr="1647.48" ybr="1046.28" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="67" keyframe="0" outside="0" occluded="0" xtl="1243.62" ytl="464.35" xbr="1638.19" ybr="1045.97" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="1238.14" ytl="464.05" xbr="1628.91" ybr="1045.67" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="1232.66" ytl="463.75" xbr="1619.62" ybr="1045.37" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="70" keyframe="0" outside="0" occluded="0" xtl="1227.18" ytl="463.44" xbr="1610.34" ybr="1045.06" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="1221.71" ytl="463.14" xbr="1601.05" ybr="1044.76" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="1216.23" ytl="462.83" xbr="1591.77" ybr="1044.45" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="73" keyframe="0" outside="0" occluded="0" xtl="1210.75" ytl="462.53" xbr="1582.48" ybr="1044.15" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="1205.27" ytl="462.22" xbr="1573.20" ybr="1043.84" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="75" keyframe="0" outside="0" occluded="0" xtl="1188.19" ytl="446.27" xbr="1547.85" ybr="1044.56" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="76" keyframe="0" outside="0" occluded="0" xtl="1171.11" ytl="430.31" xbr="1522.49" ybr="1045.28" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="77" keyframe="0" outside="0" occluded="0" xtl="1154.03" ytl="414.36" xbr="1497.14" ybr="1046.00" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="1136.94" ytl="398.40" xbr="1471.78" ybr="1046.72" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="1119.86" ytl="396.10" xbr="1446.43" ybr="1047.44" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="1102.78" ytl="393.80" xbr="1421.07" ybr="1048.16" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="1085.69" ytl="403.92" xbr="1395.72" ybr="1048.88" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="1068.61" ytl="414.04" xbr="1370.36" ybr="1049.60" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="1051.53" ytl="424.16" xbr="1345.01" ybr="1050.32" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="1034.45" ytl="434.28" xbr="1319.65" ybr="1051.04" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="1017.36" ytl="444.40" xbr="1294.30" ybr="1051.76" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="86" keyframe="0" outside="0" occluded="0" xtl="1002.80" ytl="440.38" xbr="1282.10" ybr="1050.11" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="87" keyframe="0" outside="0" occluded="0" xtl="988.24" ytl="436.37" xbr="1269.90" ybr="1048.46" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="88" keyframe="0" outside="0" occluded="0" xtl="973.68" ytl="432.35" xbr="1257.71" ybr="1046.81" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="959.12" ytl="428.33" xbr="1245.51" ybr="1045.16" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="944.56" ytl="424.32" xbr="1233.31" ybr="1043.51" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="930.00" ytl="420.30" xbr="1221.11" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="919.87" ytl="427.70" xbr="1208.96" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="909.75" ytl="435.10" xbr="1196.81" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="899.62" ytl="442.50" xbr="1184.66" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="889.50" ytl="449.90" xbr="1172.51" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="879.37" ytl="457.30" xbr="1160.36" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="97" keyframe="0" outside="0" occluded="0" xtl="869.25" ytl="464.70" xbr="1148.21" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="859.12" ytl="472.10" xbr="1136.06" ybr="1041.87" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="99" keyframe="0" outside="0" occluded="0" xtl="856.49" ytl="481.11" xbr="1133.43" ybr="1042.01" rotation="359.95" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="100" keyframe="0" outside="0" occluded="0" xtl="853.86" ytl="490.13" xbr="1130.80" ybr="1042.15" rotation="359.90" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="101" keyframe="0" outside="0" occluded="0" xtl="851.23" ytl="499.14" xbr="1128.17" ybr="1042.29" rotation="359.85" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="102" keyframe="0" outside="0" occluded="0" xtl="848.60" ytl="508.16" xbr="1125.54" ybr="1042.43" rotation="359.80" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="103" keyframe="0" outside="0" occluded="0" xtl="845.97" ytl="517.17" xbr="1122.91" ybr="1042.57" rotation="359.75" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="104" keyframe="0" outside="0" occluded="0" xtl="843.34" ytl="526.18" xbr="1120.28" ybr="1042.71" rotation="359.70" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="840.71" ytl="535.20" xbr="1117.65" ybr="1042.85" rotation="359.65" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="838.08" ytl="544.21" xbr="1115.02" ybr="1042.99" rotation="359.60" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="107" keyframe="0" outside="0" occluded="0" xtl="835.45" ytl="553.23" xbr="1112.39" ybr="1043.13" rotation="359.55" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="108" keyframe="0" outside="0" occluded="0" xtl="832.82" ytl="562.24" xbr="1109.76" ybr="1043.28" rotation="359.50" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="830.19" ytl="571.25" xbr="1107.13" ybr="1043.42" rotation="359.45" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="110" keyframe="0" outside="0" occluded="0" xtl="827.56" ytl="580.27" xbr="1104.50" ybr="1043.56" rotation="359.40" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="111" keyframe="0" outside="0" occluded="0" xtl="824.93" ytl="589.28" xbr="1101.87" ybr="1043.70" rotation="359.35" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="822.30" ytl="598.29" xbr="1099.24" ybr="1043.84" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="113" keyframe="0" outside="0" occluded="0" xtl="822.32" ytl="601.60" xbr="1088.03" ybr="1043.91" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="114" keyframe="0" outside="0" occluded="0" xtl="822.34" ytl="604.90" xbr="1076.83" ybr="1043.98" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="115" keyframe="0" outside="0" occluded="0" xtl="822.36" ytl="608.20" xbr="1065.62" ybr="1044.05" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="116" keyframe="0" outside="0" occluded="0" xtl="822.38" ytl="611.51" xbr="1054.41" ybr="1044.11" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="117" keyframe="0" outside="0" occluded="0" xtl="822.40" ytl="614.81" xbr="1043.21" ybr="1044.18" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="119" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="120" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="121" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="122" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="123" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="125" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="126" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="127" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="129" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="130" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="131" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="133" keyframe="0" outside="0" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="1" occluded="0" xtl="822.42" ytl="618.11" xbr="1032.00" ybr="1044.25" rotation="359.30" z_order="0">
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">stop_hand_sign</attribute>
+      <attribute name="gender">male</attribute>
+    </box>
+  </track>
+  <track id="4" label="pedestrian" source="manual">
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="814.62" ytl="555.89" xbr="1113.30" ybr="1000.95" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="135" keyframe="0" outside="0" occluded="0" xtl="822.75" ytl="545.56" xbr="1113.30" ybr="1000.95" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="136" keyframe="0" outside="0" occluded="0" xtl="830.88" ytl="535.23" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="137" keyframe="0" outside="0" occluded="0" xtl="839.01" ytl="524.89" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="138" keyframe="0" outside="0" occluded="0" xtl="847.14" ytl="514.56" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="139" keyframe="0" outside="0" occluded="0" xtl="855.27" ytl="504.23" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="140" keyframe="0" outside="0" occluded="0" xtl="863.41" ytl="493.90" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="141" keyframe="0" outside="0" occluded="0" xtl="871.54" ytl="483.56" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="142" keyframe="0" outside="0" occluded="0" xtl="879.67" ytl="473.23" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="143" keyframe="1" outside="0" occluded="0" xtl="887.80" ytl="462.90" xbr="1113.30" ybr="1000.94" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="144" keyframe="0" outside="0" occluded="0" xtl="889.66" ytl="461.04" xbr="1114.93" ybr="1001.52" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="145" keyframe="0" outside="0" occluded="0" xtl="891.52" ytl="459.18" xbr="1116.56" ybr="1002.10" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="146" keyframe="0" outside="0" occluded="0" xtl="893.38" ytl="457.32" xbr="1118.19" ybr="1002.68" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="147" keyframe="0" outside="0" occluded="0" xtl="895.25" ytl="455.45" xbr="1119.82" ybr="1003.26" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="148" keyframe="0" outside="0" occluded="0" xtl="897.11" ytl="453.59" xbr="1121.44" ybr="1003.84" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="149" keyframe="0" outside="0" occluded="0" xtl="898.97" ytl="451.73" xbr="1123.07" ybr="1004.42" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="150" keyframe="0" outside="0" occluded="0" xtl="900.83" ytl="449.87" xbr="1124.70" ybr="1005.00" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="151" keyframe="0" outside="0" occluded="0" xtl="902.69" ytl="448.01" xbr="1126.33" ybr="1005.58" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="152" keyframe="0" outside="0" occluded="0" xtl="904.55" ytl="446.15" xbr="1127.96" ybr="1006.16" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="153" keyframe="0" outside="0" occluded="0" xtl="906.42" ytl="444.28" xbr="1129.59" ybr="1006.74" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="154" keyframe="0" outside="0" occluded="0" xtl="908.28" ytl="442.42" xbr="1131.22" ybr="1007.32" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="155" keyframe="0" outside="0" occluded="0" xtl="910.14" ytl="440.56" xbr="1132.85" ybr="1007.90" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="156" keyframe="0" outside="0" occluded="0" xtl="912.00" ytl="438.70" xbr="1134.48" ybr="1008.48" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="157" keyframe="0" outside="0" occluded="0" xtl="913.86" ytl="436.84" xbr="1136.11" ybr="1009.06" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="158" keyframe="0" outside="0" occluded="0" xtl="915.72" ytl="434.98" xbr="1137.74" ybr="1009.64" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="159" keyframe="0" outside="0" occluded="0" xtl="917.59" ytl="433.11" xbr="1139.37" ybr="1010.22" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+    <box frame="160" keyframe="1" outside="0" occluded="0" xtl="919.45" ytl="431.25" xbr="1141.00" ybr="1010.80" z_order="0">
+      <attribute name="carrying_object">carrying_object</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">Looking</attribute>
+      <attribute name="hand_gesture">Stop_hand_sing</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">group</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">distracted</attribute>
+      <attribute name="type_of_distraction">child</attribute>
+      <attribute name="occlusion">None</attribute>
+    </box>
+  </track>
+</annotations>

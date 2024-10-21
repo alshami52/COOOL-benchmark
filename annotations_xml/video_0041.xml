@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>498642</id>
+      <size>315</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-30 00:50:23.369428+00:00</created>
+      <updated>2024-08-05 18:15:54.683289+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>314</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>499266</id>
+          <start>0</start>
+          <stop>314</stop>
+          <url>https://app.cvat.ai/api/jobs/498642</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-05 18:15:59.259666+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="722.21" ytl="574.20" xbr="742.26" ybr="609.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="1" keyframe="1" outside="0" occluded="0" xtl="722.21" ytl="575.10" xbr="742.26" ybr="610.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="721.92" ytl="574.24" xbr="741.98" ybr="609.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="3" keyframe="1" outside="0" occluded="0" xtl="722.21" ytl="571.66" xbr="742.26" ybr="607.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="722.21" ytl="569.64" xbr="742.26" ybr="607.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="722.35" ytl="570.22" xbr="741.98" ybr="608.18" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="6" keyframe="1" outside="0" occluded="0" xtl="722.50" ytl="570.79" xbr="741.69" ybr="608.75" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="7" keyframe="1" outside="0" occluded="0" xtl="722.80" ytl="568.78" xbr="741.69" ybr="606.74" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="8" keyframe="1" outside="0" occluded="0" xtl="723.10" ytl="571.66" xbr="742.26" ybr="609.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="9" keyframe="1" outside="0" occluded="0" xtl="723.60" ytl="569.93" xbr="742.26" ybr="609.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="10" keyframe="1" outside="0" occluded="0" xtl="723.60" ytl="572.23" xbr="742.26" ybr="611.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="11" keyframe="1" outside="0" occluded="0" xtl="724.78" ytl="572.50" xbr="743.99" ybr="614.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="12" keyframe="1" outside="0" occluded="0" xtl="724.78" ytl="575.38" xbr="744.30" ybr="617.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="13" keyframe="1" outside="0" occluded="0" xtl="724.78" ytl="575.67" xbr="744.30" ybr="617.89" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="14" keyframe="1" outside="0" occluded="0" xtl="725.93" ytl="576.53" xbr="745.70" ybr="618.75" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="725.93" ytl="576.68" xbr="745.70" ybr="619.48" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="725.93" ytl="576.82" xbr="745.70" ybr="620.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="17" keyframe="1" outside="0" occluded="0" xtl="725.93" ytl="576.82" xbr="745.70" ybr="620.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="18" keyframe="1" outside="0" occluded="0" xtl="725.93" ytl="573.90" xbr="746.90" ybr="619.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="571.85" xbr="747.20" ybr="619.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="726.19" ytl="562.46" xbr="748.70" ybr="609.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="566.30" xbr="748.41" ybr="613.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="22" keyframe="1" outside="0" occluded="0" xtl="725.60" ytl="563.70" xbr="748.41" ybr="612.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="0" occluded="0" xtl="725.60" ytl="561.06" xbr="748.41" ybr="611.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="24" keyframe="1" outside="0" occluded="0" xtl="725.60" ytl="557.83" xbr="748.70" ybr="609.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="25" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="562.23" xbr="748.70" ybr="611.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="26" keyframe="1" outside="0" occluded="0" xtl="726.19" ytl="561.06" xbr="749.60" ybr="611.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="726.19" ytl="565.75" xbr="750.50" ybr="617.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="726.19" ytl="569.27" xbr="749.90" ybr="624.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="726.19" ytl="568.10" xbr="749.90" ybr="623.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="580.13" xbr="750.20" ybr="635.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="579.50" xbr="750.20" ybr="635.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="725.02" ytl="568.35" xbr="751.10" ybr="625.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="725.61" ytl="573.63" xbr="751.69" ybr="630.88" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="34" keyframe="1" outside="0" occluded="0" xtl="725.61" ytl="576.57" xbr="751.69" ybr="633.81" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="724.70" ytl="581.26" xbr="749.90" ybr="640.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="723.82" ytl="578.04" xbr="749.02" ybr="637.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="723.82" ytl="578.04" xbr="750.50" ybr="636.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="722.40" ytl="577.20" xbr="750.50" ybr="638.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="721.80" ytl="577.20" xbr="750.80" ybr="639.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="721.80" ytl="575.44" xbr="751.40" ybr="641.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="721.80" ytl="573.68" xbr="752.00" ybr="643.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="721.80" ytl="574.56" xbr="752.00" ybr="643.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="721.21" ytl="576.32" xbr="752.00" ybr="646.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="721.21" ytl="574.85" xbr="752.90" ybr="646.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="721.21" ytl="574.00" xbr="752.90" ybr="647.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="719.75" ytl="575.76" xbr="753.20" ybr="652.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="719.75" ytl="575.76" xbr="753.50" ybr="653.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="719.45" ytl="577.81" xbr="753.50" ybr="655.95" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="719.45" ytl="576.64" xbr="755.00" ybr="655.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="719.45" ytl="578.11" xbr="755.90" ybr="658.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="718.87" ytl="578.69" xbr="756.20" ybr="660.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="718.30" ytl="580.75" xbr="756.80" ybr="664.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="717.81" ytl="583.70" xbr="757.00" ybr="666.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="718.06" ytl="585.63" xbr="758.20" ybr="671.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="719.03" ytl="586.61" xbr="759.18" ybr="672.18" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="719.77" ytl="591.99" xbr="760.20" ybr="678.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="719.77" ytl="593.00" xbr="760.70" ybr="681.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="719.77" ytl="595.69" xbr="761.70" ybr="686.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="720.74" ytl="596.42" xbr="761.40" ybr="689.06" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="721.48" ytl="595.20" xbr="761.90" ybr="690.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="721.50" ytl="591.29" xbr="764.10" ybr="689.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="722.48" ytl="586.89" xbr="764.30" ybr="688.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="722.23" ytl="588.85" xbr="765.80" ybr="687.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="722.23" ytl="588.85" xbr="766.50" ybr="690.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="722.23" ytl="588.85" xbr="767.20" ybr="692.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="722.23" ytl="592.51" xbr="767.70" ybr="696.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="722.00" ytl="594.22" xbr="768.20" ybr="700.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="722.35" ytl="595.98" xbr="768.55" ybr="706.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="723.10" ytl="596.00" xbr="769.96" ybr="708.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="722.70" ytl="594.94" xbr="772.10" ybr="711.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="723.05" ytl="598.11" xbr="772.45" ybr="716.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="724.50" ytl="600.22" xbr="773.90" ybr="722.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="725.20" ytl="601.28" xbr="775.30" ybr="724.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="725.90" ytl="604.09" xbr="775.70" ybr="730.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="725.20" ytl="604.45" xbr="776.80" ybr="733.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="723.80" ytl="606.90" xbr="776.80" ybr="738.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="723.40" ytl="607.60" xbr="776.80" ybr="744.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="723.40" ytl="610.06" xbr="776.80" ybr="748.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="722.30" ytl="612.53" xbr="775.70" ybr="755.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="721.20" ytl="614.99" xbr="774.64" ybr="760.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="720.10" ytl="616.75" xbr="774.64" ybr="765.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="719.00" ytl="618.51" xbr="775.00" ybr="771.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="718.65" ytl="621.00" xbr="775.40" ybr="775.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="718.20" ytl="621.35" xbr="776.10" ybr="779.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="716.80" ytl="623.11" xbr="777.20" ybr="786.20" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="716.10" ytl="624.52" xbr="779.70" ybr="789.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="715.75" ytl="627.33" xbr="781.50" ybr="794.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="715.75" ytl="630.50" xbr="783.30" ybr="800.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="714.30" ytl="632.30" xbr="784.80" ybr="808.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="713.00" ytl="635.90" xbr="787.80" ybr="816.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="714.50" ytl="638.60" xbr="790.20" ybr="823.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="714.50" ytl="641.10" xbr="792.70" ybr="832.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="714.90" ytl="643.60" xbr="795.50" ybr="840.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="716.20" ytl="645.70" xbr="798.50" ybr="848.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="716.60" ytl="648.70" xbr="801.50" ybr="855.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="719.10" ytl="653.77" xbr="804.50" ybr="864.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="720.60" ytl="656.80" xbr="808.60" ybr="872.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="721.60" ytl="658.32" xbr="811.60" ybr="880.60" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="722.60" ytl="660.35" xbr="815.10" ybr="889.70" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="723.11" ytl="662.88" xbr="819.20" ybr="898.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="724.00" ytl="664.15" xbr="822.60" ybr="905.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="724.40" ytl="666.30" xbr="825.60" ybr="914.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="723.56" ytl="667.99" xbr="827.30" ybr="922.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="721.90" ytl="672.20" xbr="831.10" ybr="928.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="719.77" ytl="675.85" xbr="835.35" ybr="945.45" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="717.64" ytl="679.50" xbr="839.60" ybr="962.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="722.70" ytl="667.40" xbr="830.60" ybr="922.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="718.44" ytl="685.04" xbr="839.10" ybr="963.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="717.94" ytl="687.57" xbr="838.59" ybr="972.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="715.75" ytl="690.49" xbr="838.40" ybr="984.90" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="714.50" ytl="694.75" xbr="837.80" ybr="994.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="713.30" ytl="697.80" xbr="841.40" ybr="1006.77" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="711.80" ytl="671.60" xbr="839.90" ybr="1009.00" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="708.80" ytl="707.50" xbr="839.90" ybr="1011.50" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="705.20" ytl="711.15" xbr="840.70" ybr="1009.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="702.28" ytl="714.80" xbr="842.90" ybr="1009.30" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="700.82" ytl="718.45" xbr="843.60" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="697.90" ytl="722.80" xbr="843.60" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="695.00" ytl="727.90" xbr="846.50" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="692.10" ytl="733.70" xbr="850.10" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="691.40" ytl="736.60" xbr="854.50" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="691.40" ytl="739.50" xbr="854.50" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="691.40" ytl="743.90" xbr="857.40" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="694.30" ytl="745.40" xbr="857.40" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="694.30" ytl="751.20" xbr="859.60" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="697.20" ytl="751.90" xbr="860.30" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="699.40" ytl="754.10" xbr="861.80" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="128" keyframe="1" outside="0" occluded="0" xtl="699.40" ytl="754.10" xbr="860.30" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="703.00" ytl="757.00" xbr="859.60" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="704.50" ytl="757.00" xbr="858.10" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="706.70" ytl="758.50" xbr="855.90" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="0" xtl="706.70" ytl="759.23" xbr="855.90" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="133" keyframe="0" outside="0" occluded="0" xtl="706.70" ytl="759.97" xbr="855.90" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="706.70" ytl="760.70" xbr="855.90" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="708.90" ytl="761.40" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="136" keyframe="0" outside="0" occluded="0" xtl="708.90" ytl="762.50" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="708.90" ytl="763.60" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="138" keyframe="0" outside="0" occluded="0" xtl="708.17" ytl="763.60" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="139" keyframe="0" outside="0" occluded="0" xtl="707.43" ytl="763.60" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="0" occluded="0" xtl="706.70" ytl="763.60" xbr="853.70" ybr="1007.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="141" keyframe="1" outside="0" occluded="0" xtl="705.24" ytl="764.30" xbr="852.24" ybr="1007.07" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="701.60" ytl="764.30" xbr="850.05" ybr="1007.07" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="143" keyframe="1" outside="0" occluded="0" xtl="698.70" ytl="764.30" xbr="851.50" ybr="1007.07" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="144" keyframe="1" outside="0" occluded="0" xtl="696.50" ytl="763.57" xbr="848.60" ybr="1006.34" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="145" keyframe="1" outside="0" occluded="0" xtl="694.31" ytl="763.57" xbr="846.41" ybr="1006.34" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="146" keyframe="1" outside="0" occluded="0" xtl="691.39" ytl="760.65" xbr="843.49" ybr="1003.42" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="147" keyframe="1" outside="0" occluded="0" xtl="689.93" ytl="760.65" xbr="842.03" ybr="1003.42" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="687.74" ytl="757.70" xbr="838.40" ybr="997.58" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="684.82" ytl="760.60" xbr="834.80" ybr="997.58" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="150" keyframe="1" outside="0" occluded="0" xtl="679.70" ytl="763.50" xbr="826.00" ybr="997.58" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="151" keyframe="1" outside="0" occluded="0" xtl="675.32" ytl="763.50" xbr="819.40" ybr="996.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="152" keyframe="1" outside="0" occluded="0" xtl="672.40" ytl="763.50" xbr="816.48" ybr="996.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="153" keyframe="1" outside="0" occluded="0" xtl="669.48" ytl="763.50" xbr="813.56" ybr="996.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="154" keyframe="1" outside="0" occluded="0" xtl="665.10" ytl="765.70" xbr="809.18" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="155" keyframe="1" outside="0" occluded="0" xtl="662.18" ytl="767.20" xbr="804.10" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="156" keyframe="1" outside="0" occluded="0" xtl="660.70" ytl="767.90" xbr="796.80" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="157" keyframe="1" outside="0" occluded="0" xtl="657.10" ytl="768.60" xbr="793.20" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="158" keyframe="1" outside="0" occluded="0" xtl="654.91" ytl="768.60" xbr="791.01" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="159" keyframe="1" outside="0" occluded="0" xtl="652.72" ytl="768.60" xbr="788.82" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="160" keyframe="1" outside="0" occluded="0" xtl="650.53" ytl="767.10" xbr="786.63" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="161" keyframe="1" outside="0" occluded="0" xtl="647.60" ytl="764.90" xbr="789.50" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="162" keyframe="1" outside="0" occluded="0" xtl="645.41" ytl="764.90" xbr="785.90" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="163" keyframe="1" outside="0" occluded="0" xtl="642.49" ytl="764.20" xbr="782.98" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="164" keyframe="1" outside="0" occluded="0" xtl="642.50" ytl="764.20" xbr="784.50" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="165" keyframe="1" outside="0" occluded="0" xtl="642.50" ytl="762.00" xbr="782.30" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="166" keyframe="1" outside="0" occluded="0" xtl="640.31" ytl="761.30" xbr="780.11" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="167" keyframe="1" outside="0" occluded="0" xtl="638.12" ytl="761.30" xbr="777.92" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="168" keyframe="1" outside="0" occluded="0" xtl="635.90" ytl="760.60" xbr="775.00" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="169" keyframe="1" outside="0" occluded="0" xtl="635.90" ytl="758.40" xbr="774.30" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="170" keyframe="1" outside="0" occluded="0" xtl="632.98" ytl="758.40" xbr="772.80" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="171" keyframe="1" outside="0" occluded="0" xtl="628.60" ytl="756.90" xbr="771.30" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="172" keyframe="1" outside="0" occluded="0" xtl="626.40" ytl="755.40" xbr="769.80" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="173" keyframe="1" outside="0" occluded="0" xtl="622.75" ytl="753.20" xbr="769.80" ybr="995.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="174" keyframe="1" outside="0" occluded="0" xtl="621.29" ytl="751.00" xbr="768.34" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="175" keyframe="1" outside="0" occluded="0" xtl="617.70" ytl="749.50" xbr="769.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="176" keyframe="1" outside="0" occluded="0" xtl="614.05" ytl="748.80" xbr="770.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="177" keyframe="1" outside="0" occluded="0" xtl="610.40" ytl="747.30" xbr="770.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="178" keyframe="1" outside="0" occluded="0" xtl="607.48" ytl="747.30" xbr="770.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="179" keyframe="1" outside="0" occluded="0" xtl="605.29" ytl="747.30" xbr="768.41" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="180" keyframe="1" outside="0" occluded="0" xtl="602.37" ytl="745.80" xbr="768.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="181" keyframe="1" outside="0" occluded="0" xtl="600.19" ytl="745.80" xbr="766.21" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="182" keyframe="1" outside="0" occluded="0" xtl="598.00" ytl="745.80" xbr="763.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="183" keyframe="1" outside="0" occluded="0" xtl="595.80" ytl="745.80" xbr="758.90" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="184" keyframe="1" outside="0" occluded="0" xtl="592.15" ytl="745.80" xbr="753.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="185" keyframe="1" outside="0" occluded="0" xtl="589.20" ytl="745.80" xbr="751.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="186" keyframe="1" outside="0" occluded="0" xtl="587.20" ytl="745.80" xbr="745.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="187" keyframe="1" outside="0" occluded="0" xtl="583.70" ytl="745.80" xbr="740.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="188" keyframe="1" outside="0" occluded="0" xtl="577.70" ytl="742.80" xbr="737.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="189" keyframe="1" outside="0" occluded="0" xtl="573.50" ytl="736.20" xbr="727.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="190" keyframe="1" outside="0" occluded="0" xtl="566.30" ytl="731.40" xbr="720.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="191" keyframe="1" outside="0" occluded="0" xtl="556.70" ytl="726.60" xbr="711.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="192" keyframe="1" outside="0" occluded="0" xtl="548.94" ytl="726.00" xbr="703.64" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="193" keyframe="1" outside="0" occluded="0" xtl="540.00" ytl="726.60" xbr="698.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="194" keyframe="1" outside="0" occluded="0" xtl="533.40" ytl="732.00" xbr="693.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="195" keyframe="1" outside="0" occluded="0" xtl="527.40" ytl="735.00" xbr="690.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="196" keyframe="1" outside="0" occluded="0" xtl="521.40" ytl="743.40" xbr="685.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="197" keyframe="1" outside="0" occluded="0" xtl="516.00" ytl="744.60" xbr="681.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="198" keyframe="1" outside="0" occluded="0" xtl="511.80" ytl="744.60" xbr="678.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="199" keyframe="1" outside="0" occluded="0" xtl="507.60" ytl="743.40" xbr="674.90" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="200" keyframe="1" outside="0" occluded="0" xtl="504.60" ytl="741.00" xbr="667.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="201" keyframe="1" outside="0" occluded="0" xtl="501.60" ytl="739.80" xbr="664.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="202" keyframe="1" outside="0" occluded="0" xtl="496.80" ytl="738.00" xbr="661.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="203" keyframe="1" outside="0" occluded="0" xtl="494.40" ytl="736.80" xbr="656.90" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="204" keyframe="1" outside="0" occluded="0" xtl="490.20" ytl="733.80" xbr="654.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="205" keyframe="1" outside="0" occluded="0" xtl="483.60" ytl="732.00" xbr="651.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="206" keyframe="1" outside="0" occluded="0" xtl="479.40" ytl="729.60" xbr="650.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="207" keyframe="1" outside="0" occluded="0" xtl="475.82" ytl="729.60" xbr="646.72" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="208" keyframe="1" outside="0" occluded="0" xtl="470.40" ytl="729.60" xbr="641.90" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="209" keyframe="1" outside="0" occluded="0" xtl="463.20" ytl="729.60" xbr="637.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="210" keyframe="1" outside="0" occluded="0" xtl="456.60" ytl="728.40" xbr="635.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="211" keyframe="1" outside="0" occluded="0" xtl="452.40" ytl="727.20" xbr="630.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="212" keyframe="1" outside="0" occluded="0" xtl="447.60" ytl="726.00" xbr="624.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="213" keyframe="1" outside="0" occluded="0" xtl="444.60" ytl="725.40" xbr="620.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="214" keyframe="1" outside="0" occluded="0" xtl="440.40" ytl="724.20" xbr="615.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="215" keyframe="1" outside="0" occluded="0" xtl="436.20" ytl="724.20" xbr="612.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="216" keyframe="1" outside="0" occluded="0" xtl="432.00" ytl="724.20" xbr="606.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="217" keyframe="1" outside="0" occluded="0" xtl="427.20" ytl="724.20" xbr="602.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="218" keyframe="1" outside="0" occluded="0" xtl="423.60" ytl="724.20" xbr="598.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="219" keyframe="1" outside="0" occluded="0" xtl="418.80" ytl="718.20" xbr="593.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="220" keyframe="1" outside="0" occluded="0" xtl="412.80" ytl="714.00" xbr="583.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="221" keyframe="1" outside="0" occluded="0" xtl="403.50" ytl="708.40" xbr="577.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="222" keyframe="1" outside="0" occluded="0" xtl="395.60" ytl="707.00" xbr="570.00" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="223" keyframe="1" outside="0" occluded="0" xtl="387.70" ytl="706.30" xbr="561.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="224" keyframe="1" outside="0" occluded="0" xtl="379.10" ytl="707.70" xbr="552.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="225" keyframe="1" outside="0" occluded="0" xtl="368.40" ytl="711.30" xbr="541.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="226" keyframe="1" outside="0" occluded="0" xtl="362.00" ytl="716.30" xbr="534.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="227" keyframe="1" outside="0" occluded="0" xtl="356.30" ytl="719.20" xbr="526.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="228" keyframe="1" outside="0" occluded="0" xtl="347.00" ytl="728.50" xbr="522.00" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="229" keyframe="1" outside="0" occluded="0" xtl="341.30" ytl="730.60" xbr="517.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="230" keyframe="1" outside="0" occluded="0" xtl="336.30" ytl="730.60" xbr="512.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="231" keyframe="1" outside="0" occluded="0" xtl="331.30" ytl="729.90" xbr="508.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="232" keyframe="1" outside="0" occluded="0" xtl="325.60" ytl="727.80" xbr="502.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="233" keyframe="1" outside="0" occluded="0" xtl="322.70" ytl="725.70" xbr="497.00" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="234" keyframe="1" outside="0" occluded="0" xtl="317.70" ytl="722.10" xbr="490.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="235" keyframe="1" outside="0" occluded="0" xtl="312.70" ytl="719.20" xbr="487.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="236" keyframe="1" outside="0" occluded="0" xtl="307.00" ytl="717.10" xbr="483.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="237" keyframe="1" outside="0" occluded="0" xtl="301.30" ytl="715.70" xbr="478.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="238" keyframe="1" outside="0" occluded="0" xtl="294.80" ytl="713.60" xbr="475.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="239" keyframe="1" outside="0" occluded="0" xtl="286.90" ytl="712.90" xbr="467.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="240" keyframe="1" outside="0" occluded="0" xtl="279.00" ytl="711.50" xbr="460.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="241" keyframe="1" outside="0" occluded="0" xtl="270.40" ytl="712.90" xbr="459.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="242" keyframe="1" outside="0" occluded="0" xtl="263.20" ytl="712.90" xbr="451.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="243" keyframe="1" outside="0" occluded="0" xtl="256.00" ytl="712.20" xbr="444.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="244" keyframe="1" outside="0" occluded="0" xtl="250.30" ytl="712.20" xbr="439.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="245" keyframe="1" outside="0" occluded="0" xtl="245.30" ytl="712.20" xbr="432.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="246" keyframe="1" outside="0" occluded="0" xtl="239.60" ytl="712.20" xbr="427.00" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="247" keyframe="1" outside="0" occluded="0" xtl="232.40" ytl="712.20" xbr="421.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="248" keyframe="1" outside="0" occluded="0" xtl="227.40" ytl="712.20" xbr="414.90" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="249" keyframe="1" outside="0" occluded="0" xtl="221.00" ytl="712.20" xbr="407.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="250" keyframe="1" outside="0" occluded="0" xtl="215.30" ytl="712.20" xbr="401.30" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="251" keyframe="1" outside="0" occluded="0" xtl="208.10" ytl="710.80" xbr="392.00" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="252" keyframe="1" outside="0" occluded="0" xtl="199.50" ytl="707.90" xbr="382.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="253" keyframe="1" outside="0" occluded="0" xtl="188.80" ytl="704.40" xbr="371.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="254" keyframe="1" outside="0" occluded="0" xtl="175.90" ytl="705.80" xbr="360.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="255" keyframe="1" outside="0" occluded="0" xtl="165.90" ytl="707.90" xbr="349.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="256" keyframe="1" outside="0" occluded="0" xtl="155.90" ytl="709.30" xbr="343.40" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="257" keyframe="1" outside="0" occluded="0" xtl="150.20" ytl="710.70" xbr="335.50" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="258" keyframe="1" outside="0" occluded="0" xtl="142.30" ytl="711.40" xbr="329.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="259" keyframe="1" outside="0" occluded="0" xtl="137.30" ytl="711.40" xbr="322.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="260" keyframe="1" outside="0" occluded="0" xtl="130.90" ytl="714.30" xbr="314.80" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="261" keyframe="1" outside="0" occluded="0" xtl="125.20" ytl="714.30" xbr="306.20" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="262" keyframe="1" outside="0" occluded="0" xtl="118.80" ytl="715.70" xbr="297.60" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="263" keyframe="1" outside="0" occluded="0" xtl="113.10" ytl="719.30" xbr="289.70" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="264" keyframe="1" outside="0" occluded="0" xtl="106.70" ytl="718.60" xbr="281.10" ybr="994.67" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="265" keyframe="1" outside="0" occluded="0" xtl="98.80" ytl="717.90" xbr="273.90" ybr="991.10" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="266" keyframe="1" outside="0" occluded="0" xtl="90.20" ytl="720.80" xbr="265.30" ybr="991.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="267" keyframe="1" outside="0" occluded="0" xtl="81.60" ytl="720.80" xbr="257.40" ybr="991.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="268" keyframe="1" outside="0" occluded="0" xtl="71.60" ytl="722.20" xbr="249.50" ybr="990.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="269" keyframe="1" outside="0" occluded="0" xtl="60.90" ytl="721.50" xbr="242.30" ybr="990.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="270" keyframe="1" outside="0" occluded="0" xtl="49.40" ytl="722.20" xbr="230.50" ybr="990.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="271" keyframe="1" outside="0" occluded="0" xtl="42.40" ytl="724.20" xbr="218.60" ybr="990.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="272" keyframe="1" outside="0" occluded="0" xtl="33.90" ytl="724.20" xbr="211.60" ybr="989.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="273" keyframe="1" outside="0" occluded="0" xtl="25.80" ytl="724.20" xbr="201.20" ybr="989.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="274" keyframe="1" outside="0" occluded="0" xtl="16.20" ytl="724.20" xbr="186.90" ybr="989.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="275" keyframe="1" outside="0" occluded="0" xtl="8.44" ytl="727.20" xbr="177.90" ybr="989.40" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="276" keyframe="1" outside="0" occluded="0" xtl="1.28" ytl="729.60" xbr="167.80" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="277" keyframe="1" outside="0" occluded="0" xtl="1.28" ytl="732.00" xbr="154.10" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="278" keyframe="1" outside="0" occluded="0" xtl="1.28" ytl="732.00" xbr="139.20" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="279" keyframe="1" outside="0" occluded="0" xtl="1.28" ytl="733.20" xbr="122.50" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="280" keyframe="1" outside="0" occluded="0" xtl="1.28" ytl="744.90" xbr="111.40" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="281" keyframe="1" outside="1" occluded="0" xtl="1.28" ytl="744.90" xbr="111.40" ybr="988.80" z_order="0">
+      <attribute name="type_of_subject">goose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+</annotations>

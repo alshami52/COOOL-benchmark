@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>484443</id>
+      <size>343</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-21 06:12:07.178011+00:00</created>
+      <updated>2024-08-02 20:04:49.658044+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>342</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>485025</id>
+          <start>0</start>
+          <stop>342</stop>
+          <url>https://app.cvat.ai/api/jobs/484443</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-02 20:06:45.691386+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="884.37" ytl="791.19" xbr="906.37" ybr="803.99" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="884.04" ytl="792.05" xbr="906.11" ybr="804.78" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="883.71" ytl="792.92" xbr="905.85" ybr="805.58" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="53" keyframe="0" outside="0" occluded="0" xtl="883.38" ytl="793.78" xbr="905.59" ybr="806.38" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="883.04" ytl="794.64" xbr="905.33" ybr="807.18" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="882.71" ytl="795.51" xbr="905.08" ybr="807.97" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="882.38" ytl="796.37" xbr="904.82" ybr="808.77" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="882.05" ytl="797.24" xbr="904.56" ybr="809.57" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="881.72" ytl="798.10" xbr="904.30" ybr="810.37" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="881.39" ytl="798.96" xbr="904.04" ybr="811.16" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="881.06" ytl="799.83" xbr="903.78" ybr="811.96" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="61" keyframe="0" outside="0" occluded="0" xtl="880.73" ytl="800.69" xbr="903.52" ybr="812.76" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="880.39" ytl="801.56" xbr="903.26" ybr="813.56" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="880.06" ytl="802.42" xbr="903.00" ybr="814.35" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="879.73" ytl="803.29" xbr="902.74" ybr="815.15" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="65" keyframe="0" outside="0" occluded="0" xtl="879.40" ytl="804.15" xbr="902.49" ybr="815.95" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="879.07" ytl="805.01" xbr="902.23" ybr="816.75" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="67" keyframe="0" outside="0" occluded="0" xtl="878.74" ytl="805.88" xbr="901.97" ybr="817.54" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="878.41" ytl="806.74" xbr="901.71" ybr="818.34" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="878.08" ytl="807.61" xbr="901.45" ybr="819.14" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="70" keyframe="0" outside="0" occluded="0" xtl="877.74" ytl="808.47" xbr="901.19" ybr="819.94" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="877.41" ytl="809.34" xbr="900.93" ybr="820.73" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="877.08" ytl="810.20" xbr="900.67" ybr="821.53" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="874.30" ytl="811.70" xbr="896.47" ybr="821.73" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="873.40" ytl="810.80" xbr="895.57" ybr="823.23" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="873.40" ytl="813.50" xbr="895.57" ybr="825.93" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="871.40" ytl="815.90" xbr="892.10" ybr="828.33" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="871.79" ytl="815.85" xbr="891.72" ybr="826.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="871.00" ytl="816.85" xbr="890.72" ybr="828.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="869.70" ytl="818.45" xbr="889.42" ybr="831.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="869.10" ytl="820.79" xbr="888.82" ybr="833.63" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="868.09" ytl="820.64" xbr="885.70" ybr="834.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="866.10" ytl="824.20" xbr="885.70" ybr="836.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="866.70" ytl="823.20" xbr="885.70" ybr="836.66" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="865.30" ytl="824.40" xbr="887.70" ybr="838.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="85" keyframe="0" outside="0" occluded="0" xtl="865.23" ytl="825.05" xbr="887.63" ybr="839.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="865.16" ytl="825.70" xbr="887.56" ybr="840.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="87" keyframe="0" outside="0" occluded="0" xtl="864.65" ytl="827.05" xbr="887.05" ybr="841.68" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="864.15" ytl="828.40" xbr="886.55" ybr="843.26" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="864.15" ytl="827.70" xbr="888.00" ybr="843.26" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="863.57" ytl="829.60" xbr="885.90" ybr="846.29" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="863.00" ytl="829.90" xbr="885.60" ybr="847.15" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="861.60" ytl="832.60" xbr="884.90" ybr="847.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="861.20" ytl="831.88" xbr="884.90" ybr="848.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="859.60" ytl="833.75" xbr="884.18" ybr="851.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="859.60" ytl="833.20" xbr="884.20" ybr="851.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="859.10" ytl="835.40" xbr="883.80" ybr="852.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="858.20" ytl="837.49" xbr="883.80" ybr="853.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="859.80" ytl="838.40" xbr="882.60" ybr="855.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="859.00" ytl="838.40" xbr="884.40" ybr="856.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="856.92" ytl="841.82" xbr="883.72" ybr="858.72" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="856.92" ytl="843.90" xbr="887.20" ybr="860.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="859.09" ytl="844.58" xbr="887.10" ybr="862.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="860.33" ytl="847.07" xbr="887.10" ybr="864.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="861.58" ytl="849.31" xbr="888.80" ybr="864.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="862.82" ytl="850.56" xbr="890.04" ybr="866.05" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="864.81" ytl="852.30" xbr="892.00" ybr="869.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="865.06" ytl="853.05" xbr="897.70" ybr="869.75" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="865.31" ytl="853.30" xbr="896.70" ybr="871.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="865.81" ytl="855.79" xbr="898.90" ybr="873.69" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="865.33" ytl="856.00" xbr="899.50" ybr="875.13" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="864.80" ytl="855.80" xbr="901.40" ybr="876.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="866.96" ytl="858.92" xbr="902.20" ybr="877.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="866.96" ytl="860.50" xbr="903.90" ybr="877.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="867.68" ytl="863.14" xbr="903.40" ybr="879.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="867.80" ytl="862.90" xbr="904.24" ybr="880.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="869.80" ytl="864.58" xbr="903.76" ybr="882.28" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="869.44" ytl="866.62" xbr="904.46" ybr="884.32" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="870.45" ytl="868.20" xbr="907.20" ybr="885.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="871.20" ytl="868.20" xbr="907.20" ybr="887.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="870.60" ytl="869.10" xbr="909.50" ybr="887.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="864.10" ytl="872.60" xbr="911.10" ybr="889.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="863.80" ytl="874.00" xbr="913.40" ybr="891.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="864.00" ytl="874.40" xbr="913.40" ybr="894.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="864.60" ytl="878.00" xbr="917.00" ybr="896.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="865.80" ytl="878.00" xbr="917.00" ybr="896.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="869.50" ytl="878.14" xbr="919.59" ybr="898.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="867.80" ytl="880.74" xbr="926.79" ybr="900.89" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="128" keyframe="1" outside="0" occluded="0" xtl="867.80" ytl="881.31" xbr="927.90" ybr="903.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="871.30" ytl="880.60" xbr="929.92" ybr="903.76" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="868.60" ytl="880.90" xbr="934.24" ybr="905.92" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="872.20" ytl="881.50" xbr="936.54" ybr="907.79" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="893.20" ytl="884.67" xbr="941.00" ybr="909.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="894.10" ytl="887.30" xbr="941.90" ybr="911.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="896.84" ytl="889.46" xbr="945.90" ybr="912.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="900.00" ytl="889.75" xbr="949.50" ybr="912.49" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="887.80" ytl="891.50" xbr="951.90" ybr="912.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="907.30" ytl="894.10" xbr="951.90" ybr="913.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="0" occluded="0" xtl="904.54" ytl="893.58" xbr="960.20" ybr="919.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="895.90" ytl="895.83" xbr="960.70" ybr="921.35" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="0" occluded="0" xtl="896.76" ytl="896.87" xbr="961.40" ybr="923.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="141" keyframe="1" outside="0" occluded="0" xtl="903.50" ytl="897.56" xbr="963.99" ybr="923.89" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="912.50" ytl="902.60" xbr="972.80" ybr="926.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="143" keyframe="1" outside="0" occluded="0" xtl="913.00" ytl="901.39" xbr="977.44" ybr="927.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="144" keyframe="1" outside="0" occluded="0" xtl="912.10" ytl="902.43" xbr="983.00" ybr="930.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="145" keyframe="1" outside="0" occluded="0" xtl="913.48" ytl="904.70" xbr="982.10" ybr="929.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="146" keyframe="1" outside="0" occluded="0" xtl="912.79" ytl="904.87" xbr="986.30" ybr="933.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="147" keyframe="1" outside="0" occluded="0" xtl="916.59" ytl="905.22" xbr="991.44" ybr="936.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="927.48" ytl="906.77" xbr="997.00" ybr="937.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="928.90" ytl="907.29" xbr="999.40" ybr="938.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="150" keyframe="1" outside="0" occluded="0" xtl="928.90" ytl="908.30" xbr="1001.80" ybr="938.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="151" keyframe="1" outside="0" occluded="0" xtl="933.22" ytl="907.40" xbr="1010.90" ybr="939.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="152" keyframe="1" outside="0" occluded="0" xtl="939.96" ytl="907.75" xbr="1009.80" ybr="942.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="153" keyframe="1" outside="0" occluded="0" xtl="947.91" ytl="906.70" xbr="1010.30" ybr="942.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="154" keyframe="1" outside="0" occluded="0" xtl="952.40" ytl="906.18" xbr="1021.40" ybr="944.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="155" keyframe="1" outside="0" occluded="0" xtl="952.40" ytl="907.40" xbr="1021.40" ybr="944.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="156" keyframe="1" outside="0" occluded="0" xtl="952.40" ytl="907.40" xbr="1028.60" ybr="947.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="157" keyframe="1" outside="0" occluded="0" xtl="952.40" ytl="916.10" xbr="1029.10" ybr="950.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="158" keyframe="1" outside="0" occluded="0" xtl="958.40" ytl="920.10" xbr="1031.60" ybr="950.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="159" keyframe="1" outside="0" occluded="0" xtl="962.63" ytl="922.34" xbr="1035.10" ybr="952.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="160" keyframe="1" outside="0" occluded="0" xtl="966.10" ytl="923.30" xbr="1035.10" ybr="952.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="161" keyframe="1" outside="0" occluded="0" xtl="966.10" ytl="926.30" xbr="1039.10" ybr="956.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="162" keyframe="1" outside="0" occluded="0" xtl="969.80" ytl="928.30" xbr="1048.00" ybr="957.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="163" keyframe="1" outside="0" occluded="0" xtl="981.20" ytl="928.30" xbr="1048.50" ybr="958.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="164" keyframe="1" outside="0" occluded="0" xtl="983.19" ytl="931.30" xbr="1053.70" ybr="959.65" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="165" keyframe="1" outside="0" occluded="0" xtl="986.70" ytl="928.81" xbr="1057.20" ybr="961.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="166" keyframe="1" outside="0" occluded="0" xtl="987.90" ytl="930.30" xbr="1059.40" ybr="960.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="167" keyframe="1" outside="0" occluded="0" xtl="994.40" ytl="930.30" xbr="1060.90" ybr="960.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="168" keyframe="1" outside="0" occluded="0" xtl="995.40" ytl="930.30" xbr="1065.40" ybr="961.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="169" keyframe="1" outside="0" occluded="0" xtl="995.65" ytl="931.00" xbr="1069.80" ybr="963.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="170" keyframe="1" outside="0" occluded="0" xtl="998.10" ytl="933.70" xbr="1073.00" ybr="965.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="171" keyframe="1" outside="0" occluded="0" xtl="998.60" ytl="934.20" xbr="1075.20" ybr="966.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="172" keyframe="1" outside="0" occluded="0" xtl="1007.81" ytl="937.70" xbr="1080.20" ybr="967.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="173" keyframe="1" outside="0" occluded="0" xtl="1007.31" ytl="937.95" xbr="1079.70" ybr="967.55" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="174" keyframe="1" outside="0" occluded="0" xtl="1007.31" ytl="938.90" xbr="1081.00" ybr="968.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="175" keyframe="1" outside="0" occluded="0" xtl="1008.80" ytl="939.40" xbr="1083.20" ybr="969.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="176" keyframe="1" outside="0" occluded="0" xtl="1012.29" ytl="939.64" xbr="1086.68" ybr="969.75" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="177" keyframe="1" outside="0" occluded="0" xtl="1001.90" ytl="940.90" xbr="1086.68" ybr="971.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="178" keyframe="1" outside="0" occluded="0" xtl="1015.90" ytl="942.40" xbr="1090.50" ybr="971.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="179" keyframe="1" outside="0" occluded="0" xtl="1015.90" ytl="941.90" xbr="1091.70" ybr="972.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="180" keyframe="1" outside="0" occluded="0" xtl="1017.14" ytl="940.91" xbr="1096.90" ybr="973.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="181" keyframe="1" outside="0" occluded="0" xtl="1017.14" ytl="942.40" xbr="1100.10" ybr="975.39" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="182" keyframe="1" outside="0" occluded="0" xtl="1022.12" ytl="944.10" xbr="1104.30" ybr="977.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="183" keyframe="0" outside="0" occluded="0" xtl="1022.49" ytl="944.60" xbr="1105.05" ybr="976.65" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="184" keyframe="1" outside="0" occluded="0" xtl="1022.87" ytl="945.10" xbr="1105.80" ybr="975.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="185" keyframe="1" outside="0" occluded="0" xtl="1023.90" ytl="945.10" xbr="1105.80" ybr="975.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="186" keyframe="1" outside="0" occluded="0" xtl="1023.90" ytl="945.59" xbr="1106.79" ybr="976.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="187" keyframe="1" outside="0" occluded="0" xtl="1023.90" ytl="945.59" xbr="1109.30" ybr="977.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="188" keyframe="1" outside="0" occluded="0" xtl="1023.90" ytl="945.59" xbr="1111.30" ybr="979.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="189" keyframe="1" outside="0" occluded="0" xtl="1023.90" ytl="945.59" xbr="1113.30" ybr="979.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="190" keyframe="1" outside="0" occluded="0" xtl="1023.40" ytl="946.59" xbr="1112.80" ybr="980.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="191" keyframe="0" outside="0" occluded="0" xtl="1023.53" ytl="945.34" xbr="1113.93" ybr="980.75" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="192" keyframe="1" outside="0" occluded="0" xtl="1023.65" ytl="944.10" xbr="1115.05" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="193" keyframe="0" outside="0" occluded="0" xtl="1023.65" ytl="941.75" xbr="1117.67" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="194" keyframe="1" outside="0" occluded="0" xtl="1023.65" ytl="939.40" xbr="1120.30" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="195" keyframe="1" outside="0" occluded="0" xtl="1023.65" ytl="939.40" xbr="1119.40" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="196" keyframe="0" outside="0" occluded="0" xtl="1023.65" ytl="937.45" xbr="1121.75" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="197" keyframe="1" outside="0" occluded="0" xtl="1023.65" ytl="935.50" xbr="1124.10" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="198" keyframe="1" outside="0" occluded="0" xtl="1030.50" ytl="932.50" xbr="1124.10" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="199" keyframe="1" outside="0" occluded="0" xtl="1043.40" ytl="932.50" xbr="1124.10" ybr="981.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="200" keyframe="1" outside="0" occluded="0" xtl="1043.40" ytl="927.30" xbr="1128.40" ybr="983.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="201" keyframe="0" outside="0" occluded="0" xtl="1049.40" ytl="925.35" xbr="1131.60" ybr="982.35" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="202" keyframe="1" outside="0" occluded="0" xtl="1055.40" ytl="923.40" xbr="1134.80" ybr="981.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="203" keyframe="0" outside="0" occluded="0" xtl="1056.27" ytl="922.40" xbr="1135.67" ybr="981.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="204" keyframe="0" outside="0" occluded="0" xtl="1057.13" ytl="921.40" xbr="1136.53" ybr="981.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="205" keyframe="1" outside="0" occluded="0" xtl="1058.00" ytl="920.40" xbr="1137.40" ybr="981.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="206" keyframe="1" outside="0" occluded="0" xtl="1061.40" ytl="920.40" xbr="1137.40" ybr="984.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="207" keyframe="0" outside="0" occluded="0" xtl="1067.85" ytl="920.40" xbr="1137.40" ybr="980.45" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="208" keyframe="1" outside="0" occluded="0" xtl="1074.30" ytl="920.40" xbr="1137.40" ybr="976.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="209" keyframe="1" outside="0" occluded="0" xtl="1095.40" ytl="924.30" xbr="1142.60" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="210" keyframe="1" outside="1" occluded="0" xtl="1097.48" ytl="926.00" xbr="1144.55" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="211" keyframe="1" outside="1" occluded="0" xtl="1100.90" ytl="927.70" xbr="1146.50" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="212" keyframe="1" outside="1" occluded="0" xtl="1100.90" ytl="927.70" xbr="1153.40" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="214" keyframe="1" outside="1" occluded="0" xtl="1103.48" ytl="926.00" xbr="1155.98" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="216" keyframe="1" outside="1" occluded="0" xtl="1105.63" ytl="925.10" xbr="1156.80" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="218" keyframe="1" outside="1" occluded="0" xtl="1111.20" ytl="925.10" xbr="1156.80" ybr="973.36" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="220" keyframe="1" outside="1" occluded="0" xtl="1102.60" ytl="925.50" xbr="1158.90" ybr="965.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="221" keyframe="1" outside="1" occluded="0" xtl="1102.84" ytl="922.10" xbr="1159.14" ybr="965.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="222" keyframe="1" outside="1" occluded="0" xtl="1102.60" ytl="922.10" xbr="1158.90" ybr="961.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="223" keyframe="1" outside="1" occluded="0" xtl="1105.20" ytl="922.40" xbr="1159.40" ybr="959.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="225" keyframe="1" outside="1" occluded="0" xtl="1106.30" ytl="920.20" xbr="1163.70" ybr="956.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="226" keyframe="1" outside="1" occluded="0" xtl="1106.30" ytl="919.12" xbr="1163.70" ybr="955.42" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="227" keyframe="1" outside="1" occluded="0" xtl="1109.53" ytl="920.90" xbr="1166.93" ybr="953.99" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="228" keyframe="1" outside="1" occluded="0" xtl="1109.53" ytl="920.90" xbr="1166.93" ybr="953.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="229" keyframe="1" outside="1" occluded="0" xtl="1112.70" ytl="920.90" xbr="1166.93" ybr="951.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="230" keyframe="1" outside="1" occluded="0" xtl="1112.70" ytl="920.90" xbr="1172.70" ybr="951.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="231" keyframe="1" outside="1" occluded="0" xtl="1112.70" ytl="918.70" xbr="1176.30" ybr="951.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="233" keyframe="1" outside="1" occluded="0" xtl="1110.50" ytl="918.70" xbr="1176.30" ybr="951.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="234" keyframe="1" outside="1" occluded="0" xtl="1108.71" ytl="924.43" xbr="1174.51" ybr="952.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="235" keyframe="1" outside="1" occluded="0" xtl="1127.90" ytl="924.43" xbr="1174.51" ybr="952.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="236" keyframe="1" outside="1" occluded="0" xtl="1137.70" ytl="932.30" xbr="1174.51" ybr="949.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="237" keyframe="1" outside="1" occluded="0" xtl="1137.70" ytl="932.30" xbr="1174.51" ybr="949.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="238" keyframe="1" outside="1" occluded="0" xtl="1137.70" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="240" keyframe="1" outside="1" occluded="0" xtl="1139.50" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="241" keyframe="1" outside="1" occluded="0" xtl="1142.00" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="242" keyframe="1" outside="1" occluded="0" xtl="1144.90" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="243" keyframe="1" outside="1" occluded="0" xtl="1147.00" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="244" keyframe="1" outside="1" occluded="0" xtl="1149.50" ytl="938.00" xbr="1174.51" ybr="948.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="245" keyframe="1" outside="1" occluded="0" xtl="1149.90" ytl="939.40" xbr="1163.00" ybr="946.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="246" keyframe="1" outside="0" occluded="0" xtl="1149.90" ytl="939.40" xbr="1163.00" ybr="946.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="247" keyframe="1" outside="1" occluded="0" xtl="1149.90" ytl="939.40" xbr="1163.00" ybr="946.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="1" label="subject" source="manual">
+    <box frame="210" keyframe="1" outside="0" occluded="0" xtl="1099.07" ytl="923.95" xbr="1146.14" ybr="971.31" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="211" keyframe="1" outside="0" occluded="0" xtl="1100.70" ytl="923.95" xbr="1146.14" ybr="971.31" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="212" keyframe="1" outside="0" occluded="0" xtl="1102.40" ytl="923.95" xbr="1147.30" ybr="971.80" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="213" keyframe="0" outside="0" occluded="0" xtl="1102.95" ytl="924.44" xbr="1148.40" ybr="971.80" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="214" keyframe="0" outside="0" occluded="0" xtl="1103.51" ytl="924.92" xbr="1149.50" ybr="971.80" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="215" keyframe="1" outside="0" occluded="0" xtl="1104.06" ytl="925.40" xbr="1150.60" ybr="971.80" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="216" keyframe="1" outside="0" occluded="0" xtl="1105.00" ytl="925.40" xbr="1151.80" ybr="971.80" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="217" keyframe="0" outside="0" occluded="0" xtl="1107.49" ytl="925.28" xbr="1153.10" ybr="971.68" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="218" keyframe="1" outside="0" occluded="0" xtl="1109.98" ytl="925.16" xbr="1154.40" ybr="971.56" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="219" keyframe="1" outside="0" occluded="0" xtl="1109.98" ytl="925.16" xbr="1154.40" ybr="964.00" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="220" keyframe="1" outside="0" occluded="0" xtl="1106.90" ytl="925.16" xbr="1154.40" ybr="964.00" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="221" keyframe="1" outside="0" occluded="0" xtl="1103.80" ytl="924.50" xbr="1155.60" ybr="964.00" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="222" keyframe="1" outside="0" occluded="0" xtl="1103.30" ytl="922.80" xbr="1157.30" ybr="961.90" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="223" keyframe="1" outside="0" occluded="0" xtl="1104.72" ytl="923.50" xbr="1160.10" ybr="959.53" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="224" keyframe="0" outside="0" occluded="0" xtl="1105.08" ytl="921.70" xbr="1167.70" ybr="958.35" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="225" keyframe="1" outside="0" occluded="0" xtl="1105.43" ytl="919.90" xbr="1175.30" ybr="957.16" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="226" keyframe="1" outside="0" occluded="0" xtl="1105.90" ytl="919.90" xbr="1172.70" ybr="956.00" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="227" keyframe="1" outside="0" occluded="0" xtl="1107.70" ytl="921.90" xbr="1176.80" ybr="953.70" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="228" keyframe="1" outside="0" occluded="0" xtl="1110.99" ytl="922.40" xbr="1180.09" ybr="952.05" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="229" keyframe="1" outside="0" occluded="0" xtl="1113.32" ytl="925.40" xbr="1182.42" ybr="950.27" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="230" keyframe="1" outside="0" occluded="0" xtl="1113.32" ytl="925.40" xbr="1177.30" ybr="950.27" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="231" keyframe="1" outside="0" occluded="0" xtl="1114.00" ytl="925.40" xbr="1177.30" ybr="950.27" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="232" keyframe="1" outside="0" occluded="0" xtl="1113.20" ytl="925.40" xbr="1177.30" ybr="950.27" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="233" keyframe="1" outside="0" occluded="0" xtl="1113.20" ytl="926.50" xbr="1177.30" ybr="950.27" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="234" keyframe="1" outside="0" occluded="0" xtl="1114.30" ytl="928.28" xbr="1175.90" ybr="952.05" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="235" keyframe="1" outside="0" occluded="0" xtl="1120.70" ytl="928.28" xbr="1173.60" ybr="951.00" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="236" keyframe="1" outside="0" occluded="0" xtl="1138.25" ytl="932.40" xbr="1176.50" ybr="948.94" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="237" keyframe="1" outside="0" occluded="0" xtl="1138.12" ytl="931.30" xbr="1177.46" ybr="947.85" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="238" keyframe="1" outside="0" occluded="0" xtl="1138.12" ytl="933.10" xbr="1177.46" ybr="947.85" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="239" keyframe="1" outside="0" occluded="0" xtl="1138.12" ytl="934.90" xbr="1176.50" ybr="947.85" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="240" keyframe="1" outside="0" occluded="0" xtl="1140.45" ytl="938.30" xbr="1177.20" ybr="947.85" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="241" keyframe="1" outside="1" occluded="0" xtl="1140.45" ytl="938.30" xbr="1177.20" ybr="947.85" z_order="0">
+      <attribute name="type_of_subject">armadillo</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+</annotations>

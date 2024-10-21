@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>498634</id>
+      <size>175</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-30 00:45:21.128585+00:00</created>
+      <updated>2024-08-05 23:58:26.310208+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>174</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>499258</id>
+          <start>0</start>
+          <stop>174</stop>
+          <url>https://app.cvat.ai/api/jobs/498634</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-05 23:58:32.962513+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1161.40" ytl="489.50" xbr="1212.12" ybr="523.98" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1163.20" ytl="488.70" xbr="1212.12" ybr="522.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="1165.80" ytl="488.70" xbr="1210.50" ybr="522.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1166.20" ytl="484.00" xbr="1209.30" ybr="517.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="1166.20" ytl="483.20" xbr="1208.90" ybr="517.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="1163.20" ytl="482.40" xbr="1207.50" ybr="517.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="1162.00" ytl="480.60" xbr="1209.90" ybr="517.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1162.40" ytl="480.60" xbr="1210.50" ybr="517.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1159.80" ytl="478.60" xbr="1206.40" ybr="517.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="1157.00" ytl="480.00" xbr="1204.43" ybr="517.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="1157.00" ytl="480.00" xbr="1200.30" ybr="516.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="1148.70" ytl="480.00" xbr="1199.90" ybr="521.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="1145.60" ytl="478.10" xbr="1198.00" ybr="521.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="1143.20" ytl="478.10" xbr="1198.00" ybr="521.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="1143.20" ytl="478.10" xbr="1195.60" ybr="520.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="1143.20" ytl="479.50" xbr="1193.80" ybr="517.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="1144.80" ytl="479.50" xbr="1193.60" ybr="517.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="1144.80" ytl="479.50" xbr="1190.00" ybr="514.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="1144.80" ytl="477.30" xbr="1189.20" ybr="516.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="1148.00" ytl="477.30" xbr="1186.20" ybr="517.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="1148.00" ytl="477.30" xbr="1187.40" ybr="519.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="1148.00" ytl="477.30" xbr="1187.40" ybr="520.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="1148.00" ytl="477.30" xbr="1189.80" ybr="521.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="1148.00" ytl="474.90" xbr="1192.60" ybr="522.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="1148.90" ytl="473.70" xbr="1192.60" ybr="522.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="1142.70" ytl="473.70" xbr="1187.10" ybr="516.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="1126.10" ytl="473.70" xbr="1180.70" ybr="511.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="1121.10" ytl="472.00" xbr="1180.70" ybr="511.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="1119.90" ytl="472.00" xbr="1178.80" ybr="513.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="1116.10" ytl="472.00" xbr="1176.90" ybr="513.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="1114.20" ytl="472.00" xbr="1175.00" ybr="513.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="1114.20" ytl="469.20" xbr="1172.60" ybr="511.50" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="1111.40" ytl="469.20" xbr="1168.60" ybr="507.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="1105.10" ytl="468.70" xbr="1168.60" ybr="507.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="1103.40" ytl="467.60" xbr="1168.60" ybr="507.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="1105.70" ytl="469.90" xbr="1172.30" ybr="507.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="1104.60" ytl="466.50" xbr="1174.60" ybr="504.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="1104.60" ytl="466.50" xbr="1178.60" ybr="506.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="1092.10" ytl="461.40" xbr="1182.60" ybr="508.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="1087.70" ytl="457.30" xbr="1153.90" ybr="508.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="1085.30" ytl="457.30" xbr="1153.90" ybr="509.93" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="1082.90" ytl="457.30" xbr="1153.90" ybr="510.97" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="1080.50" ytl="457.30" xbr="1153.90" ybr="512.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="1072.70" ytl="451.20" xbr="1154.90" ybr="512.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="1061.80" ytl="451.20" xbr="1155.90" ybr="514.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="1058.00" ytl="449.80" xbr="1159.00" ybr="515.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="1048.40" ytl="449.80" xbr="1158.00" ybr="515.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="1043.60" ytl="447.40" xbr="1155.30" ybr="515.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="1038.10" ytl="447.40" xbr="1146.10" ybr="515.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="1029.90" ytl="447.40" xbr="1140.60" ybr="517.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1023.40" ytl="447.40" xbr="1130.40" ybr="513.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="1018.60" ytl="447.40" xbr="1119.00" ybr="514.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="1012.30" ytl="447.40" xbr="1109.00" ybr="516.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="1006.00" ytl="447.40" xbr="1109.00" ybr="518.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="999.70" ytl="442.70" xbr="1080.60" ybr="511.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="1" occluded="0" xtl="999.70" ytl="442.70" xbr="1080.60" ybr="511.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="1" label="subject" source="manual">
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="992.60" ytl="442.40" xbr="1072.80" ybr="518.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="983.40" ytl="442.40" xbr="1064.30" ybr="519.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="973.40" ytl="439.80" xbr="1060.30" ybr="520.50" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="961.70" ytl="439.80" xbr="1052.90" ybr="523.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="951.70" ytl="441.20" xbr="1052.90" ybr="524.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="940.30" ytl="442.40" xbr="1052.90" ybr="526.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="927.00" ytl="442.70" xbr="1051.80" ybr="526.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="915.60" ytl="443.30" xbr="1052.90" ybr="527.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="902.50" ytl="444.70" xbr="1047.80" ybr="527.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="890.80" ytl="445.30" xbr="1031.00" ybr="527.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="877.70" ytl="445.30" xbr="1024.70" ybr="527.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="866.90" ytl="445.00" xbr="1007.10" ybr="528.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="853.30" ytl="443.00" xbr="983.80" ybr="531.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="838.70" ytl="443.90" xbr="957.60" ybr="531.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="827.80" ytl="443.90" xbr="939.90" ybr="532.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="812.40" ytl="443.90" xbr="918.40" ybr="537.50" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="798.80" ytl="443.60" xbr="902.40" ybr="540.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="783.80" ytl="442.90" xbr="888.10" ybr="537.80" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="768.10" ytl="442.90" xbr="872.40" ybr="538.80" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="748.00" ytl="441.50" xbr="862.50" ybr="542.20" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="128" keyframe="1" outside="0" occluded="0" xtl="727.90" ytl="449.00" xbr="854.00" ybr="543.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="704.00" ytl="450.00" xbr="846.00" ybr="546.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="683.50" ytl="446.30" xbr="846.00" ybr="546.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="661.00" ytl="451.60" xbr="838.60" ybr="550.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="637.70" ytl="454.50" xbr="819.40" ybr="555.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="610.30" ytl="454.50" xbr="788.30" ybr="555.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="590.60" ytl="460.20" xbr="775.20" ybr="557.80" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="568.10" ytl="461.80" xbr="747.40" ybr="560.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="551.70" ytl="461.80" xbr="697.40" ybr="564.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="520.60" ytl="461.80" xbr="670.80" ybr="566.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="0" occluded="0" xtl="486.20" ytl="463.80" xbr="631.10" ybr="569.30" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="466.10" ytl="463.80" xbr="604.10" ybr="574.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="0" occluded="0" xtl="431.70" ytl="463.00" xbr="576.30" ybr="568.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="141" keyframe="1" outside="0" occluded="0" xtl="416.10" ytl="464.60" xbr="541.90" ybr="581.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="380.10" ytl="462.55" xbr="506.69" ybr="559.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="143" keyframe="1" outside="0" occluded="0" xtl="348.20" ytl="459.70" xbr="484.60" ybr="572.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="144" keyframe="1" outside="1" occluded="0" xtl="315.40" ytl="459.70" xbr="446.90" ybr="590.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="145" keyframe="1" outside="0" occluded="0" xtl="281.00" ytl="472.80" xbr="434.60" ybr="602.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="146" keyframe="1" outside="1" occluded="0" xtl="258.40" ytl="475.75" xbr="412.00" ybr="605.65" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="2" label="subject" source="manual">
+    <box frame="146" keyframe="1" outside="0" occluded="0" xtl="243.60" ytl="475.90" xbr="412.77" ybr="607.81" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="147" keyframe="1" outside="0" occluded="0" xtl="199.90" ytl="480.30" xbr="391.60" ybr="605.40" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="168.00" ytl="502.40" xbr="317.40" ybr="593.10" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="129.20" ytl="502.40" xbr="281.50" ybr="600.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="150" keyframe="1" outside="0" occluded="0" xtl="91.90" ytl="509.30" xbr="236.30" ybr="596.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="151" keyframe="1" outside="0" occluded="0" xtl="55.50" ytl="518.10" xbr="195.50" ybr="601.00" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="152" keyframe="1" outside="0" occluded="0" xtl="14.20" ytl="526.90" xbr="149.80" ybr="611.80" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="153" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="538.70" xbr="108.60" ybr="621.60" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="154" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="554.90" xbr="53.60" ybr="616.70" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="155" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="567.70" xbr="11.80" ybr="608.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="156" keyframe="1" outside="1" occluded="0" xtl="0.00" ytl="567.70" xbr="11.80" ybr="608.90" z_order="0">
+      <attribute name="type_of_subject">moose</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+</annotations>

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>506266</id>
+      <size>193</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-01-04 06:47:26.786015+00:00</created>
+      <updated>2024-08-07 00:07:53.335478+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>192</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>506906</id>
+          <start>0</start>
+          <stop>192</stop>
+          <url>https://app.cvat.ai/api/jobs/506266</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-07 00:07:57.992076+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="1067.91" ytl="483.25" xbr="1100.29" ybr="514.23" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="1067.71" ytl="483.45" xbr="1100.09" ybr="514.43" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="1068.91" ytl="482.85" xbr="1101.30" ybr="515.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="1069.90" ytl="483.05" xbr="1102.50" ybr="516.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="1070.50" ytl="483.25" xbr="1103.10" ybr="518.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="1071.10" ytl="482.85" xbr="1103.10" ybr="518.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="1071.30" ytl="483.05" xbr="1103.70" ybr="518.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="1071.90" ytl="482.45" xbr="1105.70" ybr="518.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="1072.30" ytl="481.85" xbr="1107.30" ybr="519.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="1071.70" ytl="483.05" xbr="1107.90" ybr="520.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="1071.90" ytl="482.45" xbr="1109.50" ybr="520.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="1071.10" ytl="482.25" xbr="1109.70" ybr="520.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="1071.50" ytl="481.85" xbr="1111.70" ybr="521.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="1072.30" ytl="481.85" xbr="1113.50" ybr="521.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="1073.10" ytl="482.25" xbr="1115.30" ybr="522.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="1073.50" ytl="482.05" xbr="1119.40" ybr="523.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="1074.06" ytl="481.21" xbr="1120.90" ybr="523.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="1075.06" ytl="481.05" xbr="1123.20" ybr="523.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="1077.39" ytl="481.05" xbr="1126.90" ybr="525.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="1079.39" ytl="480.71" xbr="1130.40" ybr="527.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="1082.05" ytl="481.71" xbr="1132.10" ybr="529.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="1083.55" ytl="481.71" xbr="1133.60" ybr="529.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="1086.38" ytl="481.71" xbr="1137.80" ybr="531.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="1090.27" ytl="481.30" xbr="1142.10" ybr="532.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="1093.32" ytl="480.32" xbr="1145.30" ybr="532.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="1096.42" ytl="480.52" xbr="1148.40" ybr="533.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="1100.32" ytl="480.12" xbr="1152.30" ybr="532.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="1103.32" ytl="481.60" xbr="1155.30" ybr="532.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="1107.52" ytl="481.50" xbr="1160.70" ybr="533.50" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="1110.40" ytl="480.40" xbr="1166.50" ybr="532.60" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="1115.15" ytl="480.90" xbr="1173.00" ybr="532.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1119.04" ytl="481.50" xbr="1178.30" ybr="531.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="1124.94" ytl="480.78" xbr="1185.50" ybr="532.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="1128.83" ytl="479.77" xbr="1190.50" ybr="532.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="1133.58" ytl="479.63" xbr="1196.70" ybr="534.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="1138.62" ytl="479.92" xbr="1202.50" ybr="535.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="1143.81" ytl="483.37" xbr="1208.40" ybr="538.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="1147.55" ytl="483.37" xbr="1216.30" ybr="541.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="1153.31" ytl="484.52" xbr="1222.60" ybr="544.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="1158.64" ytl="485.24" xbr="1231.50" ybr="546.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="1164.18" ytl="487.69" xbr="1240.50" ybr="549.10" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="1169.98" ytl="489.34" xbr="1249.00" ybr="551.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="1176.41" ytl="491.00" xbr="1256.90" ybr="552.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="1184.71" ytl="492.46" xbr="1266.60" ybr="553.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="1192.17" ytl="493.08" xbr="1279.20" ybr="556.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="1201.73" ytl="494.27" xbr="1290.80" ybr="558.40" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="1209.19" ytl="492.78" xbr="1303.00" ybr="559.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="1219.34" ytl="492.78" xbr="1315.50" ybr="562.00" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="1227.41" ytl="493.97" xbr="1327.40" ybr="563.80" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="1236.36" ytl="494.87" xbr="1343.80" ybr="571.90" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="1244.43" ytl="495.76" xbr="1356.30" ybr="574.30" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="1253.38" ytl="495.46" xbr="1373.00" ybr="581.20" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="1263.54" ytl="493.67" xbr="1392.10" ybr="585.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="1" occluded="0" xtl="1263.54" ytl="493.67" xbr="1392.10" ybr="585.70" z_order="0">
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+  </track>
+  <track id="1" label="subject" source="manual">
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="1272.51" ytl="493.43" xbr="1413.97" ybr="592.75" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="1284.69" ytl="494.14" xbr="1430.50" ybr="597.80" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="1296.52" ytl="494.14" xbr="1445.50" ybr="602.10" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="128" keyframe="1" outside="0" occluded="0" xtl="1311.92" ytl="496.29" xbr="1461.30" ybr="607.50" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="1328.05" ytl="498.09" xbr="1483.90" ybr="612.50" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="1346.68" ytl="498.80" xbr="1508.50" ybr="618.40" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="1365.60" ytl="498.37" xbr="1543.80" ybr="644.60" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="1386.24" ytl="500.95" xbr="1573.40" ybr="652.80" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="1402.58" ytl="500.95" xbr="1601.80" ybr="655.80" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="1425.79" ytl="503.53" xbr="1630.00" ybr="662.70" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="1447.47" ytl="513.44" xbr="1671.50" ybr="694.30" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="1480.90" ytl="525.33" xbr="1736.10" ybr="718.10" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="1497.99" ytl="529.04" xbr="1759.90" ybr="724.00" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="1" occluded="0" xtl="1497.99" ytl="529.04" xbr="1759.90" ybr="724.00" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+</annotations>

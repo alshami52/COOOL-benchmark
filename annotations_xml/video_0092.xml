@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>521007</id>
+      <size>133</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-01-16 05:04:23.062543+00:00</created>
+      <updated>2024-08-09 19:40:54.993095+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>132</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>521728</id>
+          <start>0</start>
+          <stop>132</stop>
+          <url>https://app.cvat.ai/api/jobs/521007</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>group_2</username>
+        <email>group2.anno@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-09 19:40:59.096472+00:00</dumped>
+    <original_size>
+      <width>1280</width>
+      <height>720</height>
+    </original_size>
+  </meta>
+  <track id="0" label="object" source="manual">
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="322.63" ytl="310.17" xbr="385.50" ybr="368.30" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="317.88" ytl="307.80" xbr="380.76" ybr="365.93" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="313.14" ytl="305.43" xbr="376.01" ybr="363.56" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="304.84" ytl="294.16" xbr="371.26" ybr="354.68" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="296.53" ytl="282.89" xbr="366.50" ybr="345.80" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="288.82" ytl="272.21" xbr="367.70" ybr="344.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="281.11" ytl="261.54" xbr="368.90" ybr="342.20" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="274.59" ytl="252.64" xbr="368.30" ybr="339.85" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="268.06" ytl="243.74" xbr="367.70" ybr="337.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="257.38" ytl="224.76" xbr="376.00" ybr="338.70" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="255.01" ytl="214.08" xbr="373.63" ybr="328.02" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="252.05" ytl="205.78" xbr="370.66" ybr="319.72" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="249.08" ytl="197.47" xbr="367.70" ybr="311.41" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="246.11" ytl="187.98" xbr="364.73" ybr="301.92" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="243.15" ytl="178.49" xbr="361.77" ybr="292.43" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="243.15" ytl="175.53" xbr="361.77" ybr="289.47" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="243.15" ytl="172.56" xbr="361.77" ybr="286.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="70" keyframe="0" outside="0" occluded="0" xtl="243.15" ytl="169.60" xbr="361.77" ybr="283.54" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="243.15" ytl="166.63" xbr="361.77" ybr="280.57" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="243.15" ytl="159.51" xbr="361.77" ybr="273.45" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="243.15" ytl="152.40" xbr="361.77" ybr="266.34" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="74" keyframe="0" outside="0" occluded="0" xtl="243.15" ytl="144.09" xbr="361.77" ybr="258.03" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="243.15" ytl="135.79" xbr="361.77" ybr="249.73" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="76" keyframe="0" outside="0" occluded="0" xtl="237.81" ytl="126.30" xbr="361.15" ybr="241.41" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="232.47" ytl="116.81" xbr="360.54" ybr="233.08" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="78" keyframe="0" outside="0" occluded="0" xtl="230.10" ytl="112.06" xbr="359.37" ybr="236.04" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="227.73" ytl="107.32" xbr="358.20" ybr="239.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="222.39" ytl="93.08" xbr="365.90" ybr="239.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="217.05" ytl="78.85" xbr="373.60" ybr="239.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="209.34" ytl="71.13" xbr="365.89" ybr="231.29" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="201.63" ytl="63.42" xbr="358.18" ybr="223.58" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="195.70" ytl="59.86" xbr="359.35" ybr="224.39" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="85" keyframe="0" outside="0" occluded="0" xtl="189.77" ytl="56.31" xbr="360.53" ybr="225.19" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="183.83" ytl="52.75" xbr="361.70" ybr="226.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="87" keyframe="0" outside="0" occluded="0" xtl="168.41" ytl="46.82" xbr="351.60" ybr="221.85" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="152.99" ytl="40.88" xbr="341.50" ybr="217.70" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="147.46" ytl="38.12" xbr="335.96" ybr="214.93" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="141.92" ytl="35.35" xbr="330.43" ybr="212.16" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="136.38" ytl="32.58" xbr="324.89" ybr="209.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="129.66" ytl="31.79" xbr="322.13" ybr="207.43" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="122.94" ytl="31.00" xbr="319.36" ybr="205.47" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="116.22" ytl="30.21" xbr="316.60" ybr="203.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="108.70" ytl="29.81" xbr="313.83" ybr="204.30" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="101.19" ytl="29.42" xbr="311.07" ybr="205.10" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="93.68" ytl="29.02" xbr="308.30" ybr="205.90" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="98" keyframe="0" outside="0" occluded="0" xtl="87.35" ytl="29.81" xbr="301.97" ybr="206.69" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="99" keyframe="0" outside="0" occluded="0" xtl="81.02" ytl="30.60" xbr="295.65" ybr="207.48" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="74.70" ytl="31.39" xbr="289.32" ybr="208.27" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="101" keyframe="0" outside="0" occluded="0" xtl="61.65" ytl="41.48" xbr="292.31" ybr="205.89" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="48.60" ytl="51.56" xbr="295.30" ybr="203.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="103" keyframe="0" outside="0" occluded="0" xtl="42.07" ytl="51.56" xbr="288.78" ybr="203.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="35.55" ytl="51.56" xbr="282.25" ybr="203.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="23.70" ytl="50.77" xbr="279.10" ybr="207.83" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="11.85" ytl="49.98" xbr="275.95" ybr="212.17" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="49.19" xbr="272.80" ybr="216.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="73.79" xbr="272.80" ybr="241.10" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="0.00" ytl="73.79" xbr="278.95" ybr="250.95" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="73.79" xbr="285.10" ybr="260.80" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="73.79" xbr="302.30" ybr="278.00" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="44.27" xbr="331.90" ybr="317.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="9.83" xbr="331.90" ybr="344.46" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="341.70" ybr="378.90" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="115" keyframe="0" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="344.15" ybr="418.25" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="346.60" ybr="457.60" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="368.70" ybr="558.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="420.40" ybr="617.50" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="395.80" ybr="656.90" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="427.80" ybr="718.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="568.00" ybr="718.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="575.40" ybr="718.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="2.46" ytl="4.92" xbr="1274.00" ybr="718.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="1" occluded="0" xtl="2.46" ytl="4.92" xbr="1274.00" ybr="718.40" z_order="0">
+      <attribute name="type_of_object">debris</attribute>
+      <attribute name="situation">flying</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+  </track>
+</annotations>

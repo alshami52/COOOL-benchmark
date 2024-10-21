@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>498645</id>
+      <size>220</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-30 00:56:32.847093+00:00</created>
+      <updated>2024-08-06 21:02:39.920116+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>219</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>499269</id>
+          <start>0</start>
+          <stop>219</stop>
+          <url>https://app.cvat.ai/api/jobs/498645</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>group_2</username>
+        <email>group2.anno@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-06 21:10:42.960318+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="1298.88" ytl="687.65" xbr="1366.68" ybr="739.25" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="78" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="687.87" xbr="1366.68" ybr="739.48" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="688.09" xbr="1366.68" ybr="739.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="688.32" xbr="1366.68" ybr="739.92" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="688.54" xbr="1366.68" ybr="740.14" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="688.76" xbr="1366.68" ybr="740.36" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="688.98" xbr="1366.68" ybr="740.59" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="1298.88" ytl="689.21" xbr="1366.68" ybr="740.81" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="1298.88" ytl="689.43" xbr="1366.68" ybr="741.03" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="1297.10" ytl="698.33" xbr="1364.90" ybr="749.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="87" keyframe="0" outside="0" occluded="0" xtl="1297.10" ytl="700.10" xbr="1364.90" ybr="751.71" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="88" keyframe="0" outside="0" occluded="0" xtl="1297.10" ytl="701.88" xbr="1364.90" ybr="753.49" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="1297.10" ytl="703.66" xbr="1364.90" ybr="755.27" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="1297.99" ytl="704.55" xbr="1365.79" ybr="756.16" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="1298.88" ytl="705.44" xbr="1366.68" ybr="757.05" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="1300.41" ytl="705.70" xbr="1368.20" ybr="757.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="1301.93" ytl="705.95" xbr="1369.73" ybr="757.56" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="1303.46" ytl="706.21" xbr="1371.25" ybr="757.81" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="1304.98" ytl="706.46" xbr="1372.78" ybr="758.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="1306.51" ytl="706.71" xbr="1374.30" ybr="758.32" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="97" keyframe="0" outside="0" occluded="0" xtl="1308.03" ytl="706.97" xbr="1375.83" ybr="758.57" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="1309.56" ytl="707.22" xbr="1377.35" ybr="758.83" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="99" keyframe="0" outside="0" occluded="0" xtl="1312.23" ytl="709.00" xbr="1380.02" ybr="760.61" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="1314.90" ytl="710.78" xbr="1382.69" ybr="762.38" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="101" keyframe="0" outside="0" occluded="0" xtl="1314.90" ytl="710.78" xbr="1388.00" ybr="765.04" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="1314.90" ytl="710.78" xbr="1393.30" ybr="767.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1320.23" ytl="712.56" xbr="1398.64" ybr="769.48" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="1318.46" ytl="712.56" xbr="1396.86" ybr="769.48" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="1329.13" ytl="717.90" xbr="1407.54" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="1331.36" ytl="717.90" xbr="1409.76" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="107" keyframe="0" outside="0" occluded="0" xtl="1333.58" ytl="717.90" xbr="1411.98" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="108" keyframe="0" outside="0" occluded="0" xtl="1335.80" ytl="717.90" xbr="1414.21" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="1338.03" ytl="717.90" xbr="1416.43" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="1343.37" ytl="717.90" xbr="1421.77" ybr="774.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="1343.37" ytl="717.90" xbr="1434.20" ybr="780.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="1348.71" ytl="717.90" xbr="1439.54" ybr="780.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="1354.04" ytl="714.34" xbr="1448.40" ybr="785.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="1357.60" ytl="712.56" xbr="1451.96" ybr="783.72" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="1370.06" ytl="709.00" xbr="1464.41" ybr="780.16" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="1378.95" ytl="710.78" xbr="1473.31" ybr="781.94" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="1380.73" ytl="714.34" xbr="1475.09" ybr="785.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="1386.07" ytl="717.90" xbr="1480.43" ybr="789.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="1391.41" ytl="723.24" xbr="1485.77" ybr="794.40" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="1398.53" ytl="730.36" xbr="1492.88" ybr="801.52" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="1402.09" ytl="730.36" xbr="1510.70" ybr="810.40" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="1414.54" ytl="732.14" xbr="1523.16" ybr="812.18" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="1414.54" ytl="732.14" xbr="1540.90" ybr="817.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="1427.00" ytl="732.14" xbr="1553.36" ybr="817.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="1434.12" ytl="733.92" xbr="1560.47" ybr="819.28" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="1441.23" ytl="735.69" xbr="1567.59" ybr="821.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="1453.69" ytl="735.69" xbr="1580.05" ybr="821.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="128" keyframe="1" outside="0" occluded="0" xtl="1466.15" ytl="741.03" xbr="1592.50" ybr="826.40" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="1466.15" ytl="739.25" xbr="1603.20" ybr="830.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="1475.04" ytl="739.25" xbr="1612.10" ybr="830.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="1492.84" ytl="746.37" xbr="1629.89" ybr="837.12" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="1510.63" ytl="749.93" xbr="1647.69" ybr="840.68" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="1523.09" ytl="755.27" xbr="1660.14" ybr="846.01" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="134" keyframe="1" outside="0" occluded="0" xtl="1542.66" ytl="762.39" xbr="1679.71" ybr="853.13" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="1556.90" ytl="764.17" xbr="1693.95" ybr="854.91" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="1571.13" ytl="767.72" xbr="1708.19" ybr="858.47" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="1571.13" ytl="767.72" xbr="1726.00" ybr="865.60" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="0" occluded="0" xtl="1612.06" ytl="787.30" xbr="1766.93" ybr="885.17" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="1638.75" ytl="783.74" xbr="1793.62" ybr="881.62" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="1" occluded="0" xtl="1638.75" ytl="783.74" xbr="1793.62" ybr="881.62" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="1" label="subject" source="manual">
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="1183.23" ytl="686.80" xbr="1251.03" ybr="738.41" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="1177.22" ytl="682.51" xbr="1245.02" ybr="734.12" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="1176.08" ytl="682.23" xbr="1243.87" ybr="733.83" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="1174.93" ytl="681.94" xbr="1242.73" ybr="733.54" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="1173.79" ytl="681.65" xbr="1241.59" ybr="733.26" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="1172.65" ytl="681.37" xbr="1240.44" ybr="732.97" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="1171.50" ytl="681.08" xbr="1239.30" ybr="732.69" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="1170.36" ytl="680.80" xbr="1238.15" ybr="732.40" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="85" keyframe="0" outside="0" occluded="0" xtl="1168.81" ytl="681.83" xbr="1236.61" ybr="733.43" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="1167.27" ytl="682.85" xbr="1235.06" ybr="734.46" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="1165.21" ytl="685.94" xbr="1233.01" ybr="737.55" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="1163.15" ytl="688.00" xbr="1230.95" ybr="739.61" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="1161.60" ytl="690.06" xbr="1229.40" ybr="741.67" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1227.86" ybr="743.73" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="91" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1228.32" ybr="744.10" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1228.79" ybr="744.47" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1229.26" ybr="744.84" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1229.73" ybr="745.21" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1230.19" ybr="745.58" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1230.66" ybr="745.95" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="97" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1231.13" ybr="746.32" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="98" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1231.60" ybr="746.69" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="99" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1232.06" ybr="747.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="100" keyframe="0" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1232.53" ybr="747.43" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="1160.06" ytl="692.12" xbr="1233.00" ybr="747.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="102" keyframe="0" outside="0" occluded="0" xtl="1163.66" ytl="695.21" xbr="1236.60" ybr="750.89" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1167.27" ytl="698.30" xbr="1240.21" ybr="753.98" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="104" keyframe="0" outside="0" occluded="0" xtl="1167.27" ytl="698.30" xbr="1242.80" ybr="757.09" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="1167.27" ytl="698.30" xbr="1245.40" ybr="760.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="1169.67" ytl="698.30" xbr="1247.80" ybr="760.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="107" keyframe="0" outside="0" occluded="0" xtl="1172.07" ytl="698.30" xbr="1250.21" ybr="760.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="1174.48" ytl="698.30" xbr="1252.61" ybr="760.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="1180.14" ytl="698.82" xbr="1258.27" ybr="760.71" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="1185.80" ytl="699.33" xbr="1263.94" ybr="761.23" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="1185.80" ytl="699.33" xbr="1267.00" ybr="761.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="1190.95" ytl="699.33" xbr="1272.15" ybr="761.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="1190.95" ytl="699.33" xbr="1277.30" ybr="762.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="1196.10" ytl="702.42" xbr="1282.45" ybr="765.29" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="1196.10" ytl="702.42" xbr="1287.60" ybr="767.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="1204.34" ytl="704.48" xbr="1295.84" ybr="769.36" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="1211.55" ytl="704.48" xbr="1303.05" ybr="769.36" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="1217.73" ytl="706.54" xbr="1309.23" ybr="771.42" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="1220.80" ytl="708.60" xbr="1314.37" ybr="773.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="1230.07" ytl="712.72" xbr="1323.64" ybr="777.62" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="1236.25" ytl="715.81" xbr="1329.82" ybr="780.71" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="1236.25" ytl="715.81" xbr="1338.10" ybr="784.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="1246.54" ytl="715.81" xbr="1352.50" ybr="787.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="0" xtl="1253.75" ytl="718.90" xbr="1359.71" ybr="790.99" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="1260.96" ytl="721.99" xbr="1366.92" ybr="794.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="1271.26" ytl="723.01" xbr="1377.21" ybr="795.11" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="1279.50" ytl="725.07" xbr="1385.45" ybr="797.17" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="1286.71" ytl="725.59" xbr="1400.88" ybr="799.75" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="1293.91" ytl="726.10" xbr="1416.32" ybr="802.33" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="1302.15" ytl="729.19" xbr="1424.55" ybr="805.42" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="1310.39" ytl="731.25" xbr="1443.14" ybr="809.56" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="1310.39" ytl="731.25" xbr="1453.40" ybr="818.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="133" keyframe="1" outside="0" occluded="0" xtl="1324.81" ytl="734.34" xbr="1467.82" ybr="821.89" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="134" keyframe="0" outside="0" occluded="0" xtl="1337.16" ytl="738.46" xbr="1480.17" ybr="826.01" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="1349.52" ytl="742.58" xbr="1492.53" ybr="830.13" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="1363.94" ytl="743.61" xbr="1520.30" ybr="841.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="1381.44" ytl="743.61" xbr="1537.80" ybr="860.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="138" keyframe="1" outside="0" occluded="0" xtl="1396.89" ytl="750.82" xbr="1553.25" ybr="867.21" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="1396.89" ytl="750.82" xbr="1560.50" ybr="871.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="0" occluded="0" xtl="1421.60" ytl="753.91" xbr="1585.21" ybr="874.39" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="141" keyframe="1" outside="0" occluded="0" xtl="1446.32" ytl="759.06" xbr="1609.93" ybr="879.54" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="1471.03" ytl="761.53" xbr="1648.20" ybr="884.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="143" keyframe="0" outside="0" occluded="0" xtl="1477.83" ytl="764.00" xbr="1669.20" ybr="889.42" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="144" keyframe="1" outside="0" occluded="0" xtl="1484.62" ytl="766.47" xbr="1690.19" ybr="894.34" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="145" keyframe="0" outside="0" occluded="0" xtl="1497.60" ytl="769.56" xbr="1703.17" ybr="897.43" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="146" keyframe="1" outside="0" occluded="0" xtl="1510.58" ytl="772.65" xbr="1716.14" ybr="900.52" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="147" keyframe="1" outside="0" occluded="0" xtl="1558.77" ytl="783.77" xbr="1764.34" ybr="911.64" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="1584.39" ytl="788.04" xbr="1789.96" ybr="915.91" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="1599.34" ytl="785.91" xbr="1822.00" ybr="935.10" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="150" keyframe="0" outside="0" occluded="0" xtl="1627.10" ytl="793.38" xbr="1849.76" ybr="942.57" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="151" keyframe="1" outside="0" occluded="0" xtl="1654.86" ytl="800.85" xbr="1877.52" ybr="950.05" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="152" keyframe="1" outside="1" occluded="0" xtl="1695.43" ytl="807.26" xbr="1918.09" ybr="956.45" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="2" label="subject" source="manual">
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="958.60" ytl="693.47" xbr="1026.40" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="102" keyframe="0" outside="0" occluded="0" xtl="956.54" ytl="693.47" xbr="1024.34" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="103" keyframe="0" outside="0" occluded="0" xtl="954.48" ytl="693.47" xbr="1022.28" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="952.42" ytl="693.47" xbr="1020.22" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="105" keyframe="0" outside="0" occluded="0" xtl="947.28" ytl="693.47" xbr="1015.07" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="106" keyframe="1" outside="0" occluded="0" xtl="942.13" ytl="693.47" xbr="1009.92" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="107" keyframe="0" outside="0" occluded="0" xtl="939.04" ytl="693.47" xbr="1006.83" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="935.95" ytl="693.47" xbr="1003.74" ybr="745.08" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="930.28" ytl="690.38" xbr="998.08" ybr="741.99" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="924.62" ytl="687.29" xbr="992.42" ybr="738.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="919.47" ytl="684.21" xbr="987.27" ybr="735.81" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="112" keyframe="1" outside="0" occluded="0" xtl="917.41" ytl="684.21" xbr="985.21" ybr="735.81" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="911.23" ytl="681.12" xbr="979.03" ybr="732.72" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="114" keyframe="1" outside="0" occluded="0" xtl="906.08" ytl="679.06" xbr="973.88" ybr="730.66" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="904.00" ytl="679.06" xbr="973.88" ybr="731.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="896.80" ytl="679.06" xbr="973.88" ybr="733.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="117" keyframe="0" outside="0" occluded="0" xtl="894.74" ytl="678.54" xbr="971.82" ybr="733.28" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="892.68" ytl="678.03" xbr="969.76" ybr="732.77" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="888.60" ytl="678.03" xbr="969.76" ybr="735.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="879.33" ytl="679.06" xbr="960.49" ybr="736.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="121" keyframe="0" outside="0" occluded="0" xtl="877.96" ytl="679.06" xbr="959.12" ybr="736.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="122" keyframe="0" outside="0" occluded="0" xtl="876.58" ytl="679.06" xbr="957.75" ybr="736.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="875.21" ytl="679.06" xbr="956.37" ybr="736.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="0" xtl="872.12" ytl="678.03" xbr="953.28" ybr="735.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="125" keyframe="1" outside="0" occluded="0" xtl="869.03" ytl="677.00" xbr="950.19" ybr="734.87" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="862.85" ytl="677.00" xbr="947.12" ybr="740.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="127" keyframe="0" outside="0" occluded="0" xtl="861.14" ytl="676.65" xbr="948.50" ybr="742.76" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="859.42" ytl="676.31" xbr="949.87" ybr="745.51" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="857.71" ytl="675.97" xbr="951.25" ybr="748.27" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="130" keyframe="0" outside="0" occluded="0" xtl="857.71" ytl="675.97" xbr="953.83" ybr="751.34" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="131" keyframe="1" outside="0" occluded="0" xtl="857.71" ytl="675.97" xbr="956.40" ybr="754.40" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="0" xtl="858.48" ytl="677.25" xbr="957.18" ybr="758.25" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="133" keyframe="0" outside="0" occluded="0" xtl="859.25" ytl="678.54" xbr="957.95" ybr="762.10" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="134" keyframe="0" outside="0" occluded="0" xtl="860.02" ytl="679.83" xbr="958.73" ybr="765.95" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="135" keyframe="1" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="959.50" ybr="769.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="966.70" ybr="774.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="137" keyframe="1" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="974.90" ybr="774.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="138" keyframe="0" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="978.00" ybr="778.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="139" keyframe="1" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="981.10" ybr="781.10" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="140" keyframe="1" outside="0" occluded="0" xtl="860.79" ytl="681.12" xbr="987.30" ybr="788.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="141" keyframe="0" outside="0" occluded="0" xtl="869.44" ytl="686.06" xbr="995.95" ybr="793.24" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="878.09" ytl="691.00" xbr="1004.60" ybr="798.19" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="143" keyframe="0" outside="0" occluded="0" xtl="883.66" ytl="693.47" xbr="1010.16" ybr="800.66" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="144" keyframe="1" outside="0" occluded="0" xtl="889.22" ytl="695.95" xbr="1015.72" ybr="803.13" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="145" keyframe="0" outside="0" occluded="0" xtl="900.34" ytl="699.65" xbr="1026.84" ybr="806.84" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="146" keyframe="1" outside="0" occluded="0" xtl="911.46" ytl="703.36" xbr="1037.96" ybr="810.54" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="147" keyframe="1" outside="0" occluded="0" xtl="910.20" ytl="703.40" xbr="1051.56" ybr="819.19" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="148" keyframe="1" outside="0" occluded="0" xtl="910.20" ytl="703.40" xbr="1075.00" ybr="823.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="149" keyframe="1" outside="0" occluded="0" xtl="910.20" ytl="703.40" xbr="1096.40" ybr="832.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="150" keyframe="0" outside="0" occluded="0" xtl="929.42" ytl="708.74" xbr="1115.62" ybr="837.34" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="151" keyframe="1" outside="0" occluded="0" xtl="948.64" ytl="714.08" xbr="1134.84" ybr="842.68" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="152" keyframe="1" outside="0" occluded="0" xtl="972.12" ytl="718.35" xbr="1158.32" ybr="846.95" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="153" keyframe="1" outside="0" occluded="0" xtl="991.34" ytl="724.75" xbr="1177.54" ybr="853.35" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="154" keyframe="1" outside="0" occluded="0" xtl="1010.56" ytl="731.16" xbr="1196.76" ybr="859.76" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="155" keyframe="1" outside="0" occluded="0" xtl="1036.18" ytl="733.29" xbr="1222.38" ybr="861.89" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="156" keyframe="1" outside="0" occluded="0" xtl="1040.45" ytl="735.43" xbr="1260.77" ybr="864.03" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="157" keyframe="1" outside="0" occluded="0" xtl="1070.35" ytl="741.84" xbr="1290.66" ybr="870.44" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="158" keyframe="1" outside="0" occluded="0" xtl="1102.38" ytl="748.24" xbr="1322.69" ybr="876.85" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="159" keyframe="1" outside="0" occluded="0" xtl="1102.38" ytl="748.24" xbr="1346.20" ybr="893.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="160" keyframe="1" outside="0" occluded="0" xtl="1138.68" ytl="758.92" xbr="1382.50" ybr="904.58" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="161" keyframe="1" outside="0" occluded="0" xtl="1168.57" ytl="763.19" xbr="1412.40" ybr="908.85" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="162" keyframe="0" outside="0" occluded="0" xtl="1202.74" ytl="767.46" xbr="1446.56" ybr="913.12" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="163" keyframe="1" outside="0" occluded="0" xtl="1236.90" ytl="771.73" xbr="1480.73" ybr="917.39" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="164" keyframe="1" outside="0" occluded="0" xtl="1273.20" ytl="780.27" xbr="1517.03" ybr="925.93" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="165" keyframe="1" outside="0" occluded="0" xtl="1309.50" ytl="786.68" xbr="1574.70" ybr="947.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="166" keyframe="1" outside="0" occluded="0" xtl="1335.13" ytl="791.80" xbr="1600.32" ybr="952.43" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="167" keyframe="1" outside="0" occluded="0" xtl="1376.12" ytl="807.18" xbr="1641.32" ybr="967.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="168" keyframe="1" outside="0" occluded="0" xtl="1409.44" ytl="822.55" xbr="1674.63" ybr="983.17" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="169" keyframe="1" outside="0" occluded="0" xtl="1468.37" ytl="827.68" xbr="1733.57" ybr="988.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="170" keyframe="1" outside="0" occluded="0" xtl="1493.99" ytl="827.68" xbr="1759.19" ybr="988.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="171" keyframe="1" outside="0" occluded="0" xtl="1493.99" ytl="827.68" xbr="1807.90" ybr="1001.10" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="172" keyframe="1" outside="0" occluded="0" xtl="1565.74" ytl="843.05" xbr="1879.65" ybr="1016.47" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="173" keyframe="1" outside="0" occluded="0" xtl="1599.05" ytl="848.18" xbr="1912.96" ybr="1021.60" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="174" keyframe="0" outside="0" occluded="0" xtl="1600.76" ytl="847.32" xbr="1914.67" ybr="1020.74" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="175" keyframe="0" outside="0" occluded="0" xtl="1602.47" ytl="846.47" xbr="1916.37" ybr="1019.89" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="176" keyframe="1" outside="1" occluded="0" xtl="1604.18" ytl="845.62" xbr="1918.08" ybr="1019.04" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="3" label="subject" source="manual">
+    <box frame="156" keyframe="1" outside="0" occluded="0" xtl="553.98" ytl="688.76" xbr="746.52" ybr="798.14" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="157" keyframe="0" outside="0" occluded="0" xtl="559.31" ytl="691.97" xbr="751.86" ybr="801.34" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="158" keyframe="1" outside="0" occluded="0" xtl="564.65" ytl="695.17" xbr="757.20" ybr="804.55" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="159" keyframe="0" outside="0" occluded="0" xtl="571.06" ytl="697.30" xbr="763.61" ybr="806.68" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="160" keyframe="1" outside="0" occluded="0" xtl="577.46" ytl="699.44" xbr="770.01" ybr="808.82" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="161" keyframe="0" outside="0" occluded="0" xtl="590.99" ytl="702.29" xbr="783.54" ybr="811.67" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="162" keyframe="0" outside="0" occluded="0" xtl="604.51" ytl="705.13" xbr="797.06" ybr="814.51" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="163" keyframe="1" outside="0" occluded="0" xtl="618.04" ytl="707.98" xbr="810.58" ybr="817.36" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="164" keyframe="0" outside="0" occluded="0" xtl="618.04" ytl="707.98" xbr="814.84" ybr="820.58" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="165" keyframe="1" outside="0" occluded="0" xtl="618.04" ytl="707.98" xbr="819.10" ybr="823.80" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="166" keyframe="1" outside="0" occluded="0" xtl="634.48" ytl="725.86" xbr="835.55" ybr="841.68" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="167" keyframe="1" outside="0" occluded="0" xtl="634.48" ytl="725.86" xbr="853.50" ybr="864.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="168" keyframe="1" outside="0" occluded="0" xtl="660.11" ytl="728.42" xbr="879.12" ybr="867.26" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="169" keyframe="1" outside="0" occluded="0" xtl="660.11" ytl="728.42" xbr="886.80" ybr="877.50" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="170" keyframe="1" outside="0" occluded="0" xtl="688.29" ytl="730.98" xbr="914.99" ybr="880.06" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="171" keyframe="1" outside="0" occluded="0" xtl="695.98" ytl="730.98" xbr="935.49" ybr="885.20" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="172" keyframe="1" outside="0" occluded="0" xtl="721.60" ytl="728.42" xbr="961.11" ybr="882.64" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="173" keyframe="1" outside="0" occluded="0" xtl="747.22" ytl="743.79" xbr="986.73" ybr="898.01" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="174" keyframe="0" outside="0" occluded="0" xtl="759.18" ytl="749.77" xbr="998.69" ybr="903.99" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="175" keyframe="0" outside="0" occluded="0" xtl="771.14" ytl="755.75" xbr="1010.65" ybr="909.97" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="176" keyframe="1" outside="0" occluded="0" xtl="783.10" ytl="761.73" xbr="1022.61" ybr="915.95" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="177" keyframe="1" outside="0" occluded="0" xtl="803.60" ytl="764.29" xbr="1068.70" ybr="931.36" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="178" keyframe="0" outside="0" occluded="0" xtl="821.53" ytl="775.82" xbr="1102.00" ybr="948.03" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="179" keyframe="1" outside="0" occluded="0" xtl="839.47" ytl="787.36" xbr="1135.30" ybr="964.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="180" keyframe="1" outside="0" occluded="0" xtl="867.66" ytl="789.92" xbr="1163.49" ybr="967.26" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="181" keyframe="1" outside="0" occluded="0" xtl="893.28" ytl="782.23" xbr="1191.70" ybr="990.30" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="182" keyframe="1" outside="0" occluded="0" xtl="949.65" ytl="784.79" xbr="1248.07" ybr="992.86" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="183" keyframe="1" outside="0" occluded="0" xtl="975.28" ytl="800.17" xbr="1273.70" ybr="1008.24" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="184" keyframe="1" outside="0" occluded="0" xtl="1006.03" ytl="807.86" xbr="1319.84" ybr="1018.48" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="185" keyframe="1" outside="0" occluded="0" xtl="1039.34" ytl="815.54" xbr="1366.00" ybr="1028.70" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="186" keyframe="1" outside="0" occluded="0" xtl="1070.09" ytl="833.48" xbr="1419.80" ybr="1046.60" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="187" keyframe="1" outside="0" occluded="0" xtl="1105.96" ytl="836.04" xbr="1468.50" ybr="1056.90" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="188" keyframe="1" outside="0" occluded="0" xtl="1144.39" ytl="838.60" xbr="1522.30" ybr="1062.00" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="189" keyframe="1" outside="0" occluded="0" xtl="1177.70" ytl="853.98" xbr="1568.42" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="190" keyframe="1" outside="0" occluded="0" xtl="1231.51" ytl="856.54" xbr="1622.23" ybr="1079.94" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="191" keyframe="1" outside="0" occluded="0" xtl="1290.44" ytl="897.50" xbr="1681.17" ybr="1079.94" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="192" keyframe="1" outside="0" occluded="0" xtl="1336.57" ytl="900.04" xbr="1727.29" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="193" keyframe="1" outside="0" occluded="0" xtl="1400.62" ytl="900.04" xbr="1791.35" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="194" keyframe="1" outside="0" occluded="0" xtl="1474.93" ytl="923.10" xbr="1865.66" ybr="1074.81" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="195" keyframe="1" outside="0" occluded="0" xtl="1518.49" ytl="925.66" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="196" keyframe="1" outside="0" occluded="0" xtl="1587.70" ytl="956.40" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="197" keyframe="1" outside="0" occluded="0" xtl="1651.80" ytl="969.20" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="198" keyframe="1" outside="0" occluded="0" xtl="1718.40" ytl="1007.60" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="199" keyframe="1" outside="0" occluded="0" xtl="1795.30" ytl="1007.60" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="200" keyframe="1" outside="1" occluded="0" xtl="1795.30" ytl="1007.60" xbr="1909.22" ybr="1077.37" z_order="0">
+      <attribute name="type_of_subject">wild_boar</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+</annotations>

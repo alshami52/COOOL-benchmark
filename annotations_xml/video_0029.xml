@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>491548</id>
+      <size>146</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-24 07:29:34.833046+00:00</created>
+      <updated>2024-08-05 14:39:19.786274+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>145</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>492162</id>
+          <start>0</start>
+          <stop>145</stop>
+          <url>https://app.cvat.ai/api/jobs/491548</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>nguyen_phuong_thuy</username>
+        <email>thuyb2105688@student.ctu.edu.vn</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-05 14:39:26.215049+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="subject" source="manual">
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="846.25" ytl="551.43" xbr="876.57" ybr="581.75" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="1" occluded="0" xtl="846.25" ytl="551.43" xbr="876.57" ybr="581.75" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+    </box>
+  </track>
+  <track id="1" label="subject" source="manual">
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="841.72" ytl="552.18" xbr="872.04" ybr="582.49" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="1" occluded="0" xtl="841.72" ytl="552.18" xbr="872.04" ybr="582.49" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="2" label="subject" source="manual">
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="837.88" ytl="554.48" xbr="868.19" ybr="584.79" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="1" occluded="0" xtl="837.88" ytl="554.48" xbr="868.19" ybr="584.79" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="3" label="subject" source="manual">
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="831.02" ytl="556.00" xbr="861.34" ybr="586.32" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="1" occluded="0" xtl="831.02" ytl="556.00" xbr="861.34" ybr="586.32" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="4" label="subject" source="manual">
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="1326.18" ytl="475.26" xbr="1368.29" ybr="514.74" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="1" occluded="0" xtl="1326.18" ytl="475.26" xbr="1368.29" ybr="514.74" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="5" label="subject" source="manual">
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="823.41" ytl="556.76" xbr="853.72" ybr="587.08" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="1" occluded="0" xtl="823.41" ytl="556.76" xbr="853.72" ybr="587.08" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="6" label="subject" source="manual">
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="1327.45" ytl="479.00" xbr="1369.56" ybr="518.47" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="1" occluded="0" xtl="1327.45" ytl="479.00" xbr="1369.56" ybr="518.47" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="7" label="subject" source="manual">
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="1332.76" ytl="480.31" xbr="1378.77" ybr="519.79" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="1" occluded="0" xtl="1332.76" ytl="480.31" xbr="1378.77" ybr="519.79" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="8" label="subject" source="manual">
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="821.88" ytl="561.33" xbr="852.20" ybr="591.65" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="1" occluded="0" xtl="821.88" ytl="561.33" xbr="852.20" ybr="591.65" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="9" label="subject" source="manual">
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="815.79" ytl="563.61" xbr="846.11" ybr="593.93" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="1" occluded="0" xtl="815.79" ytl="563.61" xbr="846.11" ybr="593.93" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="10" label="subject" source="manual">
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="1" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="11" label="subject" source="manual">
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="808.18" ytl="567.42" xbr="838.50" ybr="597.74" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="1" occluded="0" xtl="808.18" ytl="567.42" xbr="838.50" ybr="597.74" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="12" label="subject" source="manual">
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="1" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="13" label="subject" source="manual">
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="801.33" ytl="571.23" xbr="831.64" ybr="601.55" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="1" occluded="0" xtl="801.33" ytl="571.23" xbr="831.64" ybr="601.55" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="14" label="subject" source="manual">
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="1333.40" ytl="472.42" xbr="1379.40" ybr="511.89" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="1" occluded="0" xtl="1333.40" ytl="472.42" xbr="1379.40" ybr="511.89" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="15" label="subject" source="manual">
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="793.71" ytl="572.75" xbr="824.03" ybr="603.07" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="1" occluded="0" xtl="793.71" ytl="572.75" xbr="824.03" ybr="603.07" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="16" label="subject" source="manual">
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="1330.77" ytl="472.42" xbr="1376.77" ybr="511.89" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="1" occluded="0" xtl="1330.77" ytl="472.42" xbr="1376.77" ybr="511.89" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="17" label="subject" source="manual">
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="1" occluded="0" xtl="1333.40" ytl="477.68" xbr="1379.40" ybr="517.16" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="18" label="subject" source="manual">
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="785.34" ytl="575.04" xbr="815.65" ybr="605.35" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="1" occluded="0" xtl="785.34" ytl="575.04" xbr="815.65" ybr="605.35" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="19" label="subject" source="manual">
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="772.39" ytl="572.75" xbr="809.61" ybr="611.47" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="1" occluded="0" xtl="772.39" ytl="572.75" xbr="809.61" ybr="611.47" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="20" label="subject" source="manual">
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1329.45" ytl="477.68" xbr="1375.45" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="1" occluded="0" xtl="1329.45" ytl="477.68" xbr="1375.45" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="21" label="subject" source="manual">
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="762.49" ytl="578.08" xbr="797.42" ybr="616.03" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="1" occluded="0" xtl="762.49" ytl="578.08" xbr="797.42" ybr="616.03" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="22" label="subject" source="manual">
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1321.55" ytl="477.68" xbr="1367.56" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="1" occluded="0" xtl="1321.55" ytl="477.68" xbr="1367.56" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="23" label="subject" source="manual">
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="753.35" ytl="582.65" xbr="792.80" ybr="618.32" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="1" occluded="0" xtl="753.35" ytl="582.65" xbr="792.80" ybr="618.32" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="24" label="subject" source="manual">
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="1320.24" ytl="477.68" xbr="1366.24" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="1" occluded="0" xtl="1320.24" ytl="477.68" xbr="1366.24" ybr="517.16" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="25" label="subject" source="manual">
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="738.89" ytl="588.74" xbr="776.04" ybr="625.91" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="1" occluded="0" xtl="738.89" ytl="588.74" xbr="776.04" ybr="625.91" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="26" label="subject" source="manual">
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1324.19" ytl="486.89" xbr="1370.19" ybr="526.37" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="1" occluded="0" xtl="1324.19" ytl="486.89" xbr="1370.19" ybr="526.37" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="27" label="subject" source="manual">
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="720.61" ytl="597.88" xbr="758.56" ybr="635.05" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="1" occluded="0" xtl="720.61" ytl="597.88" xbr="758.56" ybr="635.05" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="28" label="subject" source="manual">
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="1311.03" ytl="485.58" xbr="1357.03" ybr="525.05" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="1" occluded="0" xtl="1311.03" ytl="485.58" xbr="1357.03" ybr="525.05" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="29" label="subject" source="manual">
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="703.10" ytl="601.69" xbr="741.75" ybr="640.36" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="1" occluded="0" xtl="703.10" ytl="601.69" xbr="741.75" ybr="640.36" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="30" label="subject" source="manual">
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="1316.29" ytl="493.47" xbr="1362.30" ybr="532.94" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="1" occluded="0" xtl="1316.29" ytl="493.47" xbr="1362.30" ybr="532.94" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="31" label="subject" source="manual">
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="684.06" ytl="610.06" xbr="723.51" ybr="651.03" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="1" occluded="0" xtl="684.06" ytl="610.06" xbr="723.51" ybr="651.03" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="32" label="subject" source="manual">
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="1311.03" ytl="496.10" xbr="1357.03" ybr="535.58" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="1" occluded="0" xtl="1311.03" ytl="496.10" xbr="1357.03" ybr="535.58" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="33" label="subject" source="manual">
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="663.50" ytl="619.20" xbr="703.75" ybr="660.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="1" occluded="0" xtl="663.50" ytl="619.20" xbr="703.75" ybr="660.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="34" label="subject" source="manual">
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1305.77" ytl="505.31" xbr="1351.77" ybr="544.79" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="1" occluded="0" xtl="1305.77" ytl="505.31" xbr="1351.77" ybr="544.79" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="35" label="subject" source="manual">
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="636.09" ytl="630.62" xbr="677.04" ybr="668.59" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="1" occluded="0" xtl="636.09" ytl="630.62" xbr="677.04" ybr="668.59" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="36" label="subject" source="manual">
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1299.19" ytl="509.26" xbr="1345.19" ybr="548.73" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="1" occluded="0" xtl="1299.19" ytl="509.26" xbr="1345.19" ybr="548.73" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="37" label="subject" source="manual">
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="1293.92" ytl="510.58" xbr="1339.93" ybr="550.05" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="1" occluded="0" xtl="1293.92" ytl="510.58" xbr="1339.93" ybr="550.05" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="38" label="subject" source="manual">
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="604.11" ytl="642.81" xbr="643.56" ybr="685.27" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="1" occluded="0" xtl="604.11" ytl="642.81" xbr="643.56" ybr="685.27" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="39" label="subject" source="manual">
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="566.04" ytl="661.84" xbr="606.22" ybr="702.82" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="1" occluded="0" xtl="566.04" ytl="661.84" xbr="606.22" ybr="702.82" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="40" label="subject" source="manual">
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="1282.08" ytl="498.73" xbr="1345.20" ybr="555.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="1" occluded="0" xtl="1282.08" ytl="498.73" xbr="1345.20" ybr="555.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="41" label="subject" source="manual">
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="520.35" ytl="677.07" xbr="562.10" ybr="718.04" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="1" occluded="0" xtl="520.35" ytl="677.07" xbr="562.10" ybr="718.04" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="42" label="subject" source="manual">
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="1274.84" ytl="525.71" xbr="1337.96" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="1" occluded="0" xtl="1274.84" ytl="525.71" xbr="1337.96" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="43" label="subject" source="manual">
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="467.81" ytl="696.87" xbr="511.06" ybr="738.64" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="1" occluded="0" xtl="467.81" ytl="696.87" xbr="511.06" ybr="738.64" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">walking</attribute>
+    </box>
+  </track>
+  <track id="44" label="subject" source="manual">
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="1264.31" ytl="525.71" xbr="1327.43" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="66" keyframe="1" outside="1" occluded="0" xtl="1264.31" ytl="525.71" xbr="1327.43" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="45" label="subject" source="manual">
+    <box frame="66" keyframe="1" outside="0" occluded="0" xtl="1260.37" ytl="525.71" xbr="1323.49" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="67" keyframe="1" outside="1" occluded="0" xtl="1260.37" ytl="525.71" xbr="1323.49" ybr="596.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="46" label="subject" source="manual">
+    <box frame="67" keyframe="1" outside="0" occluded="0" xtl="1236.68" ytl="523.08" xbr="1306.40" ybr="625.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="68" keyframe="1" outside="1" occluded="0" xtl="1236.68" ytl="523.08" xbr="1306.40" ybr="625.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="47" label="subject" source="manual">
+    <box frame="68" keyframe="1" outside="0" occluded="0" xtl="1202.50" ytl="558.60" xbr="1299.80" ybr="619.17" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="1" occluded="0" xtl="1202.50" ytl="558.60" xbr="1299.80" ybr="619.17" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="48" label="subject" source="manual">
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="1213.00" ytl="563.87" xbr="1276.12" ybr="634.96" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="1" occluded="0" xtl="1213.00" ytl="563.87" xbr="1276.12" ybr="634.96" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="49" label="subject" source="manual">
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="1161.68" ytl="546.77" xbr="1264.30" ybr="675.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="1" occluded="0" xtl="1161.68" ytl="546.77" xbr="1264.30" ybr="675.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="50" label="subject" source="manual">
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="1136.68" ytl="602.03" xbr="1231.40" ybr="706.00" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="1" occluded="0" xtl="1136.68" ytl="602.03" xbr="1231.40" ybr="706.00" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="51" label="subject" source="manual">
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="1123.52" ytl="577.03" xbr="1226.14" ybr="730.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="1" occluded="0" xtl="1123.52" ytl="577.03" xbr="1226.14" ybr="730.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="52" label="subject" source="manual">
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="1047.21" ytl="594.14" xbr="1165.60" ybr="762.60" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="1" occluded="0" xtl="1047.21" ytl="594.14" xbr="1165.60" ybr="762.60" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="53" label="subject" source="manual">
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="994.58" ytl="663.87" xbr="1082.71" ybr="766.56" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="1" occluded="0" xtl="994.58" ytl="663.87" xbr="1082.71" ybr="766.56" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">flying</attribute>
+    </box>
+  </track>
+  <track id="54" label="subject" source="manual">
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="877.47" ytl="607.29" xbr="1060.30" ybr="766.50" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="1" occluded="0" xtl="877.47" ytl="607.29" xbr="1060.30" ybr="766.50" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="55" label="subject" source="manual">
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="876.16" ytl="606.29" xbr="1058.99" ybr="765.50" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="1" occluded="0" xtl="876.16" ytl="606.29" xbr="1058.99" ybr="765.50" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="56" label="subject" source="manual">
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="840.16" ytl="524.86" xbr="1038.20" ybr="701.08" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="1" occluded="0" xtl="840.16" ytl="524.86" xbr="1038.20" ybr="701.08" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+    </box>
+  </track>
+  <track id="57" label="subject" source="manual">
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="787.10" ytl="485.10" xbr="1015.46" ybr="680.23" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="1" occluded="0" xtl="787.10" ytl="485.10" xbr="1015.46" ybr="680.23" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="58" label="subject" source="manual">
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="819.30" ytl="473.70" xbr="1074.20" ybr="685.90" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="1" occluded="0" xtl="819.30" ytl="473.70" xbr="1074.20" ybr="685.90" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="59" label="subject" source="manual">
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="832.58" ytl="443.39" xbr="1070.40" ybr="636.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="1" occluded="0" xtl="832.58" ytl="443.39" xbr="1070.40" ybr="636.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="60" label="subject" source="manual">
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="834.48" ytl="460.44" xbr="1030.60" ybr="693.50" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="1" occluded="0" xtl="834.48" ytl="460.44" xbr="1030.60" ybr="693.50" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="61" label="subject" source="manual">
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="794.69" ytl="418.76" xbr="992.73" ybr="594.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="1" occluded="0" xtl="794.69" ytl="418.76" xbr="992.73" ybr="594.97" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="62" label="subject" source="manual">
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="819.32" ytl="418.76" xbr="1017.36" ybr="594.97" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="1" occluded="0" xtl="819.32" ytl="418.76" xbr="1017.36" ybr="594.97" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="63" label="subject" source="manual">
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="813.64" ytl="375.18" xbr="1011.67" ybr="612.00" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="1" occluded="0" xtl="813.64" ytl="375.18" xbr="1011.67" ybr="612.00" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="64" label="subject" source="manual">
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="796.58" ytl="382.76" xbr="994.62" ybr="558.97" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="1" occluded="0" xtl="796.58" ytl="382.76" xbr="994.62" ybr="558.97" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="65" label="subject" source="manual">
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="807.95" ytl="388.44" xbr="1005.99" ybr="606.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="1" occluded="0" xtl="807.95" ytl="388.44" xbr="1005.99" ybr="606.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="66" label="subject" source="manual">
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="770.06" ytl="413.07" xbr="1004.10" ybr="648.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="1" occluded="0" xtl="770.06" ytl="413.07" xbr="1004.10" ybr="648.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="67" label="subject" source="manual">
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="787.11" ytl="473.70" xbr="1024.90" ybr="653.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="1" occluded="0" xtl="787.11" ytl="473.70" xbr="1024.90" ybr="653.70" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="68" label="subject" source="manual">
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="717.01" ytl="397.91" xbr="975.70" ybr="739.00" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="1" occluded="0" xtl="717.01" ytl="397.91" xbr="975.70" ybr="739.00" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="69" label="subject" source="manual">
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="718.90" ytl="432.02" xbr="977.60" ybr="746.50" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="1" occluded="0" xtl="718.90" ytl="432.02" xbr="977.60" ybr="746.50" z_order="0">
+      <attribute name="action">undefined</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+  <track id="70" label="subject" source="manual">
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="686.69" ytl="557.07" xbr="996.50" ybr="793.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="1" occluded="0" xtl="686.69" ytl="557.07" xbr="996.50" ybr="793.90" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">undefined</attribute>
+    </box>
+  </track>
+  <track id="71" label="subject" source="manual">
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="639.30" ytl="612.02" xbr="1102.60" ybr="858.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="1" occluded="0" xtl="639.30" ytl="612.02" xbr="1102.60" ybr="858.30" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="72" label="subject" source="manual">
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="571.11" ytl="468.00" xbr="896.10" ybr="865.90" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="1" occluded="0" xtl="571.11" ytl="468.00" xbr="896.10" ybr="865.90" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="73" label="subject" source="manual">
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="175.10" ytl="579.80" xbr="858.20" ybr="867.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="1" occluded="0" xtl="175.10" ytl="579.80" xbr="858.20" ybr="867.80" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="74" label="subject" source="manual">
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="110.69" ytl="464.23" xbr="837.40" ybr="928.42" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="1" occluded="0" xtl="110.69" ytl="464.23" xbr="837.40" ybr="928.42" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="75" label="subject" source="manual">
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="316.44" xbr="653.60" ybr="824.20" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="1" occluded="0" xtl="0.00" ytl="316.44" xbr="653.60" ybr="824.20" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">colliding</attribute>
+    </box>
+  </track>
+  <track id="76" label="subject" source="manual">
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="153.49" xbr="403.50" ybr="824.20" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">colliding</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="1" occluded="0" xtl="0.00" ytl="153.49" xbr="403.50" ybr="824.20" z_order="0">
+      <attribute name="type_of_subject">pigeon</attribute>
+      <attribute name="action">colliding</attribute>
+      <attribute name="cross">crossing</attribute>
+    </box>
+  </track>
+</annotations>

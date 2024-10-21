@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>484464</id>
+      <size>65</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-12-21 06:23:26.074363+00:00</created>
+      <updated>2024-08-04 18:51:52.267895+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>64</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>485046</id>
+          <start>0</start>
+          <stop>64</stop>
+          <url>https://app.cvat.ai/api/jobs/484464</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>group_2</username>
+        <email>group2.anno@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-08-04 18:51:55.862908+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="object" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1086.49" ytl="355.50" xbr="1120.14" ybr="384.81" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1087.12" ytl="354.88" xbr="1120.76" ybr="384.18" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="354.25" xbr="1121.39" ybr="383.55" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="352.37" xbr="1121.39" ybr="380.40" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="350.49" xbr="1121.39" ybr="377.24" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="348.61" xbr="1121.39" ybr="375.36" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="6" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="346.73" xbr="1121.39" ybr="373.48" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="346.49" xbr="1121.39" ybr="372.73" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="346.24" xbr="1121.39" ybr="371.97" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.99" xbr="1121.39" ybr="371.21" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.75" xbr="1121.39" ybr="370.46" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="11" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="369.70" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="370.33" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="370.97" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="371.60" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="372.23" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="16" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="372.87" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="17" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="373.50" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="373.50" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="345.50" xbr="1121.39" ybr="373.50" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="1087.74" ytl="348.00" xbr="1121.39" ybr="376.00" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1087.28" ytl="348.00" xbr="1121.39" ybr="375.85" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1086.81" ytl="348.00" xbr="1121.39" ybr="375.70" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1086.34" ytl="348.00" xbr="1121.39" ybr="375.55" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1085.87" ytl="348.00" xbr="1121.39" ybr="375.40" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1085.40" ytl="348.00" xbr="1121.39" ybr="375.25" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1084.94" ytl="348.00" xbr="1121.39" ybr="375.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1084.47" ytl="348.00" xbr="1121.39" ybr="374.95" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="348.00" xbr="1121.39" ybr="374.80" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="348.94" xbr="1121.39" ybr="375.74" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="349.88" xbr="1121.39" ybr="376.68" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="350.82" xbr="1121.39" ybr="377.62" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="351.76" xbr="1121.39" ybr="378.56" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="351.14" xbr="1120.77" ybr="377.29" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="350.51" xbr="1120.15" ybr="376.03" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1084.00" ytl="349.89" xbr="1119.52" ybr="374.76" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="349.26" xbr="1118.90" ybr="373.50" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="1084.63" ytl="348.01" xbr="1119.53" ybr="371.00" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="1085.25" ytl="346.75" xbr="1118.90" ybr="368.50" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="1085.25" ytl="339.24" xbr="1120.15" ybr="366.04" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1085.25" ytl="338.41" xbr="1120.15" ybr="365.20" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1085.25" ytl="337.57" xbr="1120.15" ybr="364.37" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="1085.25" ytl="336.74" xbr="1120.15" ybr="363.53" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1085.88" ytl="337.67" xbr="1119.84" ybr="364.47" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1086.50" ytl="338.61" xbr="1119.53" ybr="365.41" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1087.13" ytl="339.55" xbr="1119.21" ybr="366.35" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="1087.76" ytl="340.49" xbr="1118.90" ybr="367.29" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="1086.51" ytl="343.00" xbr="1117.65" ybr="369.79" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1086.51" ytl="348.01" xbr="1117.65" ybr="374.80" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1085.25" ytl="350.50" xbr="1118.27" ybr="377.95" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="353.00" xbr="1118.90" ybr="381.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="356.76" xbr="1118.90" ybr="384.86" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="1082.75" ytl="359.26" xbr="1117.65" ybr="387.36" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1084.00" ytl="364.27" xbr="1118.90" ybr="392.37" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1082.75" ytl="366.78" xbr="1113.90" ybr="394.88" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="1082.75" ytl="366.78" xbr="1113.90" ybr="394.88" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1081.50" ytl="366.78" xbr="1113.90" ybr="394.90" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="1081.17" ytl="366.78" xbr="1113.60" ybr="394.58" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="1080.85" ytl="366.78" xbr="1113.30" ybr="394.25" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1080.52" ytl="366.78" xbr="1113.00" ybr="393.93" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1080.20" ytl="366.78" xbr="1112.70" ybr="393.60" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1077.69" ytl="366.78" xbr="1110.20" ybr="393.60" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="1080.20" ytl="364.27" xbr="1111.40" ybr="391.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="1078.94" ytl="364.27" xbr="1108.90" ybr="391.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1078.94" ytl="364.27" xbr="1108.90" ybr="391.10" z_order="0">
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+    </box>
+  </track>
+  <track id="1" label="object" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1093.00" ytl="325.11" xbr="1128.82" ybr="358.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="1" keyframe="1" outside="0" occluded="0" xtl="1093.65" ytl="322.61" xbr="1126.90" ybr="357.55" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="320.10" xbr="1128.80" ybr="356.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="3" keyframe="1" outside="0" occluded="0" xtl="1095.55" ytl="320.10" xbr="1127.55" ybr="356.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="1094.30" ytl="320.10" xbr="1126.30" ybr="356.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="5" keyframe="1" outside="0" occluded="0" xtl="1095.55" ytl="316.30" xbr="1127.55" ybr="352.54" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="1094.92" ytl="313.78" xbr="1129.43" ybr="351.27" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="7" keyframe="1" outside="0" occluded="0" xtl="1094.30" ytl="311.26" xbr="1131.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1094.92" ytl="310.95" xbr="1130.05" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1095.55" ytl="310.63" xbr="1128.80" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1096.17" ytl="310.32" xbr="1127.55" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="11" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="310.00" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="310.76" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="311.52" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="312.28" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.04" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1126.30" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1126.53" ybr="350.32" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1126.75" ybr="350.63" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1126.98" ybr="350.95" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1127.21" ybr="351.27" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1127.44" ybr="351.58" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1127.66" ybr="351.90" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1127.89" ybr="352.22" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1128.12" ybr="352.53" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1128.35" ybr="352.85" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1128.57" ybr="353.17" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1128.80" ybr="353.48" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="313.80" xbr="1126.30" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1096.80" ytl="315.10" xbr="1128.20" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="1096.80" ytl="316.40" xbr="1130.10" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1096.37" ytl="316.40" xbr="1130.10" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1095.93" ytl="316.40" xbr="1130.10" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="316.40" xbr="1130.10" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1095.50" ytl="316.40" xbr="1130.10" ybr="355.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="316.40" xbr="1130.10" ybr="356.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1095.50" ytl="314.50" xbr="1130.10" ybr="355.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="312.60" xbr="1130.10" ybr="353.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="312.60" xbr="1130.10" ybr="350.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="306.30" xbr="1130.10" ybr="348.70" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="40" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="306.30" xbr="1130.10" ybr="348.70" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1096.75" ytl="306.30" xbr="1130.10" ybr="346.80" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="1098.00" ytl="306.30" xbr="1130.10" ybr="344.90" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1098.00" ytl="307.25" xbr="1130.10" ybr="345.23" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1098.00" ytl="308.20" xbr="1130.10" ybr="345.55" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1098.00" ytl="309.15" xbr="1130.10" ybr="345.88" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="1098.00" ytl="310.10" xbr="1130.10" ybr="346.20" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="1098.00" ytl="313.86" xbr="1130.10" ybr="352.50" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1098.00" ytl="320.12" xbr="1130.10" ybr="358.76" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1098.00" ytl="320.76" xbr="1130.10" ybr="360.63" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="1098.00" ytl="321.40" xbr="1130.10" ybr="362.50" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="323.91" xbr="1127.60" ybr="365.01" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="333.93" xbr="1127.60" ybr="375.03" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="53" keyframe="0" outside="0" occluded="0" xtl="1095.50" ytl="336.41" xbr="1127.60" ybr="375.03" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="338.90" xbr="1127.60" ybr="375.03" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="338.90" xbr="1125.10" ybr="377.00" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="338.90" xbr="1127.60" ybr="376.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="57" keyframe="1" outside="0" occluded="0" xtl="1095.50" ytl="342.66" xbr="1123.80" ybr="380.06" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="1092.99" ytl="340.15" xbr="1125.09" ybr="377.55" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1091.74" ytl="338.90" xbr="1123.84" ybr="376.30" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1090.49" ytl="337.65" xbr="1122.59" ybr="375.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="61" keyframe="0" outside="0" occluded="0" xtl="1090.49" ytl="336.37" xbr="1120.69" ybr="375.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="1090.49" ytl="335.10" xbr="1118.80" ybr="375.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="1090.49" ytl="335.10" xbr="1118.80" ybr="375.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1090.49" ytl="335.10" xbr="1118.80" ybr="375.05" z_order="0">
+      <attribute name="type_of_object">truck</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+  </track>
+  <track id="2" label="subject" source="manual">
+    <box frame="0" keyframe="1" outside="1" occluded="0" xtl="615.45" ytl="416.28" xbr="738.09" ybr="496.60" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="1" keyframe="1" outside="1" occluded="0" xtl="615.45" ytl="416.28" xbr="723.10" ybr="489.10" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="9" keyframe="1" outside="1" occluded="0" xtl="559.06" ytl="403.80" xbr="671.70" ybr="467.80" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="10" keyframe="1" outside="1" occluded="0" xtl="584.11" ytl="403.79" xbr="701.81" ybr="481.59" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="12" keyframe="1" outside="1" occluded="0" xtl="586.61" ytl="403.16" xbr="702.46" ybr="456.50" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="13" keyframe="1" outside="1" occluded="0" xtl="585.36" ytl="417.88" xbr="702.80" ybr="475.30" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="14" keyframe="1" outside="1" occluded="0" xtl="584.11" ytl="432.60" xbr="698.10" ybr="481.59" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="15" keyframe="1" outside="1" occluded="0" xtl="622.90" ytl="436.30" xbr="706.90" ybr="484.10" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="1" occluded="0" xtl="622.90" ytl="436.30" xbr="706.90" ybr="492.90" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="17" keyframe="1" outside="1" occluded="0" xtl="639.20" ytl="442.50" xbr="718.20" ybr="492.90" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="1" occluded="0" xtl="644.20" ytl="443.81" xbr="720.70" ybr="494.20" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="1" occluded="0" xtl="644.20" ytl="443.81" xbr="735.70" ybr="494.20" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="1" occluded="0" xtl="652.97" ytl="448.82" xbr="744.47" ybr="499.21" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="22" keyframe="1" outside="1" occluded="0" xtl="656.72" ytl="442.56" xbr="748.22" ybr="492.95" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="1" occluded="0" xtl="666.74" ytl="440.10" xbr="762.00" ybr="496.70" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="24" keyframe="1" outside="1" occluded="0" xtl="666.74" ytl="443.80" xbr="768.30" ybr="496.70" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="26" keyframe="1" outside="1" occluded="0" xtl="683.02" ytl="441.30" xbr="784.58" ybr="497.96" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="1" occluded="0" xtl="693.04" ytl="428.80" xbr="813.40" ybr="497.96" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="1" occluded="0" xtl="735.63" ytl="427.55" xbr="855.98" ybr="496.71" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="711.79" ytl="431.26" xbr="843.49" ybr="506.73" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="721.81" ytl="430.01" xbr="871.00" ybr="508.00" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="751.90" ytl="435.02" xbr="892.30" ybr="513.01" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="776.90" ytl="435.00" xbr="916.10" ybr="538.06" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="776.90" ytl="435.00" xbr="916.10" ybr="541.80" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="34" keyframe="1" outside="0" occluded="0" xtl="790.70" ytl="440.01" xbr="949.90" ybr="546.81" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="773.20" ytl="446.30" xbr="985.00" ybr="546.81" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="794.49" ytl="453.80" xbr="1022.50" ybr="540.55" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="839.50" ytl="462.60" xbr="1062.58" ybr="564.35" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="907.10" ytl="466.36" xbr="1110.17" ybr="571.90" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="935.91" ytl="458.84" xbr="1162.80" ybr="585.60" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="40" keyframe="1" outside="0" occluded="0" xtl="940.94" ytl="457.56" xbr="1162.80" ybr="589.36" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="1006.10" ytl="463.80" xbr="1222.92" ybr="600.63" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="1054.91" ytl="471.33" xbr="1289.30" ybr="628.20" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="1063.67" ytl="470.10" xbr="1383.20" ybr="653.25" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="1117.53" ytl="507.70" xbr="1493.40" ybr="660.76" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="1241.52" ytl="532.70" xbr="1604.89" ybr="677.05" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="1408.10" ytl="562.80" xbr="1702.60" ybr="700.84" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="1" occluded="0" xtl="1577.18" ytl="612.90" xbr="1796.50" ybr="750.94" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="3" label="subject" source="manual">
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="1561.87" ytl="600.10" xbr="1814.86" ybr="767.94" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1737.21" ytl="618.89" xbr="1920.00" ybr="786.73" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1737.21" ytl="618.89" xbr="1920.00" ybr="786.73" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="1" occluded="0" xtl="1737.21" ytl="618.89" xbr="1920.00" ybr="786.73" z_order="0">
+      <attribute name="type_of_subject">deer</attribute>
+      <attribute name="cross">not crossing</attribute>
+      <attribute name="action">running</attribute>
+    </box>
+  </track>
+  <track id="4" label="traffic_scene" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1013.30" ytl="330.80" xbr="1030.80" ybr="345.80" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="1" keyframe="1" outside="0" occluded="0" xtl="1010.80" ytl="325.80" xbr="1029.60" ybr="343.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="1010.80" ytl="325.80" xbr="1030.80" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1009.54" ytl="324.50" xbr="1030.80" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="1008.29" ytl="323.20" xbr="1030.80" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="5" keyframe="1" outside="0" occluded="0" xtl="1008.30" ytl="319.50" xbr="1028.30" ybr="338.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="6" keyframe="1" outside="0" occluded="0" xtl="1008.30" ytl="317.04" xbr="1029.50" ybr="335.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="7" keyframe="1" outside="0" occluded="0" xtl="1007.05" ytl="315.80" xbr="1028.25" ybr="333.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="8" keyframe="1" outside="0" occluded="0" xtl="1005.80" ytl="315.70" xbr="1027.00" ybr="333.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="9" keyframe="1" outside="0" occluded="0" xtl="1005.80" ytl="314.60" xbr="1025.74" ybr="332.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1005.77" ytl="314.55" xbr="1025.12" ybr="332.50" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="11" keyframe="1" outside="0" occluded="0" xtl="1005.75" ytl="314.50" xbr="1024.49" ybr="332.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="12" keyframe="1" outside="0" occluded="0" xtl="1004.50" ytl="314.50" xbr="1025.70" ybr="330.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="13" keyframe="1" outside="0" occluded="0" xtl="1004.50" ytl="313.29" xbr="1024.50" ybr="330.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="14" keyframe="1" outside="0" occluded="0" xtl="1005.80" ytl="315.80" xbr="1024.50" ybr="332.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="15" keyframe="1" outside="0" occluded="0" xtl="1003.20" ytl="313.29" xbr="1024.50" ybr="332.00" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="1002.00" ytl="315.80" xbr="1020.70" ybr="333.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="17" keyframe="1" outside="0" occluded="0" xtl="1000.70" ytl="318.40" xbr="1022.00" ybr="334.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1000.05" ytl="319.65" xbr="1021.35" ybr="335.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="999.40" ytl="320.90" xbr="1020.70" ybr="335.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="998.80" ytl="320.28" xbr="1019.42" ybr="335.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="0" occluded="0" xtl="996.90" ytl="319.65" xbr="1015.60" ybr="337.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="22" keyframe="1" outside="0" occluded="0" xtl="996.90" ytl="319.70" xbr="1016.90" ybr="338.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="0" occluded="0" xtl="996.30" ytl="321.00" xbr="1015.00" ybr="338.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="24" keyframe="1" outside="0" occluded="0" xtl="994.40" ytl="321.00" xbr="1015.64" ybr="339.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="25" keyframe="1" outside="0" occluded="0" xtl="994.80" ytl="322.60" xbr="1014.36" ybr="341.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="993.32" ytl="320.50" xbr="1013.08" ybr="341.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="991.84" ytl="318.40" xbr="1011.80" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="990.60" ytl="323.50" xbr="1010.60" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="990.60" ytl="322.20" xbr="1009.30" ybr="339.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="988.00" ytl="322.20" xbr="1010.60" ybr="340.80" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="986.70" ytl="322.20" xbr="1008.09" ybr="339.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="32" keyframe="1" outside="0" occluded="0" xtl="985.50" ytl="322.20" xbr="1006.80" ybr="343.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="986.10" ytl="322.00" xbr="1005.98" ybr="342.25" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="34" keyframe="1" outside="0" occluded="0" xtl="986.70" ytl="321.80" xbr="1005.16" ybr="341.20" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="984.20" ytl="322.20" xbr="1004.34" ybr="343.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="982.90" ytl="320.90" xbr="1004.34" ybr="343.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="980.40" ytl="318.40" xbr="1005.60" ybr="339.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="979.20" ytl="315.90" xbr="1000.59" ybr="335.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="979.10" ytl="313.40" xbr="1001.80" ybr="333.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="977.87" ytl="311.50" xbr="1001.20" ybr="332.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="976.65" ytl="309.60" xbr="1000.60" ybr="332.09" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="975.40" ytl="309.60" xbr="1000.59" ybr="328.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="974.14" ytl="310.23" xbr="998.09" ybr="329.55" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="972.89" ytl="310.85" xbr="995.60" ybr="330.80" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="972.90" ytl="312.10" xbr="995.60" ybr="333.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="970.40" ytl="314.60" xbr="994.30" ybr="337.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="967.80" ytl="319.60" xbr="994.35" ybr="342.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="967.80" ytl="323.40" xbr="991.80" ybr="345.87" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="49" keyframe="1" outside="0" occluded="0" xtl="966.55" ytl="325.90" xbr="990.55" ybr="347.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="965.30" ytl="328.41" xbr="989.30" ybr="350.88" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="961.50" ytl="332.10" xbr="989.30" ybr="355.89" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="961.50" ytl="334.60" xbr="986.79" ybr="359.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="957.74" ytl="337.11" xbr="983.03" ybr="362.11" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="956.50" ytl="338.40" xbr="980.53" ybr="364.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="55" keyframe="1" outside="0" occluded="0" xtl="951.49" ytl="339.65" xbr="979.30" ybr="365.85" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="950.20" ytl="339.70" xbr="976.80" ybr="365.85" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="949.55" ytl="339.07" xbr="976.17" ybr="365.88" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="948.90" ytl="338.45" xbr="975.55" ybr="365.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="945.14" ytl="338.40" xbr="971.79" ybr="365.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="943.89" ytl="335.90" xbr="970.53" ybr="362.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="940.01" ytl="335.90" xbr="966.65" ybr="362.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="937.60" ytl="333.35" xbr="966.65" ybr="360.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="935.09" ytl="332.00" xbr="964.15" ybr="360.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="935.09" ytl="332.00" xbr="964.10" ybr="359.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+  </track>
+  <track id="5" label="traffic_scene" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1144.90" ytl="353.40" xbr="1158.58" ybr="375.90" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="1" keyframe="1" outside="0" occluded="0" xtl="1147.40" ytl="350.88" xbr="1159.80" ybr="370.90" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="1144.90" ytl="349.62" xbr="1161.00" ybr="369.65" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="3" keyframe="1" outside="0" occluded="0" xtl="1146.15" ytl="348.39" xbr="1160.40" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="1147.40" ytl="345.90" xbr="1161.00" ybr="368.30" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="5" keyframe="1" outside="0" occluded="0" xtl="1144.90" ytl="345.90" xbr="1162.30" ybr="368.40" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="6" keyframe="1" outside="0" occluded="0" xtl="1144.90" ytl="342.10" xbr="1163.60" ybr="364.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="1146.15" ytl="340.85" xbr="1163.60" ybr="363.35" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="8" keyframe="1" outside="0" occluded="0" xtl="1147.40" ytl="339.60" xbr="1163.60" ybr="362.10" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1148.03" ytl="339.60" xbr="1164.23" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1148.66" ytl="339.60" xbr="1164.85" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="1149.28" ytl="339.60" xbr="1165.48" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1149.91" ytl="339.60" xbr="1166.10" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1150.53" ytl="339.59" xbr="1166.73" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="14" keyframe="1" outside="0" occluded="0" xtl="1151.16" ytl="339.59" xbr="1167.36" ybr="362.09" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1152.01" ytl="340.00" xbr="1168.20" ybr="362.50" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="16" keyframe="0" outside="0" occluded="0" xtl="1152.85" ytl="340.40" xbr="1169.05" ybr="362.90" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="17" keyframe="1" outside="0" occluded="0" xtl="1153.70" ytl="340.80" xbr="1169.90" ybr="363.30" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1153.70" ytl="340.80" xbr="1169.90" ybr="364.55" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="1153.70" ytl="340.80" xbr="1169.90" ybr="365.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="1154.97" ytl="340.80" xbr="1169.90" ybr="365.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1156.23" ytl="340.80" xbr="1169.90" ybr="365.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="22" keyframe="1" outside="0" occluded="0" xtl="1157.50" ytl="340.80" xbr="1169.90" ybr="365.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="0" occluded="0" xtl="1157.50" ytl="340.80" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1157.76" ytl="341.30" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1158.02" ytl="341.80" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1158.28" ytl="342.30" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1158.54" ytl="342.80" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1158.80" ytl="343.30" xbr="1173.70" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="0" occluded="0" xtl="1160.05" ytl="342.00" xbr="1174.95" ybr="373.36" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1160.08" ytl="342.65" xbr="1176.83" ybr="374.61" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="1160.10" ytl="343.30" xbr="1178.71" ybr="375.86" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1160.73" ytl="342.99" xbr="1179.34" ybr="375.55" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1161.35" ytl="342.67" xbr="1179.96" ybr="375.24" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1161.98" ytl="342.36" xbr="1180.59" ybr="374.92" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="1162.60" ytl="342.05" xbr="1181.21" ybr="374.61" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="1163.90" ytl="342.05" xbr="1181.21" ybr="374.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="1163.90" ytl="342.05" xbr="1181.21" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="1165.15" ytl="337.05" xbr="1184.90" ybr="369.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="1167.65" ytl="334.54" xbr="1187.40" ybr="365.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1168.91" ytl="332.66" xbr="1188.66" ybr="363.92" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="41" keyframe="1" outside="0" occluded="0" xtl="1170.16" ytl="330.79" xbr="1189.91" ybr="362.04" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1172.03" ytl="330.79" xbr="1189.91" ybr="362.04" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="1173.90" ytl="330.79" xbr="1189.91" ybr="362.04" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1173.90" ytl="330.79" xbr="1191.15" ybr="362.67" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="1173.90" ytl="330.79" xbr="1192.40" ybr="363.30" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="1175.20" ytl="332.10" xbr="1192.40" ybr="363.30" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="1177.70" ytl="335.90" xbr="1194.90" ybr="370.80" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1178.95" ytl="340.91" xbr="1196.15" ybr="375.81" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1178.95" ytl="342.79" xbr="1196.15" ybr="377.69" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="1178.95" ytl="344.67" xbr="1196.15" ybr="379.57" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="51" keyframe="1" outside="0" occluded="0" xtl="1180.21" ytl="349.70" xbr="1197.41" ybr="384.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="1180.21" ytl="353.46" xbr="1197.41" ybr="389.60" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1181.46" ytl="354.71" xbr="1198.66" ybr="395.90" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="54" keyframe="1" outside="0" occluded="0" xtl="1181.46" ytl="360.97" xbr="1198.66" ybr="398.40" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="1182.08" ytl="360.94" xbr="1199.28" ybr="399.65" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="56" keyframe="1" outside="0" occluded="0" xtl="1182.71" ytl="360.90" xbr="1199.90" ybr="400.91" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="1182.71" ytl="360.90" xbr="1201.80" ybr="400.30" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="58" keyframe="1" outside="0" occluded="0" xtl="1182.71" ytl="360.90" xbr="1203.70" ybr="399.70" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1183.95" ytl="360.90" xbr="1203.70" ybr="399.70" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="1185.20" ytl="360.90" xbr="1203.70" ybr="399.70" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="1187.71" ytl="357.14" xbr="1206.21" ybr="399.70" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="1190.21" ytl="355.90" xbr="1208.71" ybr="399.70" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="63" keyframe="1" outside="0" occluded="0" xtl="1191.46" ytl="354.65" xbr="1209.96" ybr="398.45" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1191.46" ytl="354.65" xbr="1209.96" ybr="398.45" z_order="0">
+      <attribute name="Stop_sign">no</attribute>
+      <attribute name="caution_sign">no</attribute>
+      <attribute name="traffic_light">no</attribute>
+      <attribute name="other_sign">keep_slow</attribute>
+    </box>
+  </track>
+  <track id="6" label="subject" source="manual">
+    <box frame="14" keyframe="1" outside="0" occluded="0" xtl="631.30" ytl="432.29" xbr="696.43" ybr="484.89" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="15" keyframe="1" outside="0" occluded="0" xtl="638.81" ytl="444.80" xbr="721.50" ybr="488.65" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="638.81" ytl="436.10" xbr="719.00" ybr="488.65" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="640.48" ytl="437.77" xbr="720.67" ybr="490.32" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="642.15" ytl="439.44" xbr="722.34" ybr="491.99" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="19" keyframe="1" outside="0" occluded="0" xtl="643.82" ytl="441.11" xbr="724.01" ybr="493.66" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="648.83" ytl="448.62" xbr="730.30" ybr="501.17" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="0" occluded="0" xtl="653.84" ytl="443.60" xbr="747.80" ybr="503.68" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="22" keyframe="1" outside="0" occluded="0" xtl="651.30" ytl="443.60" xbr="755.31" ybr="503.68" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="0" occluded="0" xtl="648.80" ytl="443.60" xbr="761.58" ybr="503.68" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="24" keyframe="1" outside="0" occluded="0" xtl="652.60" ytl="444.85" xbr="770.34" ybr="504.93" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="659.49" ytl="444.85" xbr="777.23" ybr="504.93" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="26" keyframe="1" outside="0" occluded="0" xtl="666.38" ytl="444.85" xbr="784.12" ybr="504.93" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="687.67" ytl="434.83" xbr="805.41" ybr="494.91" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="706.46" ytl="433.58" xbr="824.20" ybr="493.66" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+    <box frame="29" keyframe="1" outside="1" occluded="0" xtl="706.46" ytl="433.58" xbr="824.20" ybr="493.66" z_order="0">
+      <attribute name="cross">not_crossing</attribute>
+      <attribute name="action">running</attribute>
+      <attribute name="type_of_subject">deer</attribute>
+    </box>
+  </track>
+  <track id="7" label="traffic_scene" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1015.80" ytl="343.36" xbr="1028.33" ybr="355.89" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1013.90" ytl="340.83" xbr="1028.33" ybr="355.24" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="2" keyframe="1" outside="0" occluded="0" xtl="1012.00" ytl="338.30" xbr="1028.33" ybr="354.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1012.00" ytl="337.05" xbr="1028.33" ybr="353.35" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="4" keyframe="1" outside="0" occluded="0" xtl="1012.00" ytl="335.79" xbr="1028.33" ybr="352.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="5" keyframe="1" outside="0" occluded="0" xtl="1012.00" ytl="335.79" xbr="1028.33" ybr="350.80" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="6" keyframe="1" outside="0" occluded="0" xtl="1009.50" ytl="335.79" xbr="1024.60" ybr="350.80" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="7" keyframe="1" outside="0" occluded="0" xtl="1009.50" ytl="333.30" xbr="1024.60" ybr="349.50" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="8" keyframe="1" outside="0" occluded="0" xtl="1008.20" ytl="333.30" xbr="1024.60" ybr="346.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1008.20" ytl="333.30" xbr="1022.93" ybr="346.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="10" keyframe="1" outside="0" occluded="0" xtl="1008.20" ytl="333.30" xbr="1021.27" ybr="346.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="11" keyframe="1" outside="0" occluded="0" xtl="1006.90" ytl="333.30" xbr="1022.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1006.14" ytl="333.30" xbr="1021.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1005.38" ytl="333.30" xbr="1020.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1004.62" ytl="333.30" xbr="1019.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1003.86" ytl="333.30" xbr="1018.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="1003.10" ytl="333.30" xbr="1017.10" ybr="345.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1002.60" ytl="334.25" xbr="1016.77" ybr="347.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1002.10" ytl="335.20" xbr="1016.45" ybr="349.00" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1001.60" ytl="336.15" xbr="1016.12" ybr="350.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="1001.10" ytl="337.10" xbr="1015.80" ybr="352.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="0" occluded="0" xtl="999.30" ytl="334.60" xbr="1013.30" ybr="351.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="998.70" ytl="333.95" xbr="1013.95" ybr="350.65" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="23" keyframe="1" outside="0" occluded="0" xtl="998.10" ytl="333.30" xbr="1014.60" ybr="349.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="24" keyframe="1" outside="0" occluded="0" xtl="995.60" ytl="340.81" xbr="1010.80" ybr="355.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="994.98" ytl="340.81" xbr="1010.47" ybr="355.38" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="994.35" ytl="340.81" xbr="1010.15" ybr="355.05" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="993.73" ytl="340.81" xbr="1009.82" ybr="354.73" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="993.10" ytl="340.81" xbr="1009.50" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="992.50" ytl="340.81" xbr="1007.60" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="30" keyframe="1" outside="0" occluded="0" xtl="991.90" ytl="340.81" xbr="1005.70" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="31" keyframe="1" outside="0" occluded="0" xtl="989.40" ytl="340.81" xbr="1005.70" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="988.97" ytl="340.81" xbr="1004.43" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="988.53" ytl="340.81" xbr="1003.17" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="34" keyframe="1" outside="0" occluded="0" xtl="988.10" ytl="340.81" xbr="1001.90" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="35" keyframe="1" outside="0" occluded="0" xtl="985.60" ytl="340.81" xbr="1001.90" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="36" keyframe="1" outside="0" occluded="0" xtl="984.40" ytl="340.81" xbr="1000.60" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="37" keyframe="1" outside="0" occluded="0" xtl="983.10" ytl="340.81" xbr="1000.60" ybr="354.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="38" keyframe="1" outside="0" occluded="0" xtl="983.10" ytl="333.30" xbr="998.00" ybr="351.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="39" keyframe="1" outside="0" occluded="0" xtl="980.60" ytl="329.54" xbr="998.00" ybr="348.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="980.16" ytl="329.54" xbr="998.00" ybr="348.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="979.73" ytl="329.54" xbr="998.00" ybr="348.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="42" keyframe="1" outside="0" occluded="0" xtl="979.30" ytl="329.54" xbr="998.00" ybr="348.14" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="43" keyframe="1" outside="0" occluded="0" xtl="978.00" ytl="329.54" xbr="996.70" ybr="346.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="44" keyframe="1" outside="0" occluded="0" xtl="978.00" ytl="329.54" xbr="992.90" ybr="346.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="45" keyframe="1" outside="0" occluded="0" xtl="975.50" ytl="332.00" xbr="992.90" ybr="350.60" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="46" keyframe="1" outside="0" occluded="0" xtl="974.20" ytl="335.76" xbr="991.60" ybr="353.10" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="47" keyframe="1" outside="0" occluded="0" xtl="970.50" ytl="339.50" xbr="989.10" ybr="356.90" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="969.25" ytl="345.76" xbr="987.85" ybr="363.16" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="968.62" ytl="347.02" xbr="987.22" ybr="364.42" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="968.00" ytl="348.27" xbr="986.60" ybr="365.67" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="966.35" ytl="353.67" xbr="984.55" ybr="370.18" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="52" keyframe="1" outside="0" occluded="0" xtl="964.70" ytl="359.08" xbr="982.50" ybr="374.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="961.00" ytl="359.65" xbr="980.51" ybr="375.20" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="958.75" ytl="360.23" xbr="978.52" ybr="375.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="956.50" ytl="360.80" xbr="976.52" ybr="376.20" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="954.25" ytl="361.38" xbr="974.53" ybr="376.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="952.00" ytl="361.95" xbr="972.54" ybr="377.20" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="949.75" ytl="362.53" xbr="970.55" ybr="377.70" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="59" keyframe="1" outside="0" occluded="0" xtl="947.50" ytl="363.10" xbr="968.56" ybr="378.20" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="60" keyframe="1" outside="0" occluded="0" xtl="947.95" ytl="362.00" xbr="966.55" ybr="378.19" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="61" keyframe="1" outside="0" occluded="0" xtl="944.60" ytl="361.05" xbr="963.40" ybr="377.24" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="62" keyframe="1" outside="0" occluded="0" xtl="940.30" ytl="360.10" xbr="961.93" ybr="376.30" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="939.75" ytl="359.15" xbr="960.47" ybr="375.35" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+    <box frame="64" keyframe="1" outside="0" occluded="0" xtl="939.20" ytl="358.20" xbr="959.00" ybr="374.40" z_order="0">
+      <attribute name="other_sign">undefined</attribute>
+      <attribute name="Stop_sign">undefined</attribute>
+      <attribute name="caution_sign">undefined</attribute>
+      <attribute name="traffic_light">no</attribute>
+    </box>
+  </track>
+</annotations>

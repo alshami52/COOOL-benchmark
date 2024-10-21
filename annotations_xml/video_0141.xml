@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>682914</id>
+      <size>143</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-04-04 18:49:43.153625+00:00</created>
+      <updated>2024-10-14 21:32:20.065776+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>142</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>684363</id>
+          <start>0</start>
+          <stop>142</stop>
+          <url>https://app.cvat.ai/api/jobs/682914</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>alshami52</username>
+        <email>ali.alshami87@gmail.com</email>
+      </owner>
+      <assignee>
+        <username>Bezbakri</username>
+        <email>bezbakri@gmail.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>ped</name>
+          <color>#ffcc33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>none, full</default_value>
+              <values>none, full</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>object</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>objects name, etc.</default_value>
+              <values>objects name, etc.</values>
+            </attribute>
+            <attribute>
+              <name>situation</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>on_road, not_on_road, flying</default_value>
+              <values>on_road, not_on_road, flying</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing, undefined</default_value>
+              <values>crossing, not_crossing, undefined</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>subject</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>type_of_subject</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>type_of_animal</default_value>
+              <values>type_of_animal</values>
+            </attribute>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing, not_crossing</default_value>
+              <values>crossing, not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>standing, walking, running, stop</default_value>
+              <values>standing, walking, running, stop</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>driving_car</name>
+          <color>#3d3df5</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>car_action</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_fast, moving_slow, decelerating, accelerating, stop</default_value>
+              <values>moving_fast, moving_slow, decelerating, accelerating, stop</values>
+            </attribute>
+            <attribute>
+              <name>car_movement</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>moving_forward, turning_right, turning_left</default_value>
+              <values>moving_forward, turning_right, turning_left</values>
+            </attribute>
+            <attribute>
+              <name>car_decision</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>stop, avoid, ignore, undefined</default_value>
+              <values>stop, avoid, ignore, undefined</values>
+            </attribute>
+            <attribute>
+              <name>weather</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>raining, snowing, sunny, cloudy</default_value>
+              <values>raining, snowing, sunny, cloudy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>traffic_scene</name>
+          <color>#fafa37</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>Stop_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>caution_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>yes, no</default_value>
+              <values>yes, no</values>
+            </attribute>
+            <attribute>
+              <name>traffic_light</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>red, green, yellow</default_value>
+              <values>red, green, yellow</values>
+            </attribute>
+            <attribute>
+              <name>other_sign</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>keep_right</default_value>
+              <values>keep_right</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>pedestrian</name>
+          <color>#3df53d</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>cross</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>crossing or not_crossing</default_value>
+              <values>crossing or not_crossing</values>
+            </attribute>
+            <attribute>
+              <name>look</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Looking or not_looking</default_value>
+              <values>Looking or not_looking</values>
+            </attribute>
+            <attribute>
+              <name>hand_gesture</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>Stop_hand_sing, waving, undefined</default_value>
+              <values>Stop_hand_sing, waving, undefined</values>
+            </attribute>
+            <attribute>
+              <name>gender</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>male, female</default_value>
+              <values>male, female</values>
+            </attribute>
+            <attribute>
+              <name>group</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>group or single</default_value>
+              <values>group or single</values>
+            </attribute>
+            <attribute>
+              <name>Age</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>adult, senior, kid, teenager</default_value>
+              <values>adult, senior, kid, teenager</values>
+            </attribute>
+            <attribute>
+              <name>distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>distracted, not_distracted</default_value>
+              <values>distracted, not_distracted</values>
+            </attribute>
+            <attribute>
+              <name>type_of_distraction</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>phone, tablet, etc</default_value>
+              <values>phone, tablet, etc</values>
+            </attribute>
+            <attribute>
+              <name>occlusion</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>None, full</default_value>
+              <values>None, full</values>
+            </attribute>
+            <attribute>
+              <name>carrying_object</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value>carrying_object, holding_object, pushing_object, pulling_object</default_value>
+              <values>carrying_object, holding_object, pushing_object, pulling_object</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-10-14 21:32:24.280343+00:00</dumped>
+    <original_size>
+      <width>1920</width>
+      <height>1080</height>
+    </original_size>
+  </meta>
+  <track id="0" label="object" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1550.24" ytl="433.25" xbr="1920.00" ybr="747.76" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1548.42" ytl="433.86" xbr="1920.00" ybr="746.54" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="2" keyframe="0" outside="0" occluded="0" xtl="1546.59" ytl="434.48" xbr="1920.00" ybr="745.32" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1544.76" ytl="435.09" xbr="1920.00" ybr="744.11" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="4" keyframe="0" outside="0" occluded="0" xtl="1542.94" ytl="435.70" xbr="1920.00" ybr="742.89" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="1541.11" ytl="436.31" xbr="1920.00" ybr="741.67" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="1539.29" ytl="436.92" xbr="1920.00" ybr="740.46" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="1537.46" ytl="437.53" xbr="1920.00" ybr="739.24" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1535.64" ytl="438.14" xbr="1920.00" ybr="738.02" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1533.81" ytl="438.75" xbr="1920.00" ybr="736.80" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1531.98" ytl="439.37" xbr="1920.00" ybr="735.59" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="1530.16" ytl="439.98" xbr="1920.00" ybr="734.37" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1528.33" ytl="440.59" xbr="1920.00" ybr="733.15" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="13" keyframe="1" outside="0" occluded="0" xtl="1526.51" ytl="441.20" xbr="1920.00" ybr="731.93" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1524.23" ytl="441.20" xbr="1919.17" ybr="731.04" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1521.96" ytl="441.20" xbr="1918.34" ybr="730.15" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="16" keyframe="0" outside="0" occluded="0" xtl="1519.68" ytl="441.20" xbr="1917.51" ybr="729.26" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1517.41" ytl="441.20" xbr="1916.69" ybr="728.37" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1515.13" ytl="441.20" xbr="1915.86" ybr="727.48" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1512.86" ytl="441.20" xbr="1915.03" ybr="726.59" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="20" keyframe="1" outside="0" occluded="0" xtl="1510.58" ytl="441.20" xbr="1914.20" ybr="725.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1508.31" ytl="441.20" xbr="1909.47" ybr="724.81" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1506.03" ytl="441.20" xbr="1904.74" ybr="723.92" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1503.76" ytl="441.20" xbr="1900.01" ybr="723.03" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1501.48" ytl="441.20" xbr="1895.28" ybr="722.14" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1499.21" ytl="441.20" xbr="1890.55" ybr="721.25" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1496.93" ytl="441.20" xbr="1885.82" ybr="720.36" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1494.66" ytl="441.20" xbr="1881.08" ybr="719.47" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="28" keyframe="0" outside="0" occluded="0" xtl="1492.38" ytl="441.20" xbr="1876.35" ybr="718.58" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1490.11" ytl="441.20" xbr="1871.62" ybr="717.69" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1487.84" ytl="441.20" xbr="1866.89" ybr="716.80" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1485.56" ytl="441.20" xbr="1862.16" ybr="715.91" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1483.29" ytl="441.20" xbr="1857.43" ybr="715.02" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="33" keyframe="1" outside="0" occluded="0" xtl="1481.01" ytl="441.20" xbr="1852.70" ybr="714.13" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1479.33" ytl="441.99" xbr="1848.94" ybr="712.65" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1477.65" ytl="442.78" xbr="1845.18" ybr="711.17" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1475.97" ytl="443.57" xbr="1841.42" ybr="709.68" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="37" keyframe="0" outside="0" occluded="0" xtl="1474.29" ytl="444.36" xbr="1837.66" ybr="708.20" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1472.60" ytl="445.15" xbr="1833.90" ybr="706.72" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="39" keyframe="0" outside="0" occluded="0" xtl="1470.92" ytl="445.94" xbr="1830.14" ybr="705.23" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1469.24" ytl="446.73" xbr="1826.38" ybr="703.75" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1467.56" ytl="447.52" xbr="1822.62" ybr="702.26" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1465.88" ytl="448.31" xbr="1818.86" ybr="700.78" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1464.20" ytl="449.10" xbr="1815.10" ybr="699.30" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1462.52" ytl="449.89" xbr="1811.34" ybr="697.81" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1460.84" ytl="450.68" xbr="1807.58" ybr="696.33" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="46" keyframe="0" outside="0" occluded="0" xtl="1459.15" ytl="451.47" xbr="1803.82" ybr="694.85" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="47" keyframe="0" outside="0" occluded="0" xtl="1457.47" ytl="452.26" xbr="1800.06" ybr="693.36" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="48" keyframe="0" outside="0" occluded="0" xtl="1455.79" ytl="453.05" xbr="1796.30" ybr="691.88" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1454.11" ytl="453.84" xbr="1792.54" ybr="690.40" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="50" keyframe="0" outside="0" occluded="0" xtl="1452.43" ytl="454.63" xbr="1788.78" ybr="688.91" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="1450.75" ytl="455.42" xbr="1785.02" ybr="687.43" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="1449.07" ytl="456.21" xbr="1781.26" ybr="685.95" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="53" keyframe="1" outside="0" occluded="0" xtl="1447.38" ytl="457.00" xbr="1777.50" ybr="684.46" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="1445.28" ytl="457.00" xbr="1773.05" ybr="684.09" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="1443.18" ytl="457.00" xbr="1768.60" ybr="683.72" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="1441.08" ytl="457.00" xbr="1764.15" ybr="683.35" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="1438.98" ytl="457.00" xbr="1759.70" ybr="682.98" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="1436.88" ytl="457.00" xbr="1755.25" ybr="682.61" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1434.77" ytl="457.00" xbr="1750.80" ybr="682.24" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="1432.67" ytl="457.00" xbr="1746.35" ybr="681.87" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="61" keyframe="0" outside="0" occluded="0" xtl="1430.57" ytl="457.00" xbr="1741.90" ybr="681.50" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="1428.47" ytl="457.00" xbr="1737.45" ybr="681.12" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="1426.37" ytl="457.00" xbr="1733.00" ybr="680.75" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1424.27" ytl="457.00" xbr="1728.55" ybr="680.38" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="65" keyframe="0" outside="0" occluded="0" xtl="1422.16" ytl="457.00" xbr="1724.10" ybr="680.01" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="1420.06" ytl="457.00" xbr="1719.65" ybr="679.64" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="67" keyframe="0" outside="0" occluded="0" xtl="1417.96" ytl="457.00" xbr="1715.20" ybr="679.27" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="1415.86" ytl="457.00" xbr="1710.75" ybr="678.90" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="1413.76" ytl="457.00" xbr="1706.30" ybr="678.53" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="70" keyframe="0" outside="0" occluded="0" xtl="1411.56" ytl="457.88" xbr="1702.56" ybr="677.76" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="1409.36" ytl="458.76" xbr="1698.82" ybr="676.99" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="1407.16" ytl="459.63" xbr="1695.08" ybr="676.22" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="73" keyframe="0" outside="0" occluded="0" xtl="1404.97" ytl="460.51" xbr="1691.34" ybr="675.45" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="74" keyframe="0" outside="0" occluded="0" xtl="1402.77" ytl="461.39" xbr="1687.61" ybr="674.68" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="75" keyframe="0" outside="0" occluded="0" xtl="1400.57" ytl="462.27" xbr="1683.87" ybr="673.91" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="76" keyframe="0" outside="0" occluded="0" xtl="1398.37" ytl="463.14" xbr="1680.13" ybr="673.14" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="77" keyframe="0" outside="0" occluded="0" xtl="1396.18" ytl="464.02" xbr="1676.39" ybr="672.37" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="78" keyframe="0" outside="0" occluded="0" xtl="1393.98" ytl="464.90" xbr="1672.65" ybr="671.60" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="1391.78" ytl="465.78" xbr="1668.91" ybr="670.84" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="1389.58" ytl="466.66" xbr="1665.17" ybr="670.07" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="1387.38" ytl="467.53" xbr="1661.43" ybr="669.30" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="1385.19" ytl="468.41" xbr="1657.69" ybr="668.53" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="1382.99" ytl="469.29" xbr="1653.96" ybr="667.76" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="1380.79" ytl="470.17" xbr="1650.22" ybr="666.99" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="85" keyframe="0" outside="0" occluded="0" xtl="1378.59" ytl="471.04" xbr="1646.48" ybr="666.22" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="86" keyframe="0" outside="0" occluded="0" xtl="1376.40" ytl="471.92" xbr="1642.74" ybr="665.45" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="1374.20" ytl="472.80" xbr="1639.00" ybr="664.68" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="88" keyframe="0" outside="0" occluded="0" xtl="1371.72" ytl="472.55" xbr="1636.53" ybr="664.43" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="1369.25" ytl="472.31" xbr="1634.05" ybr="664.19" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="1366.78" ytl="472.06" xbr="1631.58" ybr="663.94" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="91" keyframe="0" outside="0" occluded="0" xtl="1364.31" ytl="471.81" xbr="1629.11" ybr="663.69" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="1361.83" ytl="471.56" xbr="1626.64" ybr="663.44" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="1359.36" ytl="471.32" xbr="1624.16" ybr="663.20" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="1356.89" ytl="471.07" xbr="1621.69" ybr="662.95" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="1354.42" ytl="470.82" xbr="1619.22" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="1336.62" ytl="480.70" xbr="1601.40" ybr="654.79" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="1318.81" ytl="484.70" xbr="1585.60" ybr="656.77" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="1295.08" ytl="490.63" xbr="1561.86" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="1271.34" ytl="490.63" xbr="1538.13" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="1271.34" ytl="490.63" xbr="1538.13" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="1241.67" ytl="490.63" xbr="1508.46" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="1202.11" ytl="490.63" xbr="1468.90" ybr="662.70" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1164.53" ytl="480.74" xbr="1431.31" ybr="652.81" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="1134.86" ytl="478.77" xbr="1401.64" ybr="650.84" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="1099.25" ytl="474.81" xbr="1366.04" ybr="646.88" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="1089.36" ytl="470.85" xbr="1356.15" ybr="642.92" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="1079.47" ytl="466.90" xbr="1346.26" ybr="638.97" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="108" keyframe="1" outside="0" occluded="0" xtl="1065.60" ytl="462.94" xbr="1312.63" ybr="635.01" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="109" keyframe="1" outside="0" occluded="0" xtl="1051.80" ytl="462.94" xbr="1284.90" ybr="635.01" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="110" keyframe="1" outside="0" occluded="0" xtl="1030.04" ytl="455.03" xbr="1263.14" ybr="627.10" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="111" keyframe="1" outside="0" occluded="0" xtl="1018.17" ytl="458.99" xbr="1251.27" ybr="631.05" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="112" keyframe="0" outside="0" occluded="0" xtl="1016.20" ytl="458.99" xbr="1249.30" ybr="631.05" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="1014.22" ytl="458.99" xbr="1247.32" ybr="631.05" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="114" keyframe="0" outside="0" occluded="0" xtl="1031.03" ytl="457.01" xbr="1254.26" ybr="629.08" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="1047.84" ytl="455.03" xbr="1261.20" ybr="627.10" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="116" keyframe="1" outside="0" occluded="0" xtl="1077.52" ytl="449.09" xbr="1275.00" ybr="621.16" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="1090.04" ytl="449.75" xbr="1287.53" ybr="621.82" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="1092.68" ytl="450.41" xbr="1290.16" ybr="622.48" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="1115.10" ytl="451.07" xbr="1312.58" ybr="623.14" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="120" keyframe="1" outside="0" occluded="0" xtl="1130.92" ytl="447.12" xbr="1328.41" ybr="619.19" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="121" keyframe="0" outside="0" occluded="0" xtl="1146.75" ytl="447.12" xbr="1344.23" ybr="619.19" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="122" keyframe="1" outside="0" occluded="0" xtl="1162.57" ytl="447.12" xbr="1360.05" ybr="619.19" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="1172.46" ytl="447.12" xbr="1369.94" ybr="619.19" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="124" keyframe="0" outside="0" occluded="0" xtl="1181.69" ytl="446.46" xbr="1379.18" ybr="618.53" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="125" keyframe="0" outside="0" occluded="0" xtl="1190.92" ytl="445.80" xbr="1388.41" ybr="617.87" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="126" keyframe="1" outside="0" occluded="0" xtl="1200.15" ytl="445.14" xbr="1397.64" ybr="617.21" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="127" keyframe="0" outside="0" occluded="0" xtl="1209.38" ytl="448.43" xbr="1396.32" ybr="615.89" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="1218.61" ytl="451.71" xbr="1395.01" ybr="614.57" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="1227.84" ytl="455.00" xbr="1393.70" ybr="613.25" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="130" keyframe="0" outside="0" occluded="0" xtl="1227.23" ytl="457.89" xbr="1391.27" ybr="613.10" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="131" keyframe="0" outside="0" occluded="0" xtl="1226.62" ytl="460.78" xbr="1388.84" ybr="612.95" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="132" keyframe="0" outside="0" occluded="0" xtl="1226.01" ytl="463.68" xbr="1386.41" ybr="612.80" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="133" keyframe="0" outside="0" occluded="0" xtl="1225.40" ytl="466.57" xbr="1383.98" ybr="612.65" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="134" keyframe="0" outside="0" occluded="0" xtl="1224.79" ytl="469.46" xbr="1381.55" ybr="612.50" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="135" keyframe="0" outside="0" occluded="0" xtl="1224.18" ytl="472.35" xbr="1379.12" ybr="612.35" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="136" keyframe="0" outside="0" occluded="0" xtl="1223.57" ytl="475.25" xbr="1376.68" ybr="612.20" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="137" keyframe="0" outside="0" occluded="0" xtl="1222.96" ytl="478.14" xbr="1374.25" ybr="612.05" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="138" keyframe="0" outside="0" occluded="0" xtl="1222.34" ytl="481.03" xbr="1371.82" ybr="611.90" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="139" keyframe="0" outside="0" occluded="0" xtl="1221.73" ytl="483.92" xbr="1369.39" ybr="611.75" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="140" keyframe="0" outside="0" occluded="0" xtl="1221.12" ytl="486.82" xbr="1366.96" ybr="611.60" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="141" keyframe="0" outside="0" occluded="0" xtl="1220.51" ytl="489.71" xbr="1364.53" ybr="611.45" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="1219.90" ytl="492.60" xbr="1362.10" ybr="611.30" z_order="0">
+      <attribute name="type_of_object">van</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">undefined</attribute>
+    </box>
+  </track>
+  <track id="1" label="object" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1065.10" ytl="520.60" xbr="1103.28" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1064.31" ytl="520.60" xbr="1102.48" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="2" keyframe="0" outside="0" occluded="0" xtl="1063.51" ytl="520.60" xbr="1101.69" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1062.72" ytl="520.60" xbr="1100.89" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="4" keyframe="0" outside="0" occluded="0" xtl="1061.92" ytl="520.60" xbr="1100.10" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="1061.13" ytl="520.60" xbr="1099.30" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="1060.33" ytl="520.60" xbr="1098.51" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="7" keyframe="1" outside="0" occluded="0" xtl="1059.54" ytl="520.60" xbr="1097.71" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1058.94" ytl="520.48" xbr="1097.38" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1058.34" ytl="520.36" xbr="1097.05" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1057.75" ytl="520.24" xbr="1096.72" ybr="554.78" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="1057.15" ytl="520.11" xbr="1096.39" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1056.56" ytl="519.99" xbr="1096.05" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1055.96" ytl="519.87" xbr="1095.72" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1055.37" ytl="519.75" xbr="1095.39" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1054.77" ytl="519.63" xbr="1095.06" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="16" keyframe="0" outside="0" occluded="0" xtl="1054.18" ytl="519.51" xbr="1094.72" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1053.58" ytl="519.39" xbr="1094.39" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1052.99" ytl="519.26" xbr="1094.06" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1052.39" ytl="519.14" xbr="1093.73" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="1051.80" ytl="519.02" xbr="1093.39" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="21" keyframe="1" outside="0" occluded="0" xtl="1051.20" ytl="518.90" xbr="1093.06" ybr="554.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1049.53" ytl="517.49" xbr="1092.73" ybr="554.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1047.86" ytl="516.08" xbr="1092.40" ybr="554.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1046.19" ytl="514.67" xbr="1092.06" ybr="554.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1044.51" ytl="513.26" xbr="1091.73" ybr="554.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="26" keyframe="1" outside="0" occluded="0" xtl="1042.84" ytl="511.86" xbr="1091.40" ybr="554.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1041.43" ytl="511.86" xbr="1090.68" ybr="555.41" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="28" keyframe="0" outside="0" occluded="0" xtl="1040.02" ytl="511.86" xbr="1089.95" ybr="556.03" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1038.61" ytl="511.86" xbr="1089.23" ybr="556.64" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1037.21" ytl="511.86" xbr="1088.51" ybr="557.26" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1035.80" ytl="511.87" xbr="1087.79" ybr="557.87" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1034.39" ytl="511.87" xbr="1087.06" ybr="558.49" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1032.98" ytl="511.87" xbr="1086.34" ybr="559.10" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1031.57" ytl="511.87" xbr="1085.62" ybr="559.71" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1030.16" ytl="511.87" xbr="1084.90" ybr="560.33" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1028.75" ytl="511.88" xbr="1084.17" ybr="560.94" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="37" keyframe="0" outside="0" occluded="0" xtl="1027.34" ytl="511.88" xbr="1083.45" ybr="561.56" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1025.93" ytl="511.88" xbr="1082.73" ybr="562.17" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="39" keyframe="0" outside="0" occluded="0" xtl="1024.52" ytl="511.88" xbr="1082.00" ybr="562.79" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1023.11" ytl="511.88" xbr="1081.28" ybr="563.40" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1021.70" ytl="511.89" xbr="1080.56" ybr="564.01" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1020.29" ytl="511.89" xbr="1079.84" ybr="564.63" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1018.89" ytl="511.89" xbr="1079.11" ybr="565.24" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1017.48" ytl="511.89" xbr="1078.39" ybr="565.86" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1016.07" ytl="511.89" xbr="1077.67" ybr="566.47" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="46" keyframe="0" outside="0" occluded="0" xtl="1014.66" ytl="511.90" xbr="1076.95" ybr="567.08" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="47" keyframe="0" outside="0" occluded="0" xtl="1013.25" ytl="511.90" xbr="1076.22" ybr="567.70" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="48" keyframe="1" outside="0" occluded="0" xtl="1011.84" ytl="511.90" xbr="1075.50" ybr="568.31" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1007.87" ytl="511.48" xbr="1073.54" ybr="569.15" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="50" keyframe="0" outside="0" occluded="0" xtl="1003.89" ytl="511.06" xbr="1071.57" ybr="569.99" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="999.92" ytl="510.64" xbr="1069.61" ybr="570.83" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="995.94" ytl="510.22" xbr="1067.64" ybr="571.68" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="53" keyframe="0" outside="0" occluded="0" xtl="991.97" ytl="509.80" xbr="1065.68" ybr="572.52" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="987.99" ytl="509.38" xbr="1063.71" ybr="573.36" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="984.02" ytl="508.95" xbr="1061.75" ybr="574.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="980.04" ytl="508.53" xbr="1059.78" ybr="575.04" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="976.07" ytl="508.11" xbr="1057.82" ybr="575.88" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="972.09" ytl="507.69" xbr="1055.85" ybr="576.72" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="968.12" ytl="507.27" xbr="1053.89" ybr="577.56" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="964.14" ytl="506.85" xbr="1051.92" ybr="578.40" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="61" keyframe="0" outside="0" occluded="0" xtl="960.17" ytl="506.43" xbr="1049.96" ybr="579.24" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="956.20" ytl="506.01" xbr="1047.99" ybr="580.08" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="952.22" ytl="505.59" xbr="1046.03" ybr="580.92" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="948.25" ytl="505.17" xbr="1044.06" ybr="581.76" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="65" keyframe="1" outside="0" occluded="0" xtl="944.27" ytl="504.75" xbr="1042.10" ybr="582.60" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="933.23" ytl="504.22" xbr="1039.37" ybr="586.04" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="67" keyframe="0" outside="0" occluded="0" xtl="922.19" ytl="503.69" xbr="1036.63" ybr="589.49" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="911.15" ytl="503.16" xbr="1033.90" ybr="592.93" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="900.11" ytl="502.63" xbr="1031.17" ybr="596.38" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="70" keyframe="0" outside="0" occluded="0" xtl="889.07" ytl="502.10" xbr="1028.43" ybr="599.82" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="878.03" ytl="501.57" xbr="1025.70" ybr="603.27" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="866.99" ytl="501.04" xbr="1022.97" ybr="606.71" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="73" keyframe="0" outside="0" occluded="0" xtl="855.95" ytl="500.51" xbr="1020.23" ybr="610.16" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="844.91" ytl="499.98" xbr="1017.50" ybr="613.60" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="75" keyframe="0" outside="0" occluded="0" xtl="837.75" ytl="498.39" xbr="1015.10" ybr="613.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="830.60" ytl="496.80" xbr="1012.70" ybr="612.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="77" keyframe="0" outside="0" occluded="0" xtl="808.34" ytl="495.21" xbr="1004.44" ybr="619.32" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="78" keyframe="0" outside="0" occluded="0" xtl="786.08" ytl="493.62" xbr="996.18" ybr="625.84" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="763.82" ytl="492.03" xbr="987.92" ybr="632.36" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="741.57" ytl="490.44" xbr="979.66" ybr="638.88" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="719.31" ytl="488.85" xbr="971.40" ybr="645.40" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="720.30" ytl="486.29" xbr="962.08" ybr="654.30" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="680.05" ytl="483.73" xbr="952.75" ybr="663.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="639.81" ytl="481.17" xbr="943.43" ybr="672.10" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="599.56" ytl="478.61" xbr="934.10" ybr="681.00" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="86" keyframe="0" outside="0" occluded="0" xtl="520.44" ytl="467.90" xbr="911.00" ybr="704.10" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="441.32" ytl="457.18" xbr="887.90" ybr="727.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="441.32" ytl="457.18" xbr="887.90" ybr="727.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="319.34" ytl="443.17" xbr="860.70" ybr="767.60" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="197.36" ytl="429.16" xbr="833.50" ybr="808.00" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="91" keyframe="0" outside="0" occluded="0" xtl="101.23" ytl="408.98" xbr="788.40" ybr="824.60" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="5.10" ytl="388.81" xbr="743.30" ybr="841.20" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="367.44" xbr="669.70" ybr="838.80" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="94" keyframe="0" outside="0" occluded="0" xtl="0.00" ytl="379.31" xbr="522.54" ybr="850.67" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="0.00" ytl="391.18" xbr="375.37" ybr="862.54" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="0.00" ytl="403.05" xbr="228.21" ybr="874.40" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="1" occluded="0" xtl="0.00" ytl="403.05" xbr="228.21" ybr="874.40" z_order="0">
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+      <attribute name="cross">not_crossing</attribute>
+    </box>
+  </track>
+  <track id="2" label="object" source="manual">
+    <box frame="0" keyframe="1" outside="0" occluded="0" xtl="1170.13" ytl="514.24" xbr="1210.67" ybr="557.96" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="1" keyframe="0" outside="0" occluded="0" xtl="1169.98" ytl="514.14" xbr="1210.52" ybr="557.86" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="2" keyframe="0" outside="0" occluded="0" xtl="1169.83" ytl="514.04" xbr="1210.37" ybr="557.76" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="3" keyframe="0" outside="0" occluded="0" xtl="1169.68" ytl="513.94" xbr="1210.23" ybr="557.66" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="4" keyframe="0" outside="0" occluded="0" xtl="1169.54" ytl="513.84" xbr="1210.08" ybr="557.56" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="5" keyframe="0" outside="0" occluded="0" xtl="1169.39" ytl="513.74" xbr="1209.93" ybr="557.47" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="6" keyframe="0" outside="0" occluded="0" xtl="1169.24" ytl="513.64" xbr="1209.78" ybr="557.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="7" keyframe="0" outside="0" occluded="0" xtl="1169.09" ytl="513.55" xbr="1209.63" ybr="557.27" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="8" keyframe="0" outside="0" occluded="0" xtl="1168.94" ytl="513.45" xbr="1209.48" ybr="557.17" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="9" keyframe="0" outside="0" occluded="0" xtl="1168.79" ytl="513.35" xbr="1209.33" ybr="557.07" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="10" keyframe="0" outside="0" occluded="0" xtl="1168.64" ytl="513.25" xbr="1209.18" ybr="556.97" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="11" keyframe="0" outside="0" occluded="0" xtl="1168.49" ytl="513.15" xbr="1209.03" ybr="556.87" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="12" keyframe="0" outside="0" occluded="0" xtl="1168.34" ytl="513.05" xbr="1208.88" ybr="556.77" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="13" keyframe="0" outside="0" occluded="0" xtl="1168.19" ytl="512.95" xbr="1208.74" ybr="556.67" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="14" keyframe="0" outside="0" occluded="0" xtl="1168.05" ytl="512.85" xbr="1208.59" ybr="556.57" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="15" keyframe="0" outside="0" occluded="0" xtl="1167.90" ytl="512.75" xbr="1208.44" ybr="556.47" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="16" keyframe="1" outside="0" occluded="0" xtl="1167.75" ytl="512.65" xbr="1208.29" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="17" keyframe="0" outside="0" occluded="0" xtl="1167.55" ytl="512.65" xbr="1208.09" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="18" keyframe="0" outside="0" occluded="0" xtl="1167.35" ytl="512.65" xbr="1207.89" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="19" keyframe="0" outside="0" occluded="0" xtl="1167.15" ytl="512.65" xbr="1207.69" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="20" keyframe="0" outside="0" occluded="0" xtl="1166.95" ytl="512.65" xbr="1207.49" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="21" keyframe="0" outside="0" occluded="0" xtl="1166.75" ytl="512.65" xbr="1207.29" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="22" keyframe="0" outside="0" occluded="0" xtl="1166.55" ytl="512.65" xbr="1207.10" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="23" keyframe="0" outside="0" occluded="0" xtl="1166.36" ytl="512.65" xbr="1206.90" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="24" keyframe="0" outside="0" occluded="0" xtl="1166.16" ytl="512.65" xbr="1206.70" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="25" keyframe="0" outside="0" occluded="0" xtl="1165.96" ytl="512.65" xbr="1206.50" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="26" keyframe="0" outside="0" occluded="0" xtl="1165.76" ytl="512.65" xbr="1206.30" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="27" keyframe="0" outside="0" occluded="0" xtl="1165.56" ytl="512.65" xbr="1206.10" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="0" occluded="0" xtl="1165.36" ytl="512.65" xbr="1205.90" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="29" keyframe="0" outside="0" occluded="0" xtl="1165.25" ytl="512.65" xbr="1205.79" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="30" keyframe="0" outside="0" occluded="0" xtl="1165.15" ytl="512.65" xbr="1205.69" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="31" keyframe="0" outside="0" occluded="0" xtl="1165.04" ytl="512.65" xbr="1205.58" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="32" keyframe="0" outside="0" occluded="0" xtl="1164.93" ytl="512.65" xbr="1205.47" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="33" keyframe="0" outside="0" occluded="0" xtl="1164.82" ytl="512.65" xbr="1205.36" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="34" keyframe="0" outside="0" occluded="0" xtl="1164.71" ytl="512.65" xbr="1205.25" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="35" keyframe="0" outside="0" occluded="0" xtl="1164.60" ytl="512.65" xbr="1205.14" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="36" keyframe="0" outside="0" occluded="0" xtl="1164.50" ytl="512.65" xbr="1205.04" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="37" keyframe="0" outside="0" occluded="0" xtl="1164.39" ytl="512.65" xbr="1204.93" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="38" keyframe="0" outside="0" occluded="0" xtl="1164.28" ytl="512.65" xbr="1204.82" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="39" keyframe="0" outside="0" occluded="0" xtl="1164.17" ytl="512.65" xbr="1204.71" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="40" keyframe="0" outside="0" occluded="0" xtl="1164.06" ytl="512.65" xbr="1204.60" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="41" keyframe="0" outside="0" occluded="0" xtl="1163.95" ytl="512.65" xbr="1204.49" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="42" keyframe="0" outside="0" occluded="0" xtl="1163.84" ytl="512.65" xbr="1204.39" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="43" keyframe="0" outside="0" occluded="0" xtl="1163.74" ytl="512.65" xbr="1204.28" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="44" keyframe="0" outside="0" occluded="0" xtl="1163.63" ytl="512.65" xbr="1204.17" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="45" keyframe="0" outside="0" occluded="0" xtl="1163.52" ytl="512.65" xbr="1204.06" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="46" keyframe="0" outside="0" occluded="0" xtl="1163.41" ytl="512.65" xbr="1203.95" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="47" keyframe="0" outside="0" occluded="0" xtl="1163.30" ytl="512.65" xbr="1203.84" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="48" keyframe="0" outside="0" occluded="0" xtl="1163.19" ytl="512.65" xbr="1203.74" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="49" keyframe="0" outside="0" occluded="0" xtl="1163.09" ytl="512.65" xbr="1203.63" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="50" keyframe="1" outside="0" occluded="0" xtl="1162.98" ytl="512.65" xbr="1203.52" ybr="556.37" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="51" keyframe="0" outside="0" occluded="0" xtl="1162.66" ytl="512.88" xbr="1202.92" ybr="556.28" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="52" keyframe="0" outside="0" occluded="0" xtl="1162.34" ytl="513.11" xbr="1202.33" ybr="556.20" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="53" keyframe="0" outside="0" occluded="0" xtl="1162.02" ytl="513.33" xbr="1201.73" ybr="556.11" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="54" keyframe="0" outside="0" occluded="0" xtl="1161.70" ytl="513.56" xbr="1201.13" ybr="556.02" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="55" keyframe="0" outside="0" occluded="0" xtl="1161.38" ytl="513.79" xbr="1200.54" ybr="555.93" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="56" keyframe="0" outside="0" occluded="0" xtl="1161.06" ytl="514.02" xbr="1199.94" ybr="555.84" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="57" keyframe="0" outside="0" occluded="0" xtl="1160.75" ytl="514.24" xbr="1199.35" ybr="555.76" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="58" keyframe="0" outside="0" occluded="0" xtl="1160.43" ytl="514.47" xbr="1198.75" ybr="555.67" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="59" keyframe="0" outside="0" occluded="0" xtl="1160.11" ytl="514.70" xbr="1198.15" ybr="555.58" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="60" keyframe="0" outside="0" occluded="0" xtl="1159.79" ytl="514.93" xbr="1197.56" ybr="555.49" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="61" keyframe="0" outside="0" occluded="0" xtl="1159.47" ytl="515.15" xbr="1196.96" ybr="555.40" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="62" keyframe="0" outside="0" occluded="0" xtl="1159.15" ytl="515.38" xbr="1196.36" ybr="555.31" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="63" keyframe="0" outside="0" occluded="0" xtl="1158.83" ytl="515.61" xbr="1195.77" ybr="555.23" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="64" keyframe="0" outside="0" occluded="0" xtl="1158.51" ytl="515.84" xbr="1195.17" ybr="555.14" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="65" keyframe="0" outside="0" occluded="0" xtl="1158.19" ytl="516.06" xbr="1194.58" ybr="555.05" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="66" keyframe="0" outside="0" occluded="0" xtl="1157.88" ytl="516.29" xbr="1193.98" ybr="554.96" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="67" keyframe="0" outside="0" occluded="0" xtl="1157.56" ytl="516.52" xbr="1193.38" ybr="554.87" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="68" keyframe="0" outside="0" occluded="0" xtl="1157.24" ytl="516.75" xbr="1192.79" ybr="554.79" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="69" keyframe="0" outside="0" occluded="0" xtl="1156.92" ytl="516.97" xbr="1192.19" ybr="554.70" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="1156.60" ytl="517.20" xbr="1191.59" ybr="554.61" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="71" keyframe="0" outside="0" occluded="0" xtl="1156.17" ytl="516.99" xbr="1191.25" ybr="554.48" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="72" keyframe="0" outside="0" occluded="0" xtl="1155.75" ytl="516.77" xbr="1190.90" ybr="554.36" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="73" keyframe="0" outside="0" occluded="0" xtl="1155.32" ytl="516.56" xbr="1190.55" ybr="554.23" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="74" keyframe="0" outside="0" occluded="0" xtl="1154.90" ytl="516.34" xbr="1190.20" ybr="554.10" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="75" keyframe="0" outside="0" occluded="0" xtl="1154.47" ytl="516.13" xbr="1189.85" ybr="553.98" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="76" keyframe="0" outside="0" occluded="0" xtl="1154.04" ytl="515.91" xbr="1189.50" ybr="553.85" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="77" keyframe="0" outside="0" occluded="0" xtl="1153.62" ytl="515.70" xbr="1189.15" ybr="553.72" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="78" keyframe="0" outside="0" occluded="0" xtl="1153.19" ytl="515.48" xbr="1188.80" ybr="553.59" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="79" keyframe="0" outside="0" occluded="0" xtl="1152.77" ytl="515.27" xbr="1188.46" ybr="553.47" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="80" keyframe="0" outside="0" occluded="0" xtl="1152.34" ytl="515.06" xbr="1188.11" ybr="553.34" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="81" keyframe="0" outside="0" occluded="0" xtl="1151.92" ytl="514.84" xbr="1187.76" ybr="553.21" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="82" keyframe="0" outside="0" occluded="0" xtl="1151.49" ytl="514.63" xbr="1187.41" ybr="553.09" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="83" keyframe="0" outside="0" occluded="0" xtl="1151.06" ytl="514.41" xbr="1187.06" ybr="552.96" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="84" keyframe="0" outside="0" occluded="0" xtl="1150.64" ytl="514.20" xbr="1186.71" ybr="552.83" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="85" keyframe="0" outside="0" occluded="0" xtl="1150.21" ytl="513.98" xbr="1186.36" ybr="552.71" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="86" keyframe="0" outside="0" occluded="0" xtl="1149.79" ytl="513.77" xbr="1186.01" ybr="552.58" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="1149.36" ytl="513.55" xbr="1185.66" ybr="552.45" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="88" keyframe="0" outside="0" occluded="0" xtl="1148.61" ytl="513.38" xbr="1184.99" ybr="552.36" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="89" keyframe="0" outside="0" occluded="0" xtl="1147.85" ytl="513.20" xbr="1184.31" ybr="552.27" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="90" keyframe="0" outside="0" occluded="0" xtl="1147.10" ytl="513.02" xbr="1183.63" ybr="552.18" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="91" keyframe="0" outside="0" occluded="0" xtl="1146.34" ytl="512.84" xbr="1182.96" ybr="552.09" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="92" keyframe="0" outside="0" occluded="0" xtl="1145.59" ytl="512.67" xbr="1182.28" ybr="552.00" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="93" keyframe="0" outside="0" occluded="0" xtl="1144.83" ytl="512.49" xbr="1181.60" ybr="551.91" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="1144.08" ytl="512.31" xbr="1180.92" ybr="551.82" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="95" keyframe="0" outside="0" occluded="0" xtl="1131.97" ytl="512.13" xbr="1168.89" ybr="551.73" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="96" keyframe="0" outside="0" occluded="0" xtl="1119.86" ytl="511.96" xbr="1156.86" ybr="551.64" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="1107.75" ytl="511.78" xbr="1144.82" ybr="551.55" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="98" keyframe="0" outside="0" occluded="0" xtl="1090.90" ytl="510.12" xbr="1128.05" ybr="549.98" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="1074.04" ytl="508.45" xbr="1111.27" ybr="548.41" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="1071.50" ytl="509.18" xbr="1108.80" ybr="549.22" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="1054.60" ytl="508.45" xbr="1091.98" ybr="548.57" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="1028.62" ytl="506.14" xbr="1066.08" ybr="546.36" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="1004.16" ytl="499.13" xbr="1041.70" ybr="539.43" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="0" occluded="0" xtl="975.64" ytl="499.46" xbr="1013.25" ybr="539.85" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="105" keyframe="1" outside="0" occluded="0" xtl="950.36" ytl="495.81" xbr="988.05" ybr="536.29" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="106" keyframe="0" outside="0" occluded="0" xtl="941.01" ytl="495.05" xbr="978.77" ybr="535.62" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="107" keyframe="1" outside="0" occluded="0" xtl="931.65" ytl="494.29" xbr="969.49" ybr="534.95" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="108" keyframe="0" outside="0" occluded="0" xtl="927.92" ytl="494.26" xbr="965.85" ybr="535.01" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="109" keyframe="0" outside="0" occluded="0" xtl="924.20" ytl="494.24" xbr="962.20" ybr="535.06" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="110" keyframe="0" outside="0" occluded="0" xtl="920.47" ytl="494.21" xbr="958.55" ybr="535.12" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="111" keyframe="0" outside="0" occluded="0" xtl="916.75" ytl="494.18" xbr="954.90" ybr="535.18" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="112" keyframe="0" outside="0" occluded="0" xtl="913.03" ytl="494.15" xbr="951.26" ybr="535.24" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="113" keyframe="1" outside="0" occluded="0" xtl="909.30" ytl="494.12" xbr="947.61" ybr="535.30" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="114" keyframe="0" outside="0" occluded="0" xtl="927.59" ytl="495.13" xbr="965.97" ybr="536.40" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="115" keyframe="1" outside="0" occluded="0" xtl="945.87" ytl="496.14" xbr="984.34" ybr="537.50" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="116" keyframe="0" outside="0" occluded="0" xtl="975.78" ytl="500.30" xbr="1014.31" ybr="541.74" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="117" keyframe="1" outside="0" occluded="0" xtl="1005.68" ytl="504.46" xbr="1044.29" ybr="545.99" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="118" keyframe="1" outside="0" occluded="0" xtl="1006.80" ytl="503.96" xbr="1045.49" ybr="545.58" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="119" keyframe="1" outside="0" occluded="0" xtl="1039.72" ytl="500.28" xbr="1078.49" ybr="541.99" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="120" keyframe="0" outside="0" occluded="0" xtl="1062.97" ytl="499.20" xbr="1098.25" ybr="540.99" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="121" keyframe="1" outside="0" occluded="0" xtl="1086.22" ytl="498.11" xbr="1118.00" ybr="539.99" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="122" keyframe="0" outside="0" occluded="0" xtl="1104.72" ytl="495.98" xbr="1136.91" ybr="537.95" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="123" keyframe="1" outside="0" occluded="0" xtl="1123.21" ytl="493.85" xbr="1155.82" ybr="535.91" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="124" keyframe="1" outside="0" occluded="0" xtl="1122.63" ytl="492.92" xbr="1155.65" ybr="535.06" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="125" keyframe="0" outside="0" occluded="0" xtl="1137.32" ytl="492.12" xbr="1170.77" ybr="534.35" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="126" keyframe="0" outside="0" occluded="0" xtl="1152.02" ytl="491.31" xbr="1185.88" ybr="533.63" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="127" keyframe="1" outside="0" occluded="0" xtl="1166.71" ytl="490.51" xbr="1200.99" ybr="532.92" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="128" keyframe="0" outside="0" occluded="0" xtl="1174.02" ytl="488.36" xbr="1208.71" ybr="530.85" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="129" keyframe="1" outside="0" occluded="0" xtl="1181.32" ytl="486.20" xbr="1216.43" ybr="528.78" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="130" keyframe="1" outside="0" occluded="0" xtl="1182.29" ytl="487.38" xbr="1217.83" ybr="530.05" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="131" keyframe="0" outside="0" occluded="0" xtl="1185.45" ytl="488.23" xbr="1221.40" ybr="530.98" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="132" keyframe="1" outside="0" occluded="0" xtl="1188.61" ytl="489.08" xbr="1224.98" ybr="531.92" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="133" keyframe="0" outside="0" occluded="0" xtl="1188.43" ytl="491.55" xbr="1225.22" ybr="534.48" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="134" keyframe="0" outside="0" occluded="0" xtl="1188.26" ytl="494.03" xbr="1225.46" ybr="537.05" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="135" keyframe="0" outside="0" occluded="0" xtl="1188.08" ytl="496.51" xbr="1225.70" ybr="539.61" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="136" keyframe="1" outside="0" occluded="0" xtl="1187.90" ytl="498.98" xbr="1225.94" ybr="542.18" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="137" keyframe="0" outside="0" occluded="0" xtl="1182.29" ytl="501.92" xbr="1220.74" ybr="545.21" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="138" keyframe="0" outside="0" occluded="0" xtl="1176.68" ytl="504.86" xbr="1215.55" ybr="548.23" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="139" keyframe="0" outside="0" occluded="0" xtl="1171.07" ytl="507.80" xbr="1210.35" ybr="551.26" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="140" keyframe="0" outside="0" occluded="0" xtl="1165.46" ytl="510.74" xbr="1205.16" ybr="554.29" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="141" keyframe="0" outside="0" occluded="0" xtl="1159.84" ytl="513.69" xbr="1199.97" ybr="557.32" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+    <box frame="142" keyframe="1" outside="0" occluded="0" xtl="1154.23" ytl="516.63" xbr="1194.77" ybr="560.35" z_order="0">
+      <attribute name="cross">undefined</attribute>
+      <attribute name="type_of_object">car</attribute>
+      <attribute name="situation">on_road</attribute>
+    </box>
+  </track>
+  <track id="3" label="pedestrian" source="manual">
+    <box frame="69" keyframe="1" outside="0" occluded="0" xtl="1027.67" ytl="548.51" xbr="1037.61" ybr="564.52" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="70" keyframe="1" outside="0" occluded="0" xtl="1027.67" ytl="548.51" xbr="1037.61" ybr="564.52" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="71" keyframe="1" outside="0" occluded="0" xtl="1021.20" ytl="544.30" xbr="1037.61" ybr="564.52" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="72" keyframe="1" outside="0" occluded="0" xtl="1017.00" ytl="538.20" xbr="1037.61" ybr="564.14" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="73" keyframe="1" outside="0" occluded="0" xtl="1009.30" ytl="538.20" xbr="1039.10" ybr="568.00" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="74" keyframe="1" outside="0" occluded="0" xtl="1012.75" ytl="544.33" xbr="1042.55" ybr="574.13" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="75" keyframe="1" outside="0" occluded="0" xtl="1010.80" ytl="544.33" xbr="1046.40" ybr="576.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="76" keyframe="1" outside="0" occluded="0" xtl="1010.80" ytl="544.33" xbr="1046.40" ybr="576.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="77" keyframe="1" outside="0" occluded="0" xtl="1006.20" ytl="544.33" xbr="1046.40" ybr="584.80" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="78" keyframe="1" outside="0" occluded="0" xtl="1000.80" ytl="544.33" xbr="1046.40" ybr="598.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="79" keyframe="1" outside="0" occluded="0" xtl="1000.80" ytl="557.80" xbr="1046.40" ybr="598.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+    <box frame="80" keyframe="1" outside="1" occluded="0" xtl="1000.80" ytl="557.80" xbr="1046.40" ybr="598.20" z_order="0">
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">full</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+    </box>
+  </track>
+  <track id="4" label="pedestrian" source="manual">
+    <box frame="80" keyframe="1" outside="0" occluded="0" xtl="995.40" ytl="557.13" xbr="1044.81" ybr="597.53" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="81" keyframe="1" outside="0" occluded="0" xtl="978.50" ytl="565.18" xbr="1042.51" ybr="605.58" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="82" keyframe="1" outside="0" occluded="0" xtl="978.50" ytl="565.18" xbr="1042.51" ybr="605.58" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="83" keyframe="1" outside="0" occluded="0" xtl="972.37" ytl="565.20" xbr="1037.90" ybr="607.49" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="84" keyframe="1" outside="0" occluded="0" xtl="959.71" ytl="559.50" xbr="1044.40" ybr="612.48" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="85" keyframe="1" outside="0" occluded="0" xtl="952.43" ytl="563.72" xbr="1039.00" ybr="616.69" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="86" keyframe="1" outside="0" occluded="0" xtl="944.00" ytl="567.17" xbr="1045.90" ybr="620.14" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="87" keyframe="1" outside="0" occluded="0" xtl="935.18" ytl="564.50" xbr="1056.20" ybr="625.89" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="88" keyframe="1" outside="0" occluded="0" xtl="935.18" ytl="564.50" xbr="1056.20" ybr="625.89" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="89" keyframe="1" outside="0" occluded="0" xtl="927.90" ytl="569.10" xbr="1062.30" ybr="642.00" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="90" keyframe="1" outside="0" occluded="0" xtl="915.75" ytl="575.17" xbr="1056.80" ybr="648.07" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="91" keyframe="1" outside="0" occluded="0" xtl="899.74" ytl="584.56" xbr="1054.60" ybr="657.45" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="92" keyframe="1" outside="0" occluded="0" xtl="885.39" ytl="585.66" xbr="1052.40" ybr="658.56" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="93" keyframe="1" outside="0" occluded="0" xtl="863.31" ytl="598.36" xbr="1049.10" ybr="671.25" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="94" keyframe="1" outside="0" occluded="0" xtl="863.31" ytl="598.36" xbr="1049.10" ybr="671.25" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="95" keyframe="1" outside="0" occluded="0" xtl="829.64" ytl="615.47" xbr="1037.50" ybr="688.37" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="96" keyframe="1" outside="0" occluded="0" xtl="797.62" ytl="629.82" xbr="1005.48" ybr="702.72" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="97" keyframe="1" outside="0" occluded="0" xtl="748.33" ytl="641.75" xbr="974.50" ybr="714.64" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="98" keyframe="1" outside="0" occluded="0" xtl="651.35" ytl="648.10" xbr="945.90" ybr="752.80" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="99" keyframe="1" outside="0" occluded="0" xtl="520.66" ytl="656.10" xbr="899.00" ybr="784.17" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="100" keyframe="1" outside="0" occluded="0" xtl="520.66" ytl="656.10" xbr="899.00" ybr="784.17" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="101" keyframe="1" outside="0" occluded="0" xtl="370.94" ytl="668.50" xbr="815.20" ybr="855.60" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="102" keyframe="1" outside="0" occluded="0" xtl="262.42" ytl="715.20" xbr="706.68" ybr="843.20" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="103" keyframe="1" outside="0" occluded="0" xtl="92.09" ytl="774.27" xbr="536.35" ybr="843.20" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+    <box frame="104" keyframe="1" outside="1" occluded="0" xtl="92.09" ytl="774.27" xbr="536.35" ybr="843.20" z_order="0">
+      <attribute name="Age">adult</attribute>
+      <attribute name="distraction">not_distracted</attribute>
+      <attribute name="type_of_distraction">undefined</attribute>
+      <attribute name="occlusion">None</attribute>
+      <attribute name="carrying_object">undefined</attribute>
+      <attribute name="cross">crossing</attribute>
+      <attribute name="look">not_looking</attribute>
+      <attribute name="hand_gesture">undefined</attribute>
+      <attribute name="gender">male</attribute>
+      <attribute name="group">single</attribute>
+    </box>
+  </track>
+</annotations>
